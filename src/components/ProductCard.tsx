@@ -1,0 +1,58 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { Product, Bundle } from "@/lib/types";
+import { formatPrice } from "@/lib/products";
+import { useCart } from "@/lib/cart-context";
+
+interface ProductCardProps {
+  item: Product | Bundle;
+  type: "product" | "bundle";
+}
+
+export default function ProductCard({ item, type }: ProductCardProps) {
+  const { addItem } = useCart();
+  const [added, setAdded] = useState(false);
+
+  const href = type === "bundle"
+    ? `/products/bundles/${item.slug}`
+    : `/products/item/${item.slug}`;
+
+  function handleAddToCart(e: React.MouseEvent) {
+    e.preventDefault();
+    addItem(item.slug, type);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1500);
+  }
+
+  return (
+    <div className="group flex flex-col rounded-lg border border-border bg-card-bg p-4 transition-shadow hover:shadow-md">
+      <Link href={href}>
+        <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+        {type === "bundle" && (
+          <span className="mb-1 inline-block text-xs font-medium uppercase tracking-wide text-accent">
+            Bundle
+          </span>
+        )}
+        <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
+          {item.name}
+        </h3>
+        <p className="mt-1 text-sm text-muted line-clamp-2">
+          {item.description}
+        </p>
+      </Link>
+      <div className="mt-auto flex items-center justify-between pt-3">
+        <p className="text-lg font-semibold text-foreground">
+          {formatPrice(item.pricePence)}
+        </p>
+        <button
+          onClick={handleAddToCart}
+          className="rounded-md bg-accent px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-accent-hover"
+        >
+          {added ? "Added!" : "Add to cart"}
+        </button>
+      </div>
+    </div>
+  );
+}

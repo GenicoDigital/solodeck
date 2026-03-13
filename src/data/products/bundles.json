@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "ai-essentials-bundle",
+    "name": "AI Essentials Bundle",
+    "description": "The perfect starting point — includes The Ultimate Small Business AI Toolkit, The Complete AI Email Assistant Toolkit, and The Complete Business Audit AI Toolkit at a discounted price.",
+    "pricePence": 6500,
+    "productSlugs": [
+      "ultimate-small-business-ai-toolkit",
+      "email-assistant-ai-toolkit",
+      "business-audit-ai-toolkit"
+    ],
+    "industries": ["all-businesses"],
+    "image": "/images/products/ai-essentials-bundle.jpg",
+    "featured": true
+  },
+  {
+    "slug": "trades-complete-bundle",
+    "name": "Trades & Construction Complete Bundle",
+    "description": "Everything a trades business needs — The Complete Trades & Construction AI Toolkit, The Complete Customer Service Response AI Toolkit, and The Complete AI Website Generator Toolkit.",
+    "pricePence": 5900,
+    "productSlugs": [
+      "trades-construction-ai-toolkit",
+      "customer-service-response-ai-toolkit",
+      "website-generator-ai-toolkit"
+    ],
+    "industries": ["trades"],
+    "image": "/images/products/trades-complete-bundle.jpg"
+  }
+]
