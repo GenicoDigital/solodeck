@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Product, Bundle } from "@/lib/types";
@@ -26,10 +27,24 @@ export default function ProductCard({ item, type }: ProductCardProps) {
     setTimeout(() => setAdded(false), 1500);
   }
 
+  const hasImage = item.image && item.image.length > 0;
+
   return (
     <div className="group flex flex-col rounded-lg border border-border bg-card-bg p-4 transition-shadow hover:shadow-md">
       <Link href={href}>
-        <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+        {hasImage ? (
+          <div className="relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-100">
+            <Image
+              src={item.image}
+              alt={item.name}
+              fill
+              className="object-cover" style={{ objectPosition: "center 25px" }}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </div>
+        ) : (
+          <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+        )}
         {type === "bundle" && (
           <span className="mb-1 inline-block text-xs font-medium uppercase tracking-wide text-accent">
             Bundle

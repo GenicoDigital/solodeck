@@ -15,6 +15,13 @@ export interface Product {
   /** Path to preview image in /public/images/products/ */
   image: string;
   featured?: boolean;
+  /** Extended product description shown on the detail page */
+  overview?: {
+    intro: string;
+    sections: { title: string; description: string }[];
+    whatsInside: string[];
+    whoItsFor: string[];
+  };
 }
 
 export interface Bundle {

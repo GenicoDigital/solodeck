@@ -8,8 +8,65 @@
     "industries": ["all-businesses"],
     "format": "pdf",
     "fileName": "ultimate-small-business-ai-toolkit.pdf",
-    "image": "/images/products/ultimate-small-business-ai-toolkit.jpg",
+    "image": "",
     "featured": true
+  },
+  {
+    "slug": "accountants-bookkeepers-ai-toolkit",
+    "name": "The Complete Accountants & Bookkeepers AI Toolkit",
+    "description": "150+ AI prompts for accountants, bookkeepers, and finance professionals — client communications, bookkeeping processes, tax and compliance, practice management, business advisory, and more. Works with ChatGPT, Claude & Gemini.",
+    "pricePence": 2700,
+    "productType": "prompt-library",
+    "industries": ["accountants-bookkeepers"],
+    "format": "pdf",
+    "fileName": "the-complete-accountants-bookkeepers-ai-toolkit.pdf",
+    "image": "/images/products/accountants-bookkeepers-ai-toolkit.jpg",
+    "featured": true,
+    "overview": {
+      "intro": "Running an accountancy or bookkeeping practice means juggling client communications, compliance deadlines, advisory work, and day-to-day admin — often all at once. This toolkit gives you 150+ ready-to-use AI prompts that handle the writing, thinking, and drafting so you can focus on the work that actually needs your expertise. Every prompt is written in plain English, designed for UK practices, and works with ChatGPT, Claude, Gemini, or any other AI tool. Just pick a prompt, fill in the bracketed placeholders with your own details, paste it into your AI tool, and you'll have a professional first draft in seconds.",
+      "sections": [
+        {
+          "title": "Client Communication",
+          "description": "15 prompts covering welcome letters, year-end reminders, fee increase letters, late document chasers, tax return notifications, VAT registration advice, onboarding questionnaires, dormant company reminders, CGT planning letters, business sale guidance, MTD updates, and payroll year-end letters."
+        },
+        {
+          "title": "Bookkeeping & Accounts",
+          "description": "15 prompts for step-by-step bookkeeping processes and guides — keeping records accurate, compliant, and audit-ready."
+        },
+        {
+          "title": "Tax & Compliance",
+          "description": "20 prompts covering tax planning, compliance guides, HMRC regulatory frameworks, and advisory content for you and your clients."
+        },
+        {
+          "title": "Practice Management",
+          "description": "15 prompts to help you run and grow your practice — operational frameworks, workflow documentation, capacity planning, and team management."
+        },
+        {
+          "title": "Business Advisory & Growth",
+          "description": "20 prompts for strategic advisory content that adds value beyond compliance — helping your clients plan, grow, and make better financial decisions."
+        },
+        {
+          "title": "Additional Prompts",
+          "description": "36 extra prompts spanning all practice areas for maximum coverage — giving you a prompt for virtually every situation you'll encounter."
+        }
+      ],
+      "whatsInside": [
+        "150+ done-for-you AI prompts across 9 sections",
+        "Covers client communication, bookkeeping, tax, compliance, practice management, and business advisory",
+        "Each prompt includes example use cases and pro tips",
+        "Written in plain English with UK-specific terminology and regulations",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "71-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Sole practitioner accountants who need to save time on admin and client communications",
+        "Bookkeepers who want professional templates for every situation",
+        "Small and mid-size accountancy practices looking to work more efficiently",
+        "Finance professionals who want to start using AI but don't know where to begin",
+        "Practice managers responsible for documentation, processes, and client correspondence"
+      ]
+    }
   },
   {
     "slug": "coaching-consultancy-ai-toolkit",
@@ -20,7 +77,7 @@
     "industries": ["coaches-consultants"],
     "format": "pdf",
     "fileName": "coaching-consultancy-ai-toolkit.pdf",
-    "image": "/images/products/coaching-consultancy-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "health-wellness-ai-toolkit",
@@ -31,7 +88,7 @@
     "industries": ["health-wellness"],
     "format": "pdf",
     "fileName": "health-wellness-ai-toolkit.pdf",
-    "image": "/images/products/health-wellness-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "manufacturing-ai-toolkit",
@@ -42,7 +99,7 @@
     "industries": ["manufacturing"],
     "format": "pdf",
     "fileName": "manufacturing-ai-toolkit.pdf",
-    "image": "/images/products/manufacturing-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "email-assistant-ai-toolkit",
@@ -53,18 +110,75 @@
     "industries": ["all-businesses"],
     "format": "pdf",
     "fileName": "email-assistant-ai-toolkit.pdf",
-    "image": "/images/products/email-assistant-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "beauty-aesthetics-ai-toolkit",
     "name": "The Complete Beauty & Aesthetics AI Toolkit",
-    "description": "AI prompts for salons, spas, and aesthetics businesses — client consultations, appointment reminders, social media content, treatment descriptions, review responses, and marketing campaigns.",
+    "description": "150+ AI prompts for salons, clinics, and beauty professionals — client communications, marketing and social media, bookings and promotions, treatment menus, salon operations, email marketing, business strategy, pricing, and brand expansion. Works with ChatGPT, Claude & Gemini.",
     "pricePence": 2700,
     "productType": "prompt-library",
     "industries": ["salons-beauty"],
     "format": "pdf",
-    "fileName": "beauty-aesthetics-ai-toolkit.pdf",
-    "image": "/images/products/beauty-aesthetics-ai-toolkit.jpg"
+    "fileName": "the-complete-beauty-aesthetics-ai-toolkit.pdf",
+    "image": "/images/products/beauty-aesthetics-ai-toolkit.jpg",
+    "overview": {
+      "intro": "Running a salon, clinic, or beauty business means you're constantly switching between treatments, client communications, marketing, and admin. This toolkit gives you 150+ ready-to-use AI prompts that handle the writing and planning so you can focus on your clients. Every prompt is written in plain English, designed for beauty and aesthetics professionals, and works with ChatGPT, Claude, Gemini, or any other AI tool. Just pick a prompt, fill in the bracketed placeholders with your own business details, paste it into your AI tool, and you'll have a professional first draft in seconds.",
+      "sections": [
+        {
+          "title": "Client Communication & Retention",
+          "description": "15 prompts for welcome messages, post-treatment follow-ups, review requests, lapsed client re-engagement, and retention communications."
+        },
+        {
+          "title": "Marketing, Social Media & Content",
+          "description": "15 prompts for Instagram captions, content plans, Reels scripts, Google posts, press releases, and marketing campaigns."
+        },
+        {
+          "title": "Sales, Bookings & Promotions",
+          "description": "20 prompts for enquiry responses, package creation, upsell scripts, seasonal campaigns, and membership pitches."
+        },
+        {
+          "title": "Treatment Menus & SEO",
+          "description": "20 prompts for treatment descriptions, SEO web copy, FAQs, comparison guides, and homepage copy."
+        },
+        {
+          "title": "Salon & Clinic Operations",
+          "description": "20 prompts for onboarding checklists, health and safety policies, GDPR compliance, complaint handling, SOPs, and stock management."
+        },
+        {
+          "title": "Email Marketing & Automation",
+          "description": "15 prompts for welcome automations, rebooking reminders, newsletters, re-engagement sequences, and gift voucher campaigns."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts for niche positioning, growth plans, brand voice development, membership models, and competitor analysis."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts for pricing strategy, revenue forecasting, cost of treatment analysis, and cash flow management."
+        },
+        {
+          "title": "Wholesale, Retail & Brand Expansion",
+          "description": "10 prompts for wholesale pitches, ambassador programmes, retreat strategies, franchising, and pop-up events."
+        }
+      ],
+      "whatsInside": [
+        "150+ done-for-you AI prompts across 9 sections",
+        "Covers client comms, marketing, bookings, treatment menus, operations, email, strategy, pricing, and brand expansion",
+        "Each prompt includes example use cases and pro tips",
+        "Written in plain English for salons, clinics, and beauty professionals",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "66-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Salon owners who want to save time on client communications and marketing",
+        "Aesthetics clinics looking to improve their online presence and bookings",
+        "Beauty therapists and freelance professionals building their own brand",
+        "Clinic managers responsible for operations, policies, and staff onboarding",
+        "Beauty business owners who want to start using AI but don't know where to begin"
+      ]
+    }
   },
   {
     "slug": "content-calendar-ai-toolkit",
@@ -75,7 +189,7 @@
     "industries": ["all-businesses", "social-media"],
     "format": "pdf",
     "fileName": "content-calendar-ai-toolkit.pdf",
-    "image": "/images/products/content-calendar-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "early-years-education-ai-toolkit",
@@ -86,7 +200,7 @@
     "industries": ["early-years-education"],
     "format": "pdf",
     "fileName": "early-years-education-ai-toolkit.pdf",
-    "image": "/images/products/early-years-education-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "ecommerce-retail-ai-toolkit",
@@ -97,7 +211,7 @@
     "industries": ["retail"],
     "format": "pdf",
     "fileName": "ecommerce-retail-ai-toolkit.pdf",
-    "image": "/images/products/ecommerce-retail-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "freelancer-creative-ai-toolkit",
@@ -108,7 +222,7 @@
     "industries": ["freelancers-creatives"],
     "format": "pdf",
     "fileName": "freelancer-creative-ai-toolkit.pdf",
-    "image": "/images/products/freelancer-creative-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "hospitality-food-ai-toolkit",
@@ -119,7 +233,7 @@
     "industries": ["hospitality"],
     "format": "pdf",
     "fileName": "hospitality-food-ai-toolkit.pdf",
-    "image": "/images/products/hospitality-food-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "hr-people-management-ai-toolkit",
@@ -130,7 +244,7 @@
     "industries": ["hr"],
     "format": "pdf",
     "fileName": "hr-people-management-ai-toolkit.pdf",
-    "image": "/images/products/hr-people-management-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "personal-finance-coaching-ai-toolkit",
@@ -141,7 +255,7 @@
     "industries": ["personal-finance-coaching"],
     "format": "pdf",
     "fileName": "personal-finance-coaching-ai-toolkit.pdf",
-    "image": "/images/products/personal-finance-coaching-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "pet-business-veterinary-ai-toolkit",
@@ -152,7 +266,7 @@
     "industries": ["pet-business-veterinary"],
     "format": "pdf",
     "fileName": "pet-business-veterinary-ai-toolkit.pdf",
-    "image": "/images/products/pet-business-veterinary-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "professional-services-ai-toolkit",
@@ -163,7 +277,7 @@
     "industries": ["all-businesses", "accountants-bookkeepers", "coaches-consultants"],
     "format": "pdf",
     "fileName": "professional-services-ai-toolkit.pdf",
-    "image": "/images/products/professional-services-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "real-estate-lettings-ai-toolkit",
@@ -174,7 +288,7 @@
     "industries": ["property"],
     "format": "pdf",
     "fileName": "real-estate-lettings-ai-toolkit.pdf",
-    "image": "/images/products/real-estate-lettings-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "social-media-management-ai-toolkit",
@@ -185,7 +299,7 @@
     "industries": ["social-media", "all-businesses"],
     "format": "pdf",
     "fileName": "social-media-management-ai-toolkit.pdf",
-    "image": "/images/products/social-media-management-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "trades-construction-ai-toolkit",
@@ -196,7 +310,7 @@
     "industries": ["trades"],
     "format": "pdf",
     "fileName": "trades-construction-ai-toolkit.pdf",
-    "image": "/images/products/trades-construction-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "wedding-events-planning-ai-toolkit",
@@ -207,7 +321,7 @@
     "industries": ["wedding-planners"],
     "format": "pdf",
     "fileName": "wedding-events-planning-ai-toolkit.pdf",
-    "image": "/images/products/wedding-events-planning-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "website-generator-ai-toolkit",
@@ -218,7 +332,7 @@
     "industries": ["all-businesses"],
     "format": "pdf",
     "fileName": "website-generator-ai-toolkit.pdf",
-    "image": "/images/products/website-generator-ai-toolkit.jpg"
+    "image": ""
   },
   {
     "slug": "customer-service-response-ai-toolkit",
@@ -229,7 +343,7 @@
     "industries": ["all-businesses"],
     "format": "pdf",
     "fileName": "customer-service-response-ai-toolkit.pdf",
-    "image": "/images/products/customer-service-response-ai-toolkit.jpg",
+    "image": "",
     "featured": true
   },
   {
@@ -241,6 +355,6 @@
     "industries": ["all-businesses"],
     "format": "pdf",
     "fileName": "business-audit-ai-toolkit.pdf",
-    "image": "/images/products/business-audit-ai-toolkit.jpg"
+    "image": ""
   }
 ]

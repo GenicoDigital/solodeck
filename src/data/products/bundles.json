@@ -10,7 +10,7 @@
       "business-audit-ai-toolkit"
     ],
     "industries": ["all-businesses"],
-    "image": "/images/products/ai-essentials-bundle.jpg",
+    "image": "",
     "featured": true
   },
   {
@@ -24,6 +24,6 @@
       "website-generator-ai-toolkit"
     ],
     "industries": ["trades"],
-    "image": "/images/products/trades-complete-bundle.jpg"
+    "image": ""
   }
 ]
