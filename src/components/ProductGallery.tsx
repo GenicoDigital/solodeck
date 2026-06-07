@@ -16,6 +16,9 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
   const [selected, setSelected] = useState(0);
   const active = images[selected] ?? images[0];
 
+  const prev = () => setSelected((s) => (s - 1 + images.length) % images.length);
+  const next = () => setSelected((s) => (s + 1) % images.length);
+
   return (
     <div>
       {/* Main image */}
@@ -28,11 +31,36 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
           sizes="(max-width: 768px) 100vw, 50vw"
           priority
         />
+
+        {images.length > 1 && (
+          <>
+            <button
+              type="button"
+              onClick={prev}
+              aria-label="Previous image"
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-colors hover:bg-black/60"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={next}
+              aria-label="Next image"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-colors hover:bg-black/60"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </>
+        )}
       </div>
 
       {/* Thumbnails */}
       {images.length > 1 && (
-        <div className="mt-3 flex gap-3">
+        <div className="mt-3 flex justify-center gap-3">
           {images.map((img, i) => (
             <button
               key={i}
