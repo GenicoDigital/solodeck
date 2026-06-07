@@ -125,28 +125,30 @@ export default async function ProductPage({ params }: Props) {
         <div className="mx-auto max-w-4xl px-6 py-16 space-y-12">
           {/* What's Inside */}
           {overview.whatsInside.length > 0 && (
-            <div>
-              <h2 className="mb-4 text-2xl font-semibold text-charcoal">
+            <div className="text-center">
+              <h2 className="mb-6 text-2xl font-semibold text-charcoal">
                 What&#39;s Inside
               </h2>
-              <ul className="space-y-2">
+              <div className="mx-auto max-w-2xl">
                 {overview.whatsInside.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-muted">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
-                    {item}
-                  </li>
+                  <div key={i}>
+                    {i > 0 && (
+                      <div className="mx-auto my-4 h-px w-16 bg-border" />
+                    )}
+                    <p className="text-muted">{item}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           )}
 
           {/* Sections breakdown */}
           {overview.sections.length > 0 && (
             <div>
-              <h2 className="mb-6 text-2xl font-semibold text-charcoal">
+              <h2 className="mb-6 text-center text-2xl font-semibold text-charcoal">
                 What&#39;s Covered
               </h2>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
                 {overview.sections.map((section, i) => {
                   const { text, truncated } = truncateWords(section.description, 15);
                   return (
