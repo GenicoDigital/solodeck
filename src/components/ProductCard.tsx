@@ -50,24 +50,19 @@ export default function ProductCard({ item, type }: ProductCardProps) {
             Bundle
           </span>
         )}
-        <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
-          {item.name}
-        </h3>
-        <p className="mt-1 text-sm text-muted line-clamp-2">
+        <p className="text-sm text-muted line-clamp-2">
           {item.description}
         </p>
       </Link>
-      <div className="mt-auto flex items-center justify-between pt-3">
-        <p className="text-lg font-semibold text-foreground">
-          {formatPrice(item.pricePence)}
-        </p>
-        <button
-          onClick={handleAddToCart}
-          className="rounded-md bg-accent px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-accent-hover"
-        >
-          {added ? "Added!" : "Add to cart"}
-        </button>
-      </div>
+      <p className="mt-auto pt-3 text-right text-lg font-semibold text-foreground">
+        {formatPrice(item.pricePence)}
+      </p>
+      <button
+        onClick={handleAddToCart}
+        className="mt-2 w-full rounded-md bg-accent px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
+      >
+        {added ? "Added!" : "Add to cart"}
+      </button>
     </div>
   );
 }

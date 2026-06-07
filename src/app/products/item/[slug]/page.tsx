@@ -196,13 +196,10 @@ export default async function ProductPage({ params }: Props) {
                   ) : (
                     <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
                   )}
-                  <h3 className="text-base font-semibold text-charcoal">
-                    {p.name}
-                  </h3>
-                  <p className="mt-1 text-lg font-semibold text-charcoal">
+                  <p className="mt-auto pt-3 text-right text-lg font-semibold text-charcoal">
                     {formatPrice(p.pricePence)}
                   </p>
-                  <Link href={`/products/item/${p.slug}`} className="mt-auto pt-3">
+                  <Link href={`/products/item/${p.slug}`} className="mt-2">
                     <span className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-hover">
                       View Toolkit
                     </span>
