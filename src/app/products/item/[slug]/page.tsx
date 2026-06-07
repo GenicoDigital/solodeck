@@ -195,7 +195,7 @@ export default async function ProductPage({ params }: Props) {
 
             {related.length > 0 && (
               <div className="mx-auto max-w-6xl px-6">
-                <h2 className="mb-6 text-2xl font-semibold text-white">
+                <h2 className="mb-6 text-center text-2xl font-semibold text-white">
                   You Might Also Like
                 </h2>
                 <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
