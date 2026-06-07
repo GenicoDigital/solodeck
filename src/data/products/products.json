@@ -77,8 +77,7 @@
     ],
     "format": "pdf",
     "fileName": "accountants-bookkeepers-ai-toolkit.pdf",
-    "image": "",
-    "featured": true
+    "image": ""
   },
   {
     "slug": "coaching-consultancy-ai-toolkit",
@@ -970,7 +969,8 @@
         "Freelance social media specialists who need professional, repeatable content systems",
         "Small business owners and creators managing their own social media without a dedicated team"
       ]
-    }
+    },
+    "featured": true
   },
   {
     "slug": "trades-construction-ai-toolkit",
