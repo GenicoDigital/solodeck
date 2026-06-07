@@ -87,11 +87,11 @@ export default async function ProductPage({ params }: Props) {
           <h1 className="text-3xl font-bold text-charcoal">
             {product.name}
           </h1>
-          <p className="mt-4 text-base text-muted leading-relaxed">
+          <p className="mt-4 text-lg text-muted leading-relaxed">
             {product.description}
           </p>
           {overview?.intro && (
-            <p className="mt-3 text-base text-muted leading-relaxed">
+            <p className="mt-3 text-lg text-muted leading-relaxed">
               {overview.intro}
             </p>
           )}
