@@ -38,6 +38,14 @@ export default async function ProductPage({ params }: Props) {
   const galleryImages = hasImage
     ? [
         { src: product.image, alt: product.name },
+        ...(existsSync(path.join(previewsDir, `${product.slug}-preview-toc.jpg`))
+          ? [
+              {
+                src: `/images/products/previews/${product.slug}-preview-toc.jpg`,
+                alt: `${product.name} — contents`,
+              },
+            ]
+          : []),
         ...[1, 2]
           .filter((n) => existsSync(path.join(previewsDir, `${product.slug}-preview-${n}.jpg`)))
           .map((n) => ({
