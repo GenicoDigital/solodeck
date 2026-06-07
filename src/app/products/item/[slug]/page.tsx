@@ -90,19 +90,11 @@ export default async function ProductPage({ params }: Props) {
           <p className="mt-4 text-sm text-muted leading-relaxed">
             {product.description}
           </p>
-          {overview?.intro && (
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              {overview.intro}
-            </p>
-          )}
-
-          <div className="mt-auto">
-            <p className="mt-6 text-3xl font-semibold text-charcoal">
-              {formatPrice(product.pricePence)}
-            </p>
-            <div className="mt-6">
-              <AddToCartButton slug={product.slug} type="product" />
-            </div>
+          <p className="mt-6 text-3xl font-semibold text-charcoal">
+            {formatPrice(product.pricePence)}
+          </p>
+          <div className="mt-6">
+            <AddToCartButton slug={product.slug} type="product" />
           </div>
         </div>
       </div>
