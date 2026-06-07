@@ -64,52 +64,59 @@ export default async function ProductPage({ params }: Props) {
   ].slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-16">
-      <div className="grid gap-10 md:grid-cols-2">
-        {/* Product image gallery */}
-        {hasImage ? (
-          <ProductGallery images={galleryImages} />
-        ) : (
-          <div className="aspect-[4/3] w-full rounded-lg bg-border" />
-        )}
-
-        <div className="flex flex-col">
-          <div className="mb-2 flex flex-wrap gap-2">
-            <span className="text-xs font-medium uppercase tracking-wide text-accent">
-              {PRODUCT_TYPE_LABELS[product.productType]}
-            </span>
-            {product.format !== "pdf" && (
-              <span className="text-xs font-medium uppercase tracking-wide text-muted">
-                {product.format === "google-sheets" ? "Google Sheets" : "Notion"}
-              </span>
+    <>
+      {/* Dark hero band — full viewport width */}
+      <section className="bg-[#1a2332]">
+        <div className="mx-auto max-w-4xl px-6 py-16">
+          <div className="grid gap-10 md:grid-cols-2">
+            {/* Product image gallery */}
+            {hasImage ? (
+              <ProductGallery images={galleryImages} />
+            ) : (
+              <div className="aspect-[4/3] w-full rounded-lg bg-white/10" />
             )}
-          </div>
-          <h1 className="text-3xl font-bold text-charcoal">
-            {product.name}
-          </h1>
-          <p className="mt-4 text-lg text-muted leading-relaxed">
-            {product.description}
-          </p>
-          {overview?.intro && (
-            <p className="mt-3 text-lg text-muted leading-relaxed">
-              {overview.intro}
-            </p>
-          )}
 
-          <div className="mt-auto">
-            <p className="mt-6 text-3xl font-semibold text-charcoal">
-              {formatPrice(product.pricePence)}
-            </p>
-            <div className="mt-6">
-              <AddToCartButton slug={product.slug} type="product" />
+            <div className="flex flex-col">
+              <div className="mb-2 flex flex-wrap gap-2">
+                <span className="text-xs font-medium uppercase tracking-wide text-accent">
+                  {PRODUCT_TYPE_LABELS[product.productType]}
+                </span>
+                {product.format !== "pdf" && (
+                  <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
+                    {product.format === "google-sheets" ? "Google Sheets" : "Notion"}
+                  </span>
+                )}
+              </div>
+              <h1 className="text-4xl font-bold text-white sm:text-5xl">
+                {product.name}
+              </h1>
+              <p className="mt-4 text-lg text-slate-300 leading-relaxed">
+                {product.description}
+              </p>
+              {overview?.intro && (
+                <p className="mt-3 text-lg text-slate-300 leading-relaxed">
+                  {overview.intro}
+                </p>
+              )}
+
+              <div className="mt-auto">
+                <p className="mt-6 text-3xl font-semibold text-white">
+                  {formatPrice(product.pricePence)}
+                </p>
+                <div className="mt-6">
+                  <AddToCartButton slug={product.slug} type="product" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
+      {/* Body sections on the cream background */}
+      <div className="mx-auto max-w-4xl px-6 py-16">
       {/* Overview section */}
       {overview && (
-        <div className="mt-16 space-y-12">
+        <div className="space-y-12">
           {/* What's Inside */}
           {overview.whatsInside.length > 0 && (
             <div>
@@ -217,6 +224,7 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   );
 }
