@@ -112,11 +112,9 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Body sections on the cream background */}
-      <div className="mx-auto max-w-4xl px-6 py-16">
-      {/* Overview section */}
-      {overview && (
-        <div className="space-y-12">
+      {/* Cream: What's Inside + What's Covered */}
+      {overview && (overview.whatsInside.length > 0 || overview.sections.length > 0) && (
+        <div className="mx-auto max-w-4xl px-6 py-16 space-y-12">
           {/* What's Inside */}
           {overview.whatsInside.length > 0 && (
             <div>
@@ -164,67 +162,72 @@ export default async function ProductPage({ params }: Props) {
             </div>
           )}
 
-          {/* Who It's For */}
-          {overview.whoItsFor.length > 0 && (
-            <div>
-              <h2 className="mb-4 text-2xl font-semibold text-charcoal">
-                Who It&#39;s For
-              </h2>
-              <ul className="space-y-2">
-                {overview.whoItsFor.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-muted">
-                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
       )}
 
-      {/* You Might Also Like */}
-      {related.length > 0 && (
-        <div className="mt-20 border-t border-border pt-12">
-          <h2 className="mb-6 text-2xl font-semibold text-charcoal">
-            You Might Also Like
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-3">
-            {related.map((p) => {
-              const img = Boolean(p.image && p.image.length > 0);
-              return (
-                <div
-                  key={p.slug}
-                  className="flex flex-col rounded-lg border border-border bg-card-bg p-4"
-                >
-                  {img ? (
-                    <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md bg-gray-100">
-                      <Image
-                        src={p.image}
-                        alt={p.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 100vw, 33vw"
-                      />
-                    </div>
-                  ) : (
-                    <div className="mb-3 aspect-[1/1] w-full rounded-md bg-gray-100" />
-                  )}
-                  <p className="mt-auto pt-3 text-right text-base font-semibold text-charcoal">
-                    {formatPrice(p.pricePence)}
-                  </p>
-                  <Link href={`/products/item/${p.slug}`} className="mt-2">
-                    <span className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-hover">
-                      View Toolkit
-                    </span>
-                  </Link>
+      {/* Dark band: Who It's For + You Might Also Like */}
+      {((overview && overview.whoItsFor.length > 0) || related.length > 0) && (
+        <section className="bg-[#1a2332]">
+          <div className="mx-auto max-w-4xl px-6 py-16 space-y-16">
+            {overview && overview.whoItsFor.length > 0 && (
+              <div>
+                <h2 className="mb-4 text-2xl font-semibold text-white">
+                  Who It&#39;s For
+                </h2>
+                <ul className="space-y-2">
+                  {overview.whoItsFor.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-300">
+                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {related.length > 0 && (
+              <div>
+                <h2 className="mb-6 text-2xl font-semibold text-white">
+                  You Might Also Like
+                </h2>
+                <div className="grid gap-6 sm:grid-cols-3">
+                  {related.map((p) => {
+                    const img = Boolean(p.image && p.image.length > 0);
+                    return (
+                      <div
+                        key={p.slug}
+                        className="flex flex-col rounded-lg bg-white p-4 shadow-md"
+                      >
+                        {img ? (
+                          <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md bg-gray-100">
+                            <Image
+                              src={p.image}
+                              alt={p.name}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 100vw, 33vw"
+                            />
+                          </div>
+                        ) : (
+                          <div className="mb-3 aspect-[1/1] w-full rounded-md bg-gray-100" />
+                        )}
+                        <p className="mt-auto pt-3 text-right text-base font-semibold text-charcoal">
+                          {formatPrice(p.pricePence)}
+                        </p>
+                        <Link href={`/products/item/${p.slug}`} className="mt-2">
+                          <span className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-hover">
+                            View Toolkit
+                          </span>
+                        </Link>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+            )}
           </div>
-        </div>
+        </section>
       )}
-      </div>
     </>
   );
 }
