@@ -167,10 +167,10 @@ export default async function ProductPage({ params }: Props) {
 
       {/* Dark band: Who It's For + You Might Also Like */}
       {((overview && overview.whoItsFor.length > 0) || related.length > 0) && (
-        <section className="bg-[#1a2332]">
-          <div className="mx-auto max-w-4xl px-6 py-16 space-y-16">
+        <section className="bg-[#1a2332] py-16">
+          <div className="space-y-16">
             {overview && overview.whoItsFor.length > 0 && (
-              <div>
+              <div className="mx-auto max-w-4xl px-6">
                 <h2 className="mb-4 text-2xl font-semibold text-white">
                   Who It&#39;s For
                 </h2>
@@ -186,11 +186,11 @@ export default async function ProductPage({ params }: Props) {
             )}
 
             {related.length > 0 && (
-              <div>
+              <div className="mx-auto max-w-6xl px-6">
                 <h2 className="mb-6 text-2xl font-semibold text-white">
                   You Might Also Like
                 </h2>
-                <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+                <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
                   {related.map((p) => {
                     const img = Boolean(p.image && p.image.length > 0);
                     return (
