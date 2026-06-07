@@ -76,8 +76,8 @@ export default function Home() {
       {/* Featured Products */}
       {featured.length > 0 && (
         <section className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="mb-6 text-2xl font-semibold text-charcoal">
-            Featured
+          <h2 className="mb-6 text-center text-2xl font-semibold text-charcoal">
+            Best Sellers
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((product) => (
