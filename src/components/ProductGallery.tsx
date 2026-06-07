@@ -22,7 +22,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
   return (
     <div>
       {/* Main image */}
-      <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-lg bg-white shadow-2xl">
+      <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-lg shadow-2xl">
         <Image
           src={active.src}
           alt={active.alt}
@@ -68,7 +68,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
               onClick={() => setSelected(i)}
               aria-label={`View image ${i + 1}`}
               aria-current={i === selected}
-              className={`relative aspect-[1000/1414] w-20 flex-shrink-0 overflow-hidden rounded-md border bg-white transition-shadow hover:shadow-md ${
+              className={`relative aspect-[1000/1414] w-20 flex-shrink-0 overflow-hidden rounded-md border transition-shadow hover:shadow-md ${
                 i === selected ? "border-accent ring-2 ring-accent" : "border-white/20"
               }`}
             >
