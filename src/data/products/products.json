@@ -1045,7 +1045,7 @@
   {
     "slug": "wedding-planning-ai-toolkit",
     "name": "The Complete Wedding Planning AI Toolkit",
-    "description": "AI prompts for wedding planners and event coordinators — client communications, vendor management, timelines, social media content, proposals, and day-of coordination.",
+    "description": "AI prompts for wedding planners — client communications, vendor management, timelines, social media content, proposals, and day-of coordination.",
     "pricePence": 2700,
     "productType": "prompt-library",
     "industries": [
@@ -1055,44 +1055,44 @@
     "fileName": "wedding-planning-ai-toolkit.pdf",
     "image": "/images/products/wedding-planning-ai-toolkit-v3.jpg",
     "overview": {
-      "intro": "The Complete Wedding Planning AI Toolkit is a collection of 150 done-for-you AI prompts built specifically for UK mid-market wedding planning businesses. It covers the full client journey and back-office operation — from first enquiry and supplier briefs through design, finance, marketing, operations, business strategy, and couple-facing resources. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "intro": "The Complete Wedding Planning AI Toolkit is a collection of 150 done-for-you AI prompts built specifically for UK wedding planning businesses. It covers the full client journey and back office — from first enquiry and supplier briefs through wedding design, finance, marketing, operations, business strategy, and couple-facing resources. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
       "sections": [
         {
           "title": "Client Communication & Enquiries",
-          "description": "21 prompts covering enquiry responses, discovery call scripts, proposals and quotes, booking and welcome letters, kickoff agendas, milestone updates, difficult conversations (budget vs vision, family politics, scope creep), supplier recommendations, day-of and wedding-party briefings, postponements, complaint resolution, post-wedding thank-yous, proposal follow-ups, and inclusive and anniversary communications."
+          "description": "21 prompts covering enquiry responses, discovery call scripts, proposals and quotes, booking and welcome letters, kickoff agendas, milestone updates, difficult conversations (budget vs vision, family politics, scope creep), supplier recommendations, day-of and wedding-party briefings, postponements, complaint resolution, post-wedding thank-yous, proposal follow-ups, rehearsal-dinner notes, and inclusive, vow-renewal and anniversary communications."
         },
         {
           "title": "Venue & Supplier Management",
-          "description": "23 prompts covering venue sourcing, site-visit checklists and comparison reports, plus detailed supplier briefs for photographers, florists, videographers, cake, catering, bar service, music, officiants, hair and makeup, stationery, transport, marquees, lighting, and hire — alongside contract review, day-of briefing packs, supplier feedback, accommodation, and venue-coordinator agreements."
+          "description": "23 prompts covering venue sourcing, site-visit checklists and comparison reports, plus detailed briefs for photographers, florists, videographers, cake, catering, bar service, music, officiants, hair and makeup, stationery, transport, marquees, lighting and hire — alongside contract review, day-of briefing packs, supplier feedback, accommodation, and venue-coordinator agreements."
         },
         {
           "title": "Wedding Design & Styling",
-          "description": "25 prompts covering design briefs across classic, modern, rustic, destination, garden, themed, city, seasonal, micro, and multi-day weddings, plus concept and styling briefs, ceremony and tablescape design, dining experience, guest journey, inclusive and sustainable design, moodboards, photo moments, cultural ceremonies, favours, and welcome bags."
+          "description": "25 prompts covering design briefs across classic, modern, rustic, destination, garden, themed, city, seasonal, micro and multi-day weddings, plus concept and styling briefs, ceremony and tablescape design, dining experience, guest journey, inclusive and sustainable design, moodboards, photo moments, cultural ceremonies, favours and welcome bags."
         },
         {
           "title": "Budgeting & Financial Management",
-          "description": "14 prompts covering planner-business finance only — pricing strategy and package structure, fee positioning, annual revenue and pipeline forecasting, deposit and payment terms, cash flow, contracts, force majeure, supplier payments, insurance, and year-end."
+          "description": "14 prompts covering planner-business finance — pricing strategy and package structure, fee positioning, annual revenue and pipeline forecasting, deposit and payment terms, cash flow, per-project margin, insurance, seasonal and team-cost models, force majeure, scope-variation pricing, supplier payments, and year-end tax planning."
         },
         {
           "title": "Marketing & Business Building",
-          "description": "23 prompts covering marketing, content, and visibility strategy for a mid-market wedding planning business — Instagram, Pinterest, wedding fairs, press, referrals, awards, and conversion."
+          "description": "23 prompts covering website and brand positioning, Instagram and Pinterest strategy, wedding fairs, real-wedding features, founder visibility, blog and SEO, awards, press pitches, marketing calendar and ROI, directories, newsletters, lead magnets, referral partnerships, testimonials, case studies, enquiry conversion, showcase events, graceful declines, and styled shoots."
         },
         {
           "title": "Operations & Admin",
-          "description": "22 prompts covering day-of execution, operations infrastructure, and compliance — from the master run-of-show and morning prep through ceremony, dining, evening reception, and post-wedding wrap-up."
+          "description": "22 prompts covering the wedding-day run-of-show, 12–18 month timelines, emergency kit and contingency/weather plans, CRM workflow, final-fortnight and week-of confirmations, headcount/dietary/seating finalisation, risk assessment, allergen management, rehearsal guides, morning-prep guides, venue setup, ceremony and reception flow, speeches running order, and the 48-hour wrap-up."
         },
         {
           "title": "Business Strategy & Growth",
-          "description": "10 prompts covering long-game decisions for a wedding planning business — growth, recession-proofing, hiring, vertical specialisation, exit planning, and adjacent-segment expansion."
+          "description": "10 prompts covering long-game decisions — 3-year growth plans, recession resilience, hiring, vertical specialisation, adjacent-segment expansion, exit planning, annual review and reset, pricing repositioning, sustainability and values strategy, and IP and digital products."
         },
         {
           "title": "Couples' Resources & Templates",
-          "description": "12 prompts covering content the planner produces for couples to use and share — guest information, RSVP guidance, budget frameworks, cost-saving, honeymoon and insurance guides, vendor cash flow, attire timelines, children at weddings, vows, dietary management, and more."
+          "description": "12 prompts covering content the planner produces for couples — guest information and wedding-website copy, weekend itineraries, speech-writing, budget and cost-saving guides, honeymoon planning, wedding insurance, vendor cash-flow, attire timelines, children at weddings, RSVP and guest-list guidance, and vow-writing."
         }
       ],
       "whatsInside": [
-        "150 done-for-you AI prompts organised across 8 sections",
-        "Every prompt includes a practical Pro Tip drawn from real wedding-industry experience",
+        "150 done-for-you AI prompts across 8 sections",
+        "Every prompt includes a Pro Tip with practical, real-world wedding-industry advice",
         "Written in plain English with UK terminology and UK English throughout",
         "Bracketed placeholders make every prompt easy to personalise",
         "Works with ChatGPT, Claude, Gemini, and any other AI tool",
@@ -1100,11 +1100,11 @@
         "Print-ready PDF — download once, use forever"
       ],
       "whoItsFor": [
-        "Mid-market wedding planners running their own business",
+        "Wedding planners running their own business",
         "Solo and small-team wedding planning professionals who want to save time on client comms and admin",
         "Wedding planners who manage venues, suppliers, and full-day coordination",
         "Wedding stylists and designers handling concept, styling, and supplier briefs",
-        "Planners expanding into anniversaries, vow renewals, and adjacent celebration events"
+        "Planners expanding into vow renewals, anniversaries, and adjacent celebration events"
       ]
     }
   },
