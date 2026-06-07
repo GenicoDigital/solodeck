@@ -1,9 +1,12 @@
+import { existsSync } from "fs";
+import path from "path";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products, formatPrice } from "@/lib/products";
 import { PRODUCT_TYPE_LABELS } from "@/lib/types";
 import AddToCartButton from "@/components/AddToCartButton";
+import ProductGallery from "@/components/ProductGallery";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -30,6 +33,20 @@ export default async function ProductPage({ params }: Props) {
   const hasImage = product.image && product.image.length > 0;
   const overview = product.overview;
 
+  // Gallery: cover + any interior preview pages that exist on disk.
+  const previewsDir = path.join(process.cwd(), "public", "images", "products", "previews");
+  const galleryImages = hasImage
+    ? [
+        { src: product.image, alt: product.name },
+        ...[1, 2]
+          .filter((n) => existsSync(path.join(previewsDir, `${product.slug}-preview-${n}.jpg`)))
+          .map((n) => ({
+            src: `/images/products/previews/${product.slug}-preview-${n}.jpg`,
+            alt: `${product.name} — preview ${n}`,
+          })),
+      ]
+    : [];
+
   // Related products: same-industry first, preferring finalised (has-image) products,
   // then other finalised products, falling back to coming-soon stubs only if needed.
   const hasImg = (p: typeof products[number]) => Boolean(p.image && p.image.length > 0);
@@ -49,18 +66,9 @@ export default async function ProductPage({ params }: Props) {
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
       <div className="grid gap-10 md:grid-cols-2">
-        {/* Product image */}
+        {/* Product image gallery */}
         {hasImage ? (
-          <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100">
-            <Image
-              src={product.image}
-              alt={product.name}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-            />
-          </div>
+          <ProductGallery images={galleryImages} />
         ) : (
           <div className="aspect-[4/3] w-full rounded-lg bg-border" />
         )}
