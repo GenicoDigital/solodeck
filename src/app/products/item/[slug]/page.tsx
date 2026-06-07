@@ -178,18 +178,20 @@ export default async function ProductPage({ params }: Props) {
         <section className="bg-[#1a2332] py-16">
           <div className="space-y-16">
             {overview && overview.whoItsFor.length > 0 && (
-              <div className="mx-auto max-w-4xl px-6">
-                <h2 className="mb-4 text-2xl font-semibold text-white">
+              <div className="mx-auto max-w-4xl px-6 text-center">
+                <h2 className="mb-6 text-2xl font-semibold text-white">
                   Who It&#39;s For
                 </h2>
-                <ul className="space-y-2">
+                <div className="mx-auto max-w-2xl">
                   {overview.whoItsFor.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-slate-300">
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
-                      {item}
-                    </li>
+                    <div key={i}>
+                      {i > 0 && (
+                        <div className="mx-auto my-4 h-px w-16 bg-white/20" />
+                      )}
+                      <p className="text-slate-300">{item}</p>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             )}
 
