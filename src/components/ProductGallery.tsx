@@ -21,8 +21,9 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
 
   return (
     <div>
-      {/* Main image */}
-      <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-lg bg-white shadow-2xl">
+      {/* Main image — white matte (padding) around the cover */}
+      <div className="rounded-lg bg-white p-4 shadow-2xl">
+        <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-md">
         <Image
           src={active.src}
           alt={active.alt}
@@ -56,6 +57,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
             </button>
           </>
         )}
+        </div>
       </div>
 
       {/* Thumbnails */}
