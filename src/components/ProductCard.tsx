@@ -30,10 +30,10 @@ export default function ProductCard({ item, type }: ProductCardProps) {
   const hasImage = item.image && item.image.length > 0;
 
   return (
-    <div className="group flex flex-col rounded-lg border border-border bg-card-bg p-4 transition-shadow hover:shadow-md">
+    <div className="group flex flex-col rounded-lg bg-[#1a2332] p-4 transition-shadow hover:shadow-md">
       <Link href={href}>
         {hasImage ? (
-          <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md border-2 border-[#1a2332] bg-gray-100">
+          <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md bg-gray-100">
             <Image
               src={item.image}
               alt={item.name}
@@ -43,15 +43,18 @@ export default function ProductCard({ item, type }: ProductCardProps) {
             />
           </div>
         ) : (
-          <div className="mb-3 aspect-[1/1] w-full rounded-md border-2 border-[#1a2332] bg-gray-100" />
+          <div className="mb-3 aspect-[1/1] w-full rounded-md bg-gray-100" />
         )}
         {type === "bundle" && (
           <span className="mb-1 inline-block text-xs font-medium uppercase tracking-wide text-accent">
             Bundle
           </span>
         )}
+        <p className="text-sm text-slate-300 line-clamp-2">
+          {item.description}
+        </p>
       </Link>
-      <p className="mt-auto pt-3 text-right text-base font-semibold text-foreground">
+      <p className="mt-auto pt-3 text-right text-base font-semibold text-white">
         {formatPrice(item.pricePence)}
       </p>
       <button
