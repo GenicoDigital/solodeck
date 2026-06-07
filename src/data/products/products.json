@@ -1,72 +1,84 @@
 [
   {
-    "slug": "ultimate-small-business-ai-toolkit",
-    "name": "The Ultimate Small Business AI Toolkit",
+    "slug": "complete-small-business-ai-toolkit",
+    "name": "The Complete Small Business AI Toolkit",
     "description": "The all-in-one AI prompt toolkit for small business owners. Covers marketing, sales, customer service, operations, HR, finance, and more — everything you need to start using AI across your entire business.",
     "pricePence": 4700,
     "productType": "prompt-library",
-    "industries": ["all-businesses"],
+    "industries": [
+      "all-businesses"
+    ],
     "format": "pdf",
-    "fileName": "ultimate-small-business-ai-toolkit.pdf",
-    "image": "",
-    "featured": true
+    "fileName": "complete-small-business-ai-toolkit.pdf",
+    "image": "/images/products/complete-small-business-ai-toolkit.jpg",
+    "featured": true,
+    "overview": {
+      "intro": "The Complete Small Business AI Toolkit is a ready-to-use library of 150 done-for-you AI prompts spanning eight core business functions, designed for UK small business owners with 1-10 employees who want to scale without hiring more staff. Each prompt is plug-and-play: replace the bracketed placeholders with your own details and paste straight into your AI assistant. It works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Customer Service",
+          "description": "15 prompts covering enquiry responses, complaint and refund handling, delivery-delay apologies, post-purchase thank-yous, client onboarding, follow-ups, requesting and responding to Google/Trustpilot reviews, FAQ pages, de-escalating angry customers, re-engaging inactive customers, cancellation retention, and appointment reminders."
+        },
+        {
+          "title": "Marketing & Content",
+          "description": "15 prompts covering Facebook and Google ad copy, Instagram and LinkedIn posts, email newsletters and subject lines, SEO blog outlines, product and website copy, About Us pages, promotional announcements, 30-day content calendars, brand origin stories, welcome email sequences, and customer case studies."
+        },
+        {
+          "title": "Sales & Operations",
+          "description": "20 prompts covering lead qualification, sales proposals, quote follow-ups, price and timing objection handling, cold outreach, partnership and referral outreach, discovery call scripts, process documentation and SOPs, meeting agendas and minutes, SWOT analysis, status reports, job descriptions, interview questions, performance reviews, invoicing, pricing strategy, and onboarding checklists."
+        },
+        {
+          "title": "Operations & Admin",
+          "description": "30 prompts covering process documents, SOPs, process improvement, customer journey mapping, quality control checklists, meeting agendas and minutes, team standups, stakeholder and performance reports, data and feedback analysis, task prioritisation, delegation, project planning and briefs, risk registers, time-blocking and time audits, workflow automation, client onboarding sequences, welcome packs, KPI dashboards, competitor comparison and mystery shop reports, and annual business reviews."
+        },
+        {
+          "title": "Website & SEO",
+          "description": "25 prompts covering homepage hero and value-proposition copy, service, product, pricing and landing pages, About Us pages, FAQ sections, meta descriptions and SEO titles, Google Business Profile and Open Graph tags, blog topic ideas, outlines, introductions and conclusions, internal linking, local SEO plans and landing pages, CTA copy and sections, exit-intent pop-ups, keyword research, and on-page SEO audits."
+        },
+        {
+          "title": "Business Strategy",
+          "description": "20 prompts covering deep competitor analysis and positioning maps, market research and sizing, SWOT and TOWS analysis, OKRs, 90-day sprint plans, one-page business plans and executive summaries, decision-analysis and scenario planning, new product ideation and improvement roadmaps, customer personas and jobs-to-be-done, value propositions and USPs, and growth and market-expansion strategies."
+        },
+        {
+          "title": "Financial Management",
+          "description": "15 prompts covering annual budgets and variance analysis, 13-week and 12-month cash flow and revenue forecasts, cash flow improvement plans, pricing strategy and price-increase communications, cost reduction and break-even analysis, sales pipeline forecasting, interpreting P&L statements, monthly financial health checks, payment terms and late-payment strategies, expense tracking and tax preparation, and profit margin improvement."
+        },
+        {
+          "title": "HR & Team",
+          "description": "10 prompts covering job descriptions, structured interview scorecards, performance review frameworks, underperformance conversation scripts, employee training plans, skills gap analysis, team-wide updates, delegation briefs and handover plans, 360-degree feedback, and 30-60-90 day onboarding plans."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 8 business functions, organised into 3 complete volumes",
+        "Every prompt includes a real-world example use case, and many include a Pro Tip",
+        "Written in plain English with UK terminology",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Clickable contents page so you can jump straight to the section you need",
+        "54-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Small business owners with 1-10 employees who want to scale without hiring more staff",
+        "Sole traders and freelancers handling their own marketing, sales, admin and finances",
+        "Local service businesses (trades, salons, clinics, hospitality) wanting better customer service and reviews",
+        "Founders who need help with strategy, budgeting, cash flow and growth planning",
+        "Business owners managing a small team who need help with hiring, onboarding and performance"
+      ]
+    }
   },
   {
     "slug": "accountants-bookkeepers-ai-toolkit",
     "name": "The Complete Accountants & Bookkeepers AI Toolkit",
-    "description": "150+ AI prompts for accountants, bookkeepers, and finance professionals — client communications, bookkeeping processes, tax and compliance, practice management, business advisory, and more. Works with ChatGPT, Claude & Gemini.",
+    "description": "AI prompts built for accountants, bookkeepers, and finance professionals — coming soon.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["accountants-bookkeepers"],
+    "industries": [
+      "accountants-bookkeepers"
+    ],
     "format": "pdf",
-    "fileName": "the-complete-accountants-bookkeepers-ai-toolkit.pdf",
-    "image": "/images/products/accountants-bookkeepers-ai-toolkit.jpg",
-    "featured": true,
-    "overview": {
-      "intro": "Running an accountancy or bookkeeping practice means juggling client communications, compliance deadlines, advisory work, and day-to-day admin — often all at once. This toolkit gives you 150+ ready-to-use AI prompts that handle the writing, thinking, and drafting so you can focus on the work that actually needs your expertise. Every prompt is written in plain English, designed for UK practices, and works with ChatGPT, Claude, Gemini, or any other AI tool. Just pick a prompt, fill in the bracketed placeholders with your own details, paste it into your AI tool, and you'll have a professional first draft in seconds.",
-      "sections": [
-        {
-          "title": "Client Communication",
-          "description": "15 prompts covering welcome letters, year-end reminders, fee increase letters, late document chasers, tax return notifications, VAT registration advice, onboarding questionnaires, dormant company reminders, CGT planning letters, business sale guidance, MTD updates, and payroll year-end letters."
-        },
-        {
-          "title": "Bookkeeping & Accounts",
-          "description": "15 prompts for step-by-step bookkeeping processes and guides — keeping records accurate, compliant, and audit-ready."
-        },
-        {
-          "title": "Tax & Compliance",
-          "description": "20 prompts covering tax planning, compliance guides, HMRC regulatory frameworks, and advisory content for you and your clients."
-        },
-        {
-          "title": "Practice Management",
-          "description": "15 prompts to help you run and grow your practice — operational frameworks, workflow documentation, capacity planning, and team management."
-        },
-        {
-          "title": "Business Advisory & Growth",
-          "description": "20 prompts for strategic advisory content that adds value beyond compliance — helping your clients plan, grow, and make better financial decisions."
-        },
-        {
-          "title": "Additional Prompts",
-          "description": "36 extra prompts spanning all practice areas for maximum coverage — giving you a prompt for virtually every situation you'll encounter."
-        }
-      ],
-      "whatsInside": [
-        "150+ done-for-you AI prompts across 9 sections",
-        "Covers client communication, bookkeeping, tax, compliance, practice management, and business advisory",
-        "Each prompt includes example use cases and pro tips",
-        "Written in plain English with UK-specific terminology and regulations",
-        "Bracketed placeholders make every prompt easy to personalise",
-        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
-        "71-page PDF — download once, use forever"
-      ],
-      "whoItsFor": [
-        "Sole practitioner accountants who need to save time on admin and client communications",
-        "Bookkeepers who want professional templates for every situation",
-        "Small and mid-size accountancy practices looking to work more efficiently",
-        "Finance professionals who want to start using AI but don't know where to begin",
-        "Practice managers responsible for documentation, processes, and client correspondence"
-      ]
-    }
+    "fileName": "accountants-bookkeepers-ai-toolkit.pdf",
+    "image": "",
+    "featured": true
   },
   {
     "slug": "coaching-consultancy-ai-toolkit",
@@ -74,10 +86,69 @@
     "description": "AI prompts built for coaches and consultants — client onboarding, session prep, proposal writing, follow-ups, content creation, and business development.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["coaches-consultants"],
+    "industries": [
+      "coaches-consultants"
+    ],
     "format": "pdf",
     "fileName": "coaching-consultancy-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/coaching-consultancy-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Coaching & Consultancy AI Toolkit is a collection of 150 done-for-you AI prompts written specifically for coaches, consultants, and advisers. Organised into 9 sections covering everything from client communication to thought leadership, each prompt is ready to personalise and paste straight into your AI tool. It works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Communication & Retention",
+          "description": "15 prompts covering welcome and onboarding emails, post-session follow-ups, re-engaging quiet clients, between-session check-ins, testimonial and referral requests, handling pauses, cancellations and frustration, announcing price increases, completion messages, feedback surveys, session reminders, late-payment reminders, and difficult-conversation scripts."
+        },
+        {
+          "title": "Marketing, Content & Visibility",
+          "description": "15 prompts covering LinkedIn posts, 30-day content plans, bios, email newsletters, lead magnet outlines, podcast guest pitches, sales pages, nurture sequences, episode descriptions, case studies, collaboration pitches, Instagram captions, webinar outlines, Google/Facebook ads, and speaking bios."
+        },
+        {
+          "title": "Sales, Discovery & Proposals",
+          "description": "20 prompts covering discovery call scripts, consultancy and retainer proposals, post-call follow-ups, price-objection handling, inbound enquiry responses, programme outlines, corporate training and executive coaching proposals, speaking pitches, warm-lead and cold-outreach emails, launch sequences, FAQs, retained-consultancy narratives, upsells, joint ventures, reactivation offers, and mastermind proposals."
+        },
+        {
+          "title": "Programme & Session Delivery",
+          "description": "20 prompts covering coaching programme frameworks, powerful question sets, strategy workshops, client workbooks, 360 feedback processes, guided reflections, group session plans, values clarification, accountability frameworks, diagnostic questionnaires, cohort onboarding, assessment debriefs, goal-setting, mid-programme reviews, VIP days, case conceptualisation, signature methodologies, supervision prompts, retreats, and corporate progress reports."
+        },
+        {
+          "title": "Online Presence & Lead Generation",
+          "description": "20 prompts covering SEO homepage copy, Work With Me pages, content authority strategies, About pages, LinkedIn profiles, discovery-call landing pages, blog posts, referral programmes, YouTube scripts, LinkedIn DM outreach, opt-in pages, podcast launches, challenge sequences, social proof strategies, joint webinars, cold-list re-engagement, signature talks, Quora/Reddit answers, and 90-day visibility sprints."
+        },
+        {
+          "title": "Business Admin & Automation",
+          "description": "15 prompts covering coaching contracts, client onboarding checklists, weekly business rhythms, GDPR privacy policies, email automation setups, cancellation policies, client portals, scope-of-work documents, client-notes systems, group programme terms, business metrics dashboards, associate contracts, offboarding processes, business continuity plans, and annual planning templates."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts covering niche positioning statements, 12-month growth plans, scalable business models, competitor analysis, pricing strategy reviews, thought leadership plans, productised offers, business model canvases, client-decision frameworks, brand voice guides, passive income strategies, annual reviews, associate/licence models, book strategies, live events, exit and succession planning, corporate market entry, values and vision statements, group programme business cases, and service line reviews."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts covering day-rate and package pricing frameworks, revenue forecasts, payment terms and invoicing policies, financial tracking systems, refund and cancellation policies, true-cost analysis of low-priced offers, sole-trader expenses and tax planning, cash flow management, CPD investment cases, payment plan structures, value-based pricing justifications, revenue diversification, financial goal-setting, price-increase strategies, and post-downturn reset plans."
+        },
+        {
+          "title": "Partnerships, PR & Thought Leadership",
+          "description": "10 prompts covering press releases, guest article pitches, HR/L&D partnership programmes, TEDx and keynote applications, 12-month PR strategies, original research summaries, expert commentary pitches, thought leadership roundtables, LinkedIn articles, and award entries."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 9 sections",
+        "Every prompt includes a Pro Tip with practical, real-world advice",
+        "Prompts use an expert persona (\"Act as...\") and clear structure for better AI results",
+        "Written in plain English with UK terminology",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Coaches building and growing a coaching practice (executive, business, life)",
+        "Consultants and advisers selling project, retainer, and corporate engagements",
+        "Solo practitioners and sole traders running a one-person coaching or consultancy business",
+        "Coaches scaling into group programmes, masterminds, retreats, and digital products",
+        "Coaches and consultants who want to use AI to save time without being technical"
+      ]
+    }
   },
   {
     "slug": "health-wellness-ai-toolkit",
@@ -85,7 +156,9 @@
     "description": "AI prompts designed for health and wellness businesses — client communications, programme design, marketing content, booking management, and community building.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["health-wellness"],
+    "industries": [
+      "health-wellness"
+    ],
     "format": "pdf",
     "fileName": "health-wellness-ai-toolkit.pdf",
     "image": ""
@@ -96,10 +169,69 @@
     "description": "AI prompts for manufacturing businesses — supplier communications, quality reporting, SOP generation, workforce scheduling, safety documentation, and process improvement.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["manufacturing"],
+    "industries": [
+      "manufacturing"
+    ],
     "format": "pdf",
     "fileName": "manufacturing-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/manufacturing-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Manufacturing AI Toolkit is a collection of 150 done-for-you AI prompts built specifically for UK manufacturing businesses, job shops, and subcontractors. It covers everything from customer communication and tender writing to production, quality, financial management, strategy, and HR, with every prompt written to paste straight into ChatGPT, Claude, Gemini, or any other AI tool. It is designed for owners, managers, and teams who want to save hours each week and run a tighter, more professional operation without needing to be technical.",
+      "sections": [
+        {
+          "title": "Customer Communication & Retention",
+          "description": "15 prompts covering every client touchpoint, including project updates, complaint and delivery-delay responses, price increase notifications, quality-defect apologies, bespoke order confirmations, testimonial requests, downtime and supply-chain notices, and re-engagement and year-end thank-you messages."
+        },
+        {
+          "title": "Marketing & Tender Writing",
+          "description": "15 prompts for winning work, including capability statements, tender executive summaries, case studies, LinkedIn and trade-show posts, press releases, PQQ responses, website and Google Business Profile copy, quote covering letters, and responses to negative reviews."
+        },
+        {
+          "title": "Sales, Quotes & Pricing",
+          "description": "20 prompts for converting enquiries into orders, including quotation follow-ups, price-reduction handling, RFQ clarifications, preferred-supplier and long-term supply agreements, tiered and VMI/consignment pricing proposals, OEM approval bids, lost-order recovery, outbound call scripts, and internal go/no-go bid summaries."
+        },
+        {
+          "title": "Production, Scheduling & Procurement",
+          "description": "20 prompts for running the production floor, including supplier non-conformance reports, production schedule and shift-handover briefings, supplier performance reviews and onboarding, capacity planning, RFQs to suppliers, works orders, machine breakdown reports, lead-time updates, and continuous improvement suggestions."
+        },
+        {
+          "title": "Quality, Health & Safety",
+          "description": "20 prompts for staying compliant and passing audits, including corrective action responses (CARs), risk assessments, COSHH and method statements, toolbox talks, accident and near-miss reporting, FAI templates, quality, H&S and environmental policy statements, calibration and MOC procedures, and fire evacuation plans."
+        },
+        {
+          "title": "Systems, Automation & Process",
+          "description": "15 prompts for improving productivity and resilience, including ERP implementation briefs, process maps, AI adoption and digital transformation roadmaps, OEE and SOP creation, automation proposals, GDPR and cybersecurity policies, knowledge transfer plans, audit preparation, business continuity plans, and board reports."
+        },
+        {
+          "title": "Business Strategy & Growth",
+          "description": "20 prompts for growing the business, including strategic market reviews, SWOT analyses, 3-year growth plans, sector diversification and export strategies, key-account development, MBO/EOT and succession planning, private equity pitches, pricing strategy reviews, competitor analyses, grant funding narratives, and partnership proposals."
+        },
+        {
+          "title": "Financial Management",
+          "description": "15 prompts for financial discipline, including credit control chasing letters, cash flow forecast narratives, job costing templates, supplier payment-term proposals, invoice financing requests, management accounts commentary, capex justifications, budget briefs, cost reduction and make-or-buy analyses, Late Payment Act letters, and financial KPI dashboards."
+        },
+        {
+          "title": "Recruitment, HR & Training",
+          "description": "10 prompts for attracting and retaining a skilled workforce, including job advertisements, structured interview questions, offer letters, 12-week induction plans, ACAS-compliant disciplinary and redundancy letters, skills matrices, employee engagement surveys, apprenticeship pitches, and staff retention strategies."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised into 9 sections",
+        "Every prompt includes a practical Pro Tip to get better results",
+        "Each prompt includes example use cases and placeholders for context such as machinery, processes, and sectors",
+        "Written in plain English with UK terminology and references to UK standards (ISO 9001, HSE, ACAS, the Late Payment Act, and more)",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Owners and managing directors of small and medium manufacturing businesses",
+        "Job shops and subcontractors handling machining, fabrication, or assembly work",
+        "Production, quality, and operations managers running the shop floor",
+        "Sales, estimating, and commercial teams quoting and winning manufacturing work",
+        "Finance, HR, and office staff handling credit control, recruitment, and compliance in manufacturing firms"
+      ]
+    }
   },
   {
     "slug": "email-assistant-ai-toolkit",
@@ -107,76 +239,141 @@
     "description": "AI prompts to handle every type of business email — enquiries, follow-ups, proposals, complaints, newsletters, cold outreach, and internal communications. Works for any industry.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses"],
+    "industries": [
+      "all-businesses"
+    ],
     "format": "pdf",
     "fileName": "email-assistant-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/email-assistant-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete AI Email Assistant Toolkit is a done-for-you library of 150 AI prompts that help UK business owners, managers and customer-facing professionals write every kind of business email faster and better. It spans ten of the most common email scenarios, from new enquiries and customer service to sales, internal comms, supplier negotiations and specialist formal requests. Every prompt is ready to paste into ChatGPT, Claude, Gemini or any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Acquisition & New Enquiries",
+          "description": "15 prompts for converting enquiries into clients, covering first responses to cold enquiries, warm lead and quote follow-ups, proposal and tender cover emails, referral requests and thank-yous, cold outreach, re-engagement of lost leads, networking and partnership proposals, price-increase notices, upsells and social-media-to-email conversion."
+        },
+        {
+          "title": "Customer Service & Support",
+          "description": "15 prompts for handling customer interactions and building loyalty, covering complaint acknowledgement and resolution, service delay notifications, refund and warranty responses, difficult-customer de-escalation, FAQ auto-responses, product update notices, booking confirmations, review requests, onboarding welcomes, out-of-office replies, renewals, satisfaction check-ins, cancellations and escalations to management."
+        },
+        {
+          "title": "Difficult Conversations",
+          "description": "15 prompts for navigating sensitive topics and bad news, covering overdue payment chases, price increases, declining requests, managing scope creep, ending client relationships, missed deadlines, responding to negative reviews, correcting errors, giving constructive feedback, raising supplier concerns, saying no to discounts, disputing invoices, communicating bad news, handling unreasonable demands and issuing formal warnings or legal notices."
+        },
+        {
+          "title": "Internal Communications",
+          "description": "15 prompts for keeping teams aligned, covering team updates and briefings, meeting agendas and follow-ups, performance feedback, policy and procedure updates, new employee welcomes, whole-company updates, employee recognition, project status (RAG) reports, approval requests, absence handovers, resignation acknowledgements, disciplinary/HR process emails, change management and cross-department collaboration requests."
+        },
+        {
+          "title": "Sales & Negotiation",
+          "description": "15 prompts for opening doors and closing deals without sounding pushy, covering sales introductions to decision makers, objection handling, no-response follow-ups, case study sharing, limited-time offers, competitor switching, win-backs for lapsed customers, negotiation counter-proposals, cross-sells, event/webinar invitations, seasonal campaigns, testimonial requests, free-trial follow-ups, revenue-share partnerships and post-sale onboarding-to-upsell paths."
+        },
+        {
+          "title": "Professional Writing & Formatting",
+          "description": "15 prompts for polishing and adapting every email, covering formal business letters, executive summaries, subject-line optimisers, tone adjustment, long-email summarising, UK English proofreading, template creation, plain-English rewriting, announcements, email-chain continuation, persuasive emails, reference letters, conditional 'awaiting information' emails, thank-you emails and email signature creation."
+        },
+        {
+          "title": "Marketing & Promotional Emails",
+          "description": "15 prompts for running campaigns that earn attention and response, covering product launch announcements, value-led newsletters, flash sales, content-upgrade delivery, re-engagement campaigns, abandoned-cart recovery, seasonal campaigns, event follow-ups, customer milestones, partner/affiliate promotions, survey and feedback requests, referral programme launches, VIP exclusives, success-story emails and charity/community involvement emails."
+        },
+        {
+          "title": "AI-Powered Email Productivity",
+          "description": "15 prompts for running email like a system, covering inbox-zero processing, response-time reduction, batch email writing, thread summarising, A/B test generation, campaign performance analysis, automated sequence building, personalisation at scale, spam-filter optimisation, KPI dashboard building, legal compliance checks, welcome-sequence optimisation, copywriting-formula application, rewriting for different audiences and signature A/B testing."
+        },
+        {
+          "title": "Supplier & Partner Communications",
+          "description": "15 prompts for managing suppliers and partners commercially, covering new supplier introduction and onboarding, requests for quote/proposal, contract negotiation follow-ups, supplier performance reviews, supply-chain issue escalation, ending supplier relationships, payment-terms negotiation, supplier meeting requests, accreditation/compliance requests, exclusive/preferred-supplier proposals, force majeure notifications, joint-venture proposals, dispute resolution, market price reviews and supplier appreciation."
+        },
+        {
+          "title": "Specialist & Niche Email Scenarios",
+          "description": "15 prompts for the formal emails most templates miss, covering job application cover emails, speaking-engagement pitches, press/media pitches, award and grant applications, investor/funding enquiries, academic research collaborations, charity funding requests, property/lease enquiries, franchise/licensing enquiries, insurance claims, formal subject access requests (SAR), social-enterprise impact reports, licensing introductions, GDPR data-request responses and resignation emails."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised into 10 sections covering the most common business email scenarios",
+        "Every prompt includes a Pro Tip with practical, real-world guidance on getting the best results",
+        "Written in plain English with UK terminology and UK English spelling throughout",
+        "Bracketed placeholders make every prompt easy to personalise to your own business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Includes a quick how-to guide and a clickable contents page so you can jump straight to the email you need",
+        "94-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Small business owners and sole traders who write a lot of their own emails",
+        "Managers and team leaders handling internal comms, feedback and approvals",
+        "Customer-facing and customer service professionals dealing with enquiries, complaints and reviews",
+        "Sales, marketing and business development people running outreach, follow-ups and campaigns",
+        "Anyone responsible for supplier negotiations, formal requests or specialist emails such as tenders, grants and GDPR responses"
+      ]
+    }
   },
   {
     "slug": "beauty-aesthetics-ai-toolkit",
     "name": "The Complete Beauty & Aesthetics AI Toolkit",
-    "description": "150+ AI prompts for salons, clinics, and beauty professionals — client communications, marketing and social media, bookings and promotions, treatment menus, salon operations, email marketing, business strategy, pricing, and brand expansion. Works with ChatGPT, Claude & Gemini.",
+    "description": "150 AI prompts for salons, clinics, and beauty professionals — client communication, marketing and social media, bookings and promotions, treatment menus, salon operations, email marketing, business strategy, pricing, and brand expansion. Works with ChatGPT, Claude & Gemini.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["salons-beauty"],
+    "industries": [
+      "salons-beauty"
+    ],
     "format": "pdf",
-    "fileName": "the-complete-beauty-aesthetics-ai-toolkit.pdf",
+    "fileName": "beauty-aesthetics-ai-toolkit.pdf",
     "image": "/images/products/beauty-aesthetics-ai-toolkit.jpg",
     "overview": {
-      "intro": "Running a salon, clinic, or beauty business means you're constantly switching between treatments, client communications, marketing, and admin. This toolkit gives you 150+ ready-to-use AI prompts that handle the writing and planning so you can focus on your clients. Every prompt is written in plain English, designed for beauty and aesthetics professionals, and works with ChatGPT, Claude, Gemini, or any other AI tool. Just pick a prompt, fill in the bracketed placeholders with your own business details, paste it into your AI tool, and you'll have a professional first draft in seconds.",
+      "intro": "The Complete Beauty & Aesthetics AI Toolkit is a ready-to-use library of 150 done-for-you AI prompts written specifically for UK salons, clinics, and beauty professionals. It covers everything from client communication and marketing to operations, pricing, and brand expansion, so you can save hours every week. Every prompt works with ChatGPT, Claude, Gemini, and any other AI tool.",
       "sections": [
         {
           "title": "Client Communication & Retention",
-          "description": "15 prompts for welcome messages, post-treatment follow-ups, review requests, lapsed client re-engagement, and retention communications."
+          "description": "15 prompts covering welcome messages, pre-appointment and patch test reminders, post-treatment follow-ups and aftercare, lapsed-client re-engagement, complaint handling, review requests, referral invitations, price-increase notices, birthday treats, new-treatment announcements, and seasonal self-care messages."
         },
         {
           "title": "Marketing, Social Media & Content",
-          "description": "15 prompts for Instagram captions, content plans, Reels scripts, Google posts, press releases, and marketing campaigns."
+          "description": "15 prompts covering Instagram captions, 30-day content plans, TikTok and Reel scripts, Google Business Profile posts, influencer gifting campaigns, press releases, seasonal campaigns, SEO blog posts, meet-the-team posts, gift voucher and loyalty programme copy, email strategy, Google/Meta ads, transformation stories, and booking platform profiles."
         },
         {
           "title": "Sales, Bookings & Promotions",
-          "description": "20 prompts for enquiry responses, package creation, upsell scripts, seasonal campaigns, and membership pitches."
+          "description": "20 prompts covering enquiry responses that convert, treatment packages and courses, new-client offers, price objection handling, last-minute availability, in-room upsell scripts, Black Friday and seasonal sales, reactivation offers, couples and group bookings, bridal packages, membership pitches, cross-sells, retail recommendations, corporate wellness, waiting-list activation, and student/NHS discounts."
         },
         {
           "title": "Treatment Menus & SEO",
-          "description": "20 prompts for treatment descriptions, SEO web copy, FAQs, comparison guides, and homepage copy."
+          "description": "20 prompts covering treatment menu descriptions, SEO-optimised treatment pages, FAQ sections, results-and-expectations guides, comparison guides, skin concern landing pages, price list pages, consultation process and About Us pages, Google Q&A responses, bundle descriptions, contraindications and T&Cs, homepage copy, skin type guides, aftercare pages, spotlight emails, and self-qualification guides."
         },
         {
           "title": "Salon & Clinic Operations",
-          "description": "20 prompts for onboarding checklists, health and safety policies, GDPR compliance, complaint handling, SOPs, and stock management."
+          "description": "20 prompts covering staff rotas, employee onboarding checklists, consultation forms, health and safety policy, GDPR data protection, social media policy, treatment SOPs, complaint handling procedures, self-employed therapist terms, opening/closing checklists, procurement, no-show logs, equipment maintenance, deposit policies, performance reviews, adverse reaction protocols, business continuity, stock takes, and referral agreements."
         },
         {
           "title": "Email Marketing & Automation",
-          "description": "15 prompts for welcome automations, rebooking reminders, newsletters, re-engagement sequences, and gift voucher campaigns."
+          "description": "15 prompts covering new-client welcome automations, rebooking reminders, birthday automations, post-treatment aftercare, lapsed-client re-engagement sequences, monthly newsletters, seasonal campaign series, course completion and renewal automations, product recommendation emails, VIP appreciation, win-back automations, event invitations, feedback surveys, gift voucher promotions, and list growth strategy."
         },
         {
           "title": "Business Strategy & Positioning",
-          "description": "20 prompts for niche positioning, growth plans, brand voice development, membership models, and competitor analysis."
+          "description": "20 prompts covering niche positioning statements, 12-month growth plans, scalable business models, competitor analysis, second-location plans, training investment strategy, brand voice guides, treatment menu and retail strategy, franchising, PR and thought leadership, membership model design, annual strategic reviews, digital product strategy, exit planning, B2B partnerships, referral programmes, treatment innovation briefs, succession planning, and sustainability strategy."
         },
         {
           "title": "Financial Management & Pricing",
-          "description": "15 prompts for pricing strategy, revenue forecasting, cost of treatment analysis, and cash flow management."
+          "description": "15 prompts covering pricing strategy reviews, annual revenue forecasts, cost-of-treatment analysis, financial dashboards, cash flow management, sole trader tax and expenses planning, payment plans, price increase strategies, retail margin analysis, business insurance, financial goal-setting, new-treatment profitability reviews, refurbishment budgeting, dividend and salary strategy, and financial recovery plans."
         },
         {
           "title": "Wholesale, Retail & Brand Expansion",
-          "description": "10 prompts for wholesale pitches, ambassador programmes, retreat strategies, franchising, and pop-up events."
+          "description": "10 prompts covering wholesale pitches, brand ambassador programmes, product launch PR, spa and hotel partnerships, online education and masterclass strategy, private label product briefs, wellness retreat events, franchise and licensing models, pop-up event planning, and charity partnership strategy."
         }
       ],
       "whatsInside": [
-        "150+ done-for-you AI prompts across 9 sections",
-        "Covers client comms, marketing, bookings, treatment menus, operations, email, strategy, pricing, and brand expansion",
-        "Each prompt includes example use cases and pro tips",
-        "Written in plain English for salons, clinics, and beauty professionals",
+        "150 done-for-you AI prompts across 9 sections covering every area of running a beauty business",
+        "Every prompt includes a Pro Tip with practical, industry-specific advice",
+        "Written in plain English with UK terminology throughout",
         "Bracketed placeholders make every prompt easy to personalise",
         "Works with ChatGPT, Claude, Gemini, and any other AI tool",
-        "66-page PDF — download once, use forever"
+        "A simple four-step how-to-use guide: choose, personalise, paste, refine",
+        "65-page PDF — download once, use forever"
       ],
       "whoItsFor": [
-        "Salon owners who want to save time on client communications and marketing",
-        "Aesthetics clinics looking to improve their online presence and bookings",
-        "Beauty therapists and freelance professionals building their own brand",
-        "Clinic managers responsible for operations, policies, and staff onboarding",
-        "Beauty business owners who want to start using AI but don't know where to begin"
+        "Salon owners who want to save 10+ hours a week on writing and admin",
+        "Aesthetics and skin clinic owners managing treatments, consultations, and compliance",
+        "Self-employed beauty therapists and aestheticians running their own books",
+        "Solo practitioners looking to scale beyond the treatment room without burning out",
+        "Beauty professionals who want to use AI without being technical"
       ]
     }
   },
@@ -186,21 +383,144 @@
     "description": "AI prompts to plan, create, and schedule content across every platform — blog posts, social media, email newsletters, and video scripts. Includes a full content planning framework.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses", "social-media"],
+    "industries": [
+      "all-businesses",
+      "social-media"
+    ],
     "format": "pdf",
     "fileName": "content-calendar-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/content-calendar-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Content Calendar AI Toolkit is a done-for-you library of 150 AI prompts that helps UK small businesses, content creators and social media managers plan, write and schedule consistent content without staring at a blank screen. Organised into 10 sections, it covers everything from content strategy and post writing to email marketing, analytics and monetisation. Every prompt works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Content Strategy & Planning",
+          "description": "15 prompts for creating and executing a content strategy that works: 90-day content plans, content pillars, ideal content mix, monthly themes, competitor gap analysis, platform-specific strategies, audience persona mapping, posting schedules, seasonal calendars, ROI goal setting, content audits, crisis planning, lead magnet funnels, user-generated content and budget allocation."
+        },
+        {
+          "title": "Social Media Post Writing",
+          "description": "15 prompts for writing scroll-stopping posts across every platform: Instagram captions, LinkedIn frameworks, Facebook post packs, TikTok and Reels scripts, hashtag strategy, Stories and carousels, testimonial posts, promotional templates, day-in-the-life content, engagement posts, product spotlights, educational ideas, seasonal copy, repurposed content and call-to-action copywriting."
+        },
+        {
+          "title": "Content Calendar Building",
+          "description": "15 prompts for building structured, strategic calendars: weekly and monthly editorial calendars, 30-day posting challenges, campaign calendars, batching planners, evergreen libraries, national days calendars, multi-platform coordination, product launch schedules, quarterly reviews, collaboration calendars, repurposing calendars, automated scheduling, video schedules and email/social cross-promotion."
+        },
+        {
+          "title": "Content Ideas & Inspiration",
+          "description": "15 prompts to never run out of ideas: 50-post idea generators, trending topic hooks, FAQ series, storytelling prompts, myth-busting series, data and statistic posts, before-and-after concepts, this-vs-that comparisons, case study showcases, list and 'Top 10' content, thought leadership, tutorials, newsjacking, AMA sessions and an idea bank builder."
+        },
+        {
+          "title": "Engagement & Community Building",
+          "description": "15 prompts for building genuine community and driving engagement: comment and DM response templates, polls and quizzes, community challenges, live session plans, follower growth campaigns, brand voice guidelines, influencer outreach, negative comment handling, loyalty campaigns, UGC campaigns, Story engagement sequences, recurring content series, launch build-ups and social listening."
+        },
+        {
+          "title": "Video & Visual Content",
+          "description": "15 prompts for creating compelling video and visual content: YouTube scripts, Reels and TikTok hooks, talking head scripts, tutorial series, testimonial video briefs, carousel and infographic briefs, quote graphic packs, brand aesthetic guidelines, product photography briefs, behind-the-scenes ideas, graphic template systems, video series concepts, launch visuals and live shopping scripts."
+        },
+        {
+          "title": "Email Marketing & Newsletters",
+          "description": "15 prompts for nurturing leads and converting subscribers: welcome sequences, newsletter templates, subject line generators, re-engagement campaigns, promotional and abandoned cart sequences, lead magnet nurture, 12-month newsletter plans, transactional email upgrades, list growth, segmentation, automation maps, A/B testing plans, post-purchase journeys and broadcast calendars."
+        },
+        {
+          "title": "Analytics & Performance",
+          "description": "15 prompts for measuring what matters: monthly performance reviews, KPI frameworks, content scoring systems, A/B testing and competitor analysis frameworks, content ROI calculation, audience insight reports, conversion tracking setup, algorithm understanding, hashtag audits, repurposing ROI, social commerce tracking, email/social integration analytics, paid vs organic comparison and annual reports."
+        },
+        {
+          "title": "AI Tools & Workflow Automation",
+          "description": "15 prompts for producing more content in less time with AI: content creation workflows, ChatGPT custom instructions, building a prompt library, AI image generation guides, repurposing systems, scheduling automation, audience research, quality control checklists, multi-platform adaptation, brand voice training, automated reporting, customer research, content briefing systems, social listening with AI and a complete AI content stack guide."
+        },
+        {
+          "title": "Bonus: Growth & Monetisation",
+          "description": "15 prompts to scale reach and monetise your expertise: affiliate and partnership plans, paid promotion strategy, content-led product launches, subscription and membership models, small-budget influencer strategy, SEO content strategy, cross-sell and upsell sequences, brand ambassador and referral programmes, webinar promotion, long-form blog strategy, podcast guesting, paid newsletters, speaking and PR, and content licensing."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised into 10 clearly structured sections",
+        "Every prompt comes with a real-world Example Use Case and a Pro Tip to get better results",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Written in plain English with UK terminology and spelling",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "A simple four-step 'How to use this toolkit' guide: choose, personalise, paste and generate, then refine",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Small business owners and sole traders who manage their own social media and content",
+        "Social media managers and content creators who need a constant supply of fresh ideas and copy",
+        "Freelancers and virtual assistants producing content for multiple clients",
+        "Coaches, consultants and service providers building authority and generating enquiries through content",
+        "Marketing managers and agencies who want to plan, produce and measure content faster with AI"
+      ]
+    }
   },
   {
     "slug": "early-years-education-ai-toolkit",
     "name": "The Complete Early Years & Education AI Toolkit",
-    "description": "AI prompts for nurseries, childminders, tutors, and education businesses — parent communications, lesson planning, Ofsted prep, marketing, policies, and administration.",
+    "description": "150 AI prompts for nurseries, childminders, tutors, and education businesses — parent communications, marketing and admissions, safeguarding, curriculum and planning, staff management, business admin, strategy, finance, and expansion. Works with ChatGPT, Claude & Gemini.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["early-years-education"],
+    "industries": [
+      "early-years-education"
+    ],
     "format": "pdf",
-    "fileName": "early-years-education-ai-toolkit.pdf",
-    "image": ""
+    "fileName": "the-complete-early-years-education-ai-toolkit.pdf",
+    "image": "/images/products/early-years-education-ai-toolkit.jpg",
+    "overview": {
+      "intro": "Running a nursery, childminding setting, tutoring service, or education business means juggling parents, children, staff, paperwork, inspections, and the financial side — usually all at once. This toolkit gives you 150 ready-to-use AI prompts that handle the writing, planning, and drafting so you can focus on the children and families in your care. Every prompt is written in plain English, designed for UK early years and education providers, and works with ChatGPT, Claude, Gemini, or any other AI tool. Just pick a prompt, fill in the bracketed placeholders with your own setting details, paste it into your AI tool, and you'll have a professional first draft in seconds.",
+      "sections": [
+        {
+          "title": "Parent & Family Communication",
+          "description": "15 prompts for welcome letters, settling-in updates, daily reports, transition notes, behaviour conversations, and warm, professional family communications."
+        },
+        {
+          "title": "Marketing, Enrolment & Admissions",
+          "description": "15 prompts for setting descriptions, show-around scripts, social posts, funding explainers, waiting list responses, and a smooth admissions journey."
+        },
+        {
+          "title": "Safeguarding, Policies & Compliance",
+          "description": "20 prompts for safeguarding policies, SEND statements, EYFS compliance, inspection prep, accident records, and protecting children, families and your setting."
+        },
+        {
+          "title": "Curriculum, Planning & Assessment",
+          "description": "20 prompts for long-term curriculum plans, weekly activities, observations, learning journeys, two-year checks, and assessments parents and inspectors trust."
+        },
+        {
+          "title": "Staff Management & Development",
+          "description": "20 prompts for job adverts, interview questions, supervision notes, appraisals, CPD plans, and building a strong, stable team."
+        },
+        {
+          "title": "Business Admin & Finance",
+          "description": "15 prompts for fee schedules, funding explanations, registers, inspection-ready records, and the day-to-day admin that keeps your setting running."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts for niche positioning, occupancy growth, brand voice, partnership pitches, and building a setting that thrives long term."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts for fee-setting, cash flow planning, cost modelling, funding gap analysis, and running your setting profitably and sustainably."
+        },
+        {
+          "title": "Expansion, Partnerships & Digital",
+          "description": "10 prompts for new sites, franchising, local authority bids, digital products, and scaling your impact beyond a single setting."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 9 sections",
+        "Covers parent comms, marketing, safeguarding, curriculum, staffing, admin, strategy, finance, and expansion",
+        "Each prompt includes a pro tip to help you get a better result",
+        "Written in plain English with UK early years and education terminology",
+        "Bracketed placeholders make every prompt easy to personalise to your setting",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Nursery owners and managers who want to save time on paperwork, parent comms, and inspection prep",
+        "Childminders running their own setting who need professional templates for every situation",
+        "Tutors and small education businesses looking to market themselves and communicate with parents clearly",
+        "Pre-school and out-of-school club leaders responsible for policies, planning, and staff development",
+        "Education providers who want to start using AI but don't know where to begin"
+      ]
+    }
   },
   {
     "slug": "ecommerce-retail-ai-toolkit",
@@ -208,10 +528,69 @@
     "description": "AI prompts for online and high street retailers — product descriptions, customer emails, inventory management, marketing campaigns, review responses, and seasonal promotions.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["retail"],
+    "industries": [
+      "retail"
+    ],
     "format": "pdf",
     "fileName": "ecommerce-retail-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/ecommerce-retail-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete E-commerce & Retail AI Toolkit is a collection of 150 done-for-you AI prompts built for online sellers, retailers, and product-based businesses who want to save time and run a sharper operation. Organised into 9 sections covering everything from customer service and marketing to fulfilment, brand strategy, finance, and wholesale growth, every prompt is ready to personalise and paste straight into your AI tool of choice. It works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Customer Communication & Service",
+          "description": "15 prompts covering every customer touchpoint — order confirmations, complaints about damaged or incorrect items, where-is-my-order replies, refunds and retention, public review responses, delay notifications, returns and exchanges, post-purchase review requests, lost-parcel claims, loyalty and VIP emails, wholesale enquiries, FAQ templates, lapsed-customer re-engagement, and chargeback disputes."
+        },
+        {
+          "title": "Marketing, Social Media & Ads",
+          "description": "15 prompts covering reaching shoppers across every channel — Instagram launch captions, 4-week content calendars, Facebook/Instagram ads, TikTok demo scripts, seasonal sale campaigns, UGC strategy, Google Shopping and search ads, Pinterest descriptions and board strategy, influencer campaigns, abandoned cart emails, referral campaigns, comparison blog posts, brand story posts, gifting guides, and press releases."
+        },
+        {
+          "title": "Sales, Conversion & Promotions",
+          "description": "20 prompts covering turning browsers into buyers — high-converting product descriptions, flash sales, homepage and category copy, upsell/cross-sell emails, bundle offers, back-in-stock notifications, welcome discount sequences, limited-edition launches, product page FAQs, subscription pitches, gift-with-purchase promotions, personalised recommendations, win-back campaigns, a full-year promotion calendar, exit-intent popups, countdown sequences, checkout upsells, store openings, and collection launches."
+        },
+        {
+          "title": "Product Listings, SEO & Content",
+          "description": "20 prompts covering listings and content that ranks — SEO product titles and descriptions for Amazon/Etsy, collection landing pages, blog content strategies, buying guides, meta titles and descriptions, newsletters, how-to/styling guides, review strategies, keyword research briefs, About Us and sustainability pages, size guides, gift wrapping upsells, returns and delivery policy pages, brand hashtag strategies, packaging inserts, FAQ pages, photography shoot briefs, press kits, and collaboration announcements."
+        },
+        {
+          "title": "Orders, Fulfilment & Suppliers",
+          "description": "20 prompts covering a tight back end — supplier onboarding and purchase orders, chasing missed deliveries, stock replenishment, 3PL briefs, quality control, dispatch and packing guides, carrier selection, peak-season planning, supplier performance reviews, product recalls, inventory write-offs, multi-channel inventory, dropshipping agreements, customs and international shipping, packaging sustainability, returns and reverse logistics, supplier negotiation, marketplace account health, and new product launch checklists."
+        },
+        {
+          "title": "Email Marketing & Automation",
+          "description": "15 prompts covering automations and lifecycle campaigns — welcome series, browse and cart abandonment, post-purchase sequences, VIP triggers, price-drop and back-in-stock alerts, seasonal campaign calendars with subject lines, re-engagement flows, product education series, milestone (birthday/anniversary) emails, newsletter strategy and templates, subscription renewal series, segmentation strategy, product launch emails, referral emails, and A/B test plans."
+        },
+        {
+          "title": "Brand Strategy & Positioning",
+          "description": "20 prompts covering positioning and growth — brand positioning statements, 12-month growth plans, competitive analysis, customer personas, mission and values, marketplace and wholesale expansion, loyalty and retention strategy, tone of voice guides, international expansion, PR strategy, range extensions, brand refreshes, data and analytics strategy, subscription box concepts, community building, B2B sales, charity partnerships, channel diversification, and physical retail/pop-up planning."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts covering pricing and finance — pricing strategy reviews, unit economics models, cash flow forecasts, margin improvement plans, break-even analysis, supplier COGS negotiation, financial KPI dashboards, VAT and tax planning, open-to-buy inventory planning, technology investment business cases, wholesale credit control, returns cost reduction, investment pitches, brand-protective discount strategies, and annual financial reviews."
+        },
+        {
+          "title": "Wholesale, Partnerships & Channel Growth",
+          "description": "10 prompts covering growth beyond your own storefront — wholesale trade packs, retailer outreach emails, department-store entry strategies, trade show prep and follow-up, brand partnership proposals, international marketplace selling, corporate gifting, pop-up and market stall planning, brand licensing/white label proposals, and franchise or affiliate reseller programmes."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 9 sections",
+        "Every prompt includes a practical Pro Tip with insider advice you can act on straight away",
+        "Each prompt sets a clear expert role and brief so the AI gives you usable, on-brand output first time",
+        "Written in plain English with UK terminology and UK English spelling throughout",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Online sellers running their own e-commerce store or website",
+        "Independent retailers and product-based small businesses",
+        "Etsy, Amazon, and marketplace sellers wanting better listings and conversions",
+        "Founders managing fulfilment, suppliers, and operations single-handedly",
+        "Growing retail brands planning wholesale, partnerships, and channel expansion"
+      ]
+    }
   },
   {
     "slug": "freelancer-creative-ai-toolkit",
@@ -219,7 +598,9 @@
     "description": "AI prompts for freelancers, designers, writers, and creative professionals — client briefs, proposals, project scoping, invoicing, portfolio content, and self-promotion.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["freelancers-creatives"],
+    "industries": [
+      "freelancers-creatives"
+    ],
     "format": "pdf",
     "fileName": "freelancer-creative-ai-toolkit.pdf",
     "image": ""
@@ -230,10 +611,69 @@
     "description": "AI prompts for restaurants, cafes, pubs, caterers, and food businesses — menu descriptions, customer communications, staff management, marketing, review responses, and event promotion.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["hospitality"],
+    "industries": [
+      "hospitality"
+    ],
     "format": "pdf",
     "fileName": "hospitality-food-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/hospitality-food-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Hospitality & Food Business AI Toolkit is a done-for-you collection of 150 ready-to-use AI prompts built for UK restaurants, cafés, caterers, hotels, and food businesses. It covers everything from guest communication and bookings to kitchen operations, staffing, compliance, finance, strategy, and growth, with each prompt written to drop straight into ChatGPT, Claude, Gemini, or any other AI tool. It is designed for busy independent operators who want practical, plain-English help without needing to be technical.",
+      "sections": [
+        {
+          "title": "Guest Communication & Experience",
+          "description": "15 prompts covering every guest touchpoint — booking confirmations and pre-arrival messages, post-visit thank yous and review requests, responses to negative and positive reviews, special-occasion personalisation, complaint handling, no-show messages, allergen and dietary confirmations, loyalty programme communications, group booking proposals, gift voucher promotions, waitlist management, seasonal announcements, feedback surveys, and closure or change notifications."
+        },
+        {
+          "title": "Marketing, Social Media & Promotions",
+          "description": "15 prompts covering social media content plans, Google Business Profile descriptions, seasonal promotion campaigns, supplier stories, review generation strategies, food blog articles, email marketing campaigns, photography briefs, press releases, loyalty and repeat-visit marketing, local community engagement, launch plans, influencer and food blogger outreach, catering brochures, and food award or guide submissions."
+        },
+        {
+          "title": "Bookings, Events & Revenue",
+          "description": "20 prompts covering private dining and group enquiry responses, wedding and celebration proposals, corporate event proposals, deposit and booking policies, event run-of-show briefings, pre-order menu systems, upselling scripts, revenue management, Sunday lunch and afternoon tea promotions, festive season strategy, cooking class and experience events, cancellation recovery, third-party platform optimisation, takeaway and delivery launches, capacity and table layout, gift card strategy, minimum spend and prix fixe communications, pop-up proposals, last-minute offers, and annual events calendars."
+        },
+        {
+          "title": "Kitchen, Menu & Food Operations",
+          "description": "20 prompts covering menu descriptions and tasting notes, seasonal menu development briefs, allergen management, food waste reduction, supplier negotiation, mise en place and prep schedules, HACCP and food safety, daily specials systems, sustainable sourcing policies, kitchen team training, food cost and GP calculation, equipment maintenance, plant-based menu development, large event kitchen briefings, recipe standardisation, seasonal produce calendars, kitchen KPIs, hygiene and cleaning schedules, kitchen culture and wellbeing, and tasting menu descriptions."
+        },
+        {
+          "title": "Staff Management & Service",
+          "description": "20 prompts covering job advertisements, onboarding plans, service standards guides, rota and scheduling, tips and gratuities policies, upselling and menu knowledge training, disciplinary procedures, staff retention and wellbeing, service recovery training, performance reviews, staff handbooks, pre-service briefings, live-in accommodation policies, bar team training, work experience programmes, mental health and burnout prevention, appraisal and pay review communications, difficult-situation communication guides, seasonal and bank holiday staffing, and zero-hours and casual worker policies."
+        },
+        {
+          "title": "Business Admin, Compliance & Finance",
+          "description": "15 prompts covering food business registration and licensing, profit and loss templates, business insurance reviews, GDPR and data privacy policies, lease negotiation checklists, cash flow forecasts, bank loan and investment pitches, health and safety policies, VAT and flat rate scheme guides, utilities and energy cost management, payroll and tip compliance, business rates appeals and relief, financial controls and cash handling, business exit and succession plans, and food business start-up checklists."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts covering concept and positioning strategy, 3-year strategic plans, competitor analysis, menu pricing and positioning reviews, second site and expansion strategy, sustainability strategy, franchise and licensing strategy, digital transformation, food product and retail strategy, business turnaround plans, catering and events growth, dark kitchen and delivery-first plans, farm-to-fork brand strategy, festival and market strategy, Michelin or AA recognition preparation, community or social enterprise strategy, pricing strategy reviews, brand identity and storytelling, staff culture and values programmes, and customer lifetime value analysis."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts covering break-even analysis, GP and food cost optimisation, beverage GP and drinks pricing, weekly financial reporting routines, labour cost management, rent review strategy, seasonal cash flow management, cost of sales reduction, private dining and events pricing, investment readiness, business valuation, stocktaking and inventory management, catering and food production pricing models, grant and funding applications, and monthly management accounts commentary."
+        },
+        {
+          "title": "Partnerships, Expansion & New Channels",
+          "description": "10 prompts covering second site opening strategy, food product retail launches, franchising and licensing guides, hotel and accommodation F&B strategy, corporate and workplace catering proposals, online ordering and delivery optimisation, food tourism and destination dining, wedding catering and venue partnerships, pop-up and supper club launch plans, and corporate partnership and B2B revenue strategy."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised across 9 sections",
+        "Every prompt includes a practical Pro Tip with real-world hospitality benchmarks and best practice",
+        "Each prompt sets a clear expert role and context so the AI returns usable, on-brand output",
+        "Written in plain English with UK terminology (HACCP, VAT, FSA, ACAS, National Living Wage, and UK food and employment law)",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Independent restaurant, café, and bistro owners",
+        "Caterers and private dining or events businesses",
+        "Hotel and accommodation operators running food and beverage",
+        "Street food traders, pop-up and supper club chefs, and food producers",
+        "Hospitality managers and small teams who want to save time using AI without being technical"
+      ]
+    }
   },
   {
     "slug": "hr-people-management-ai-toolkit",
@@ -241,10 +681,69 @@
     "description": "AI prompts for HR managers and business owners handling people — job descriptions, interview questions, onboarding, policies, performance reviews, and employee communications.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["hr"],
+    "industries": [
+      "hr"
+    ],
     "format": "pdf",
     "fileName": "hr-people-management-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/hr-people-management-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete HR & People Management AI Toolkit is a collection of 150 done-for-you AI prompts covering every aspect of HR and people management — from writing job advertisements and conducting structured interviews to managing performance, handling redundancy, building a people strategy, and measuring the ROI of HR investment. Designed for UK small businesses, it lets you simply replace the bracketed placeholders with your own details and paste the prompt into your AI tool of choice. It works with ChatGPT, Claude, Gemini, and any other AI assistant.",
+      "sections": [
+        {
+          "title": "Recruitment & Hiring",
+          "description": "15 prompts covering job advertisements, candidate shortlisting and rejection, structured interview question sets, job offer letters, recruitment agency briefs, internal postings and promotions, reference requests, probationary reviews, graduate and apprentice campaigns, skills-based assessments, social media recruitment posts, counter-offers, diversity and inclusion hiring statements, onboarding welcome packs, and talent pipeline communications."
+        },
+        {
+          "title": "Employee Relations & Communications",
+          "description": "15 prompts covering company-wide announcements, manager briefings for difficult conversations, employee surveys, redundancy consultation, flexible working responses, return to work interviews, performance improvement plans, grievance and disciplinary letters, absence management, recognition and reward, pay reviews, TUPE transfers, wellbeing and mental health, and leaver communications with exit interviews."
+        },
+        {
+          "title": "Onboarding & Development",
+          "description": "20 prompts covering 90-day onboarding plans, induction checklists, buddy and mentor programmes, training needs analysis, line manager guides, skills matrices, L&D policies, succession planning, lunch and learn sessions, leadership development, 360-degree feedback, coaching frameworks, new manager communications, cross-training, career development conversations, secondments, qualification sponsorship, review preparation, and apprenticeship programmes."
+        },
+        {
+          "title": "Performance Management",
+          "description": "20 prompts covering annual review templates, SMART objectives, mid-year check-ins, performance feedback emails, high performer retention, performance management process guides, underperformance support plans, team reviews, bonus and incentive schemes, calibration, 1-2-1 templates, remote worker performance, end-of-year summaries, dismissal letters, objective-setting cascades, performance data analysis, away day agendas, values assessments, high-potential identification, and appeal processes."
+        },
+        {
+          "title": "Policy, Compliance & Legal",
+          "description": "20 prompts covering essential HR policy suites, GDPR and data protection, social media and acceptable use, whistleblowing, health and safety, hybrid and remote working, equal pay, maternity/paternity/shared parental leave, redundancy policy, anti-bribery, drug and alcohol, menopause at work, right to work checks, modern slavery, settlement agreements, carer's leave, neonatal care leave, reasonable adjustments, and night worker and working time compliance."
+        },
+        {
+          "title": "Strategy & Business Admin",
+          "description": "20 prompts covering people strategy, employer brand and EVP, organisational design and restructure, culture change, HR metrics and people analytics, TUPE and acquisition integration, HRIS business cases, seasonal workforce planning, employee share schemes, diversity and inclusion strategy, staff handbooks, zero hours contracts, HR budgets, multi-generational workforces, HR annual reports, HR function maturity assessments, recruitment cost analysis, remote onboarding, and supporting team members through personal difficulty."
+        },
+        {
+          "title": "Business Strategy & Growth",
+          "description": "20 prompts covering the people section of a business plan, change management communication plans, manager effectiveness surveys, hybrid team ways of working agreements, new hire business cases, outsourcing vs in-house HR, strategy launch communications, key person risk plans, stakeholder communications, merger and acquisition people integration, job evaluation and pay banding, financial wellbeing programmes, international hiring and global mobility, job sharing proposals, long service awards, and team re-energising communications."
+        },
+        {
+          "title": "Financial Management & Profitability",
+          "description": "10 prompts covering HR cost analysis for the board, payroll budgets and forecasts, redundancy cost calculations, agency vs direct hire comparisons, benefits benchmarking, training ROI cases, pension scheme communications, salary benchmarking and pay review processes, financial cases for wellbeing investment, and restructure financial models with payback analysis."
+        },
+        {
+          "title": "HR Tools & Templates",
+          "description": "10 prompts covering essential HR document sets for new businesses, disciplinary investigation report templates, TUPE consultation letters and employee liability information, job description templates, employment contract checklists, HR audit checklists for SMEs, guides to managing volunteers, employment status determination, managing sickness absence fairly, and conducting a lawful redundancy process."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 9 sections covering recruitment, employee relations, onboarding, performance, compliance, strategy, growth, finance, and HR tools",
+        "Every prompt includes a pro tip, and key prompts include real-world example use cases",
+        "Built around current UK employment law, referencing GDPR, the Equality Act 2010, TUPE, the Working Time Regulations 1998, and recent legislation like the Carer's Leave Act 2023 and Neonatal Care (Leave and Pay) Act 2023",
+        "Written in plain English with UK terminology and legal references",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Solo HR managers running the people function single-handedly in a small or growing business",
+        "Line managers who handle people issues alongside their day job",
+        "Small business owners and SME founders building and managing their team",
+        "Office managers and operations leads responsible for HR admin and compliance",
+        "Anyone responsible for recruitment, performance, policies, or staff communications in a UK small business"
+      ]
+    }
   },
   {
     "slug": "personal-finance-coaching-ai-toolkit",
@@ -252,7 +751,9 @@
     "description": "AI prompts for financial coaches, advisers, and money mentors — client assessments, financial planning content, educational materials, marketing, and client communications.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["personal-finance-coaching"],
+    "industries": [
+      "personal-finance-coaching"
+    ],
     "format": "pdf",
     "fileName": "personal-finance-coaching-ai-toolkit.pdf",
     "image": ""
@@ -263,10 +764,65 @@
     "description": "AI prompts for vets, groomers, pet shops, dog walkers, and pet service businesses — client communications, appointment management, marketing, pet care content, and review responses.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["pet-business-veterinary"],
+    "industries": [
+      "pet-business-veterinary"
+    ],
     "format": "pdf",
     "fileName": "pet-business-veterinary-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/pet-business-veterinary-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Pet Business & Veterinary AI Toolkit is a collection of 150 done-for-you AI prompts built for UK veterinary practices, groomers, trainers, dog walkers, and pet business owners. It covers everything from client communication and clinical content to operations, marketing, growth, and long-term strategy, with each prompt ready to paste straight into ChatGPT, Claude, Gemini, or any other AI tool. Written in plain English with UK terminology, it helps busy pet professionals save time on the writing and admin that fills their week.",
+      "sections": [
+        {
+          "title": "Client Communication & Appointments",
+          "description": "24 prompts covering new client welcome emails, appointment and vaccination reminders, post-appointment follow-ups, difficult diagnosis and end-of-life communications, insurance claim and specialist referral letters, grooming and boarding confirmations, bereavement follow-ups, price increase notices, complaint responses, review replies, text and waitlist messages."
+        },
+        {
+          "title": "Marketing & Social Media",
+          "description": "24 prompts covering website homepage and About Us copy, Instagram, TikTok and Reels content plans, Google Business profiles, seasonal health campaigns, email newsletters, referral and loyalty programmes, Google and Facebook ads, press releases, flyers, satisfaction surveys, partnership proposals, social media calendars, gift guides, Black Friday and Christmas safety campaigns, and email list growth."
+        },
+        {
+          "title": "Clinical & Veterinary Content",
+          "description": "13 prompts covering puppy vaccination and health schedules, dental health, weight management, parasite, flea, tick and lungworm prevention, post-operative care, kennel cough, neutering, pet first aid, dental month campaigns, and rabbit and small mammal vaccination guides written for pet owners."
+        },
+        {
+          "title": "Pet Owner Education & Safety",
+          "description": "16 prompts covering health articles, senior pet and life-stage nutrition guides, breed-specific health, anxiety and stress management, microchipping and lost pet advice, travel health, exotic pet care, indoor vs outdoor cats, responsible breeding, heatstroke, stress-free vet visits, and seasonal safety guides for fireworks, summer and Easter."
+        },
+        {
+          "title": "Operations & Business Admin",
+          "description": "25 prompts covering staff onboarding, SOPs, client retention, telephone triage, pricing reviews, health and safety, financial KPI dashboards, staff handbooks, GDPR policies, annual reviews, locum briefing packs, stock management, complaints procedures, growth and succession plans, multi-site management, clinical audits, appraisals, CRM guides, opening and closing checklists, testimonial collection, meeting agendas, incident reports, after-hours policies, and consent forms."
+        },
+        {
+          "title": "Business Growth & Partnerships",
+          "description": "17 prompts covering service menus, new service launches, charity fundraising, client education events, community sponsorships, awards submissions, recruitment adverts, CPD and training plans, franchising documents, staff wellbeing policies, sustainability policies, corporate benefit and rescue charity proposals, school education programmes, advisor briefs, equipment finance proposals, and speaker pitches."
+        },
+        {
+          "title": "Digital Products & Online Services",
+          "description": "13 prompts covering new client email automation sequences, Etsy and online store product descriptions, online course and digital product plans, podcast and YouTube concepts, influencer and PR briefs, testimonial case studies, Google Ads and local SEO strategies, data and analytics plans, podcast guest pitches, end-of-year thank-you campaigns, customer avatars, and seasonal promotion calendars."
+        },
+        {
+          "title": "Strategy & Planning",
+          "description": "18 prompts covering 5-year vision and mission statements, competitor analysis, marketing budget and ROI trackers, board and investor reports, risk registers, loan and grant application narratives, media and PR strategies, exit interviews, technology audits, partnership agreement summaries, service discontinuation and rebrand communications, multi-channel marketing plans, business insurance claim guides, quarterly KPI reviews, 90-day sprint plans, and joint venture evaluation frameworks."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised into 8 sections",
+        "Every prompt includes a Pro Tip with practical, real-world advice to get better results",
+        "Each prompt sets the AI a clear role and brief so the output is usable straight away",
+        "Written in plain English with UK terminology, spelling, and references (RCVS, GDPR, HSE, COSHH)",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "139-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Veterinary practices and practice managers handling client communication and clinical content",
+        "Pet groomers and grooming salons managing bookings, marketing, and client care",
+        "Dog trainers and behaviourists running programmes and educating owners",
+        "Dog walkers and pet sitters building and promoting their services",
+        "Pet boarding, kennel, and wider pet business owners growing and running their operation"
+      ]
+    }
   },
   {
     "slug": "professional-services-ai-toolkit",
@@ -274,10 +830,71 @@
     "description": "AI prompts for accountants, lawyers, consultants, and professional service firms — client proposals, report writing, compliance documentation, business development, and client communications.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses", "accountants-bookkeepers", "coaches-consultants"],
+    "industries": [
+      "all-businesses",
+      "accountants-bookkeepers",
+      "coaches-consultants"
+    ],
     "format": "pdf",
     "fileName": "professional-services-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/professional-services-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Professional Services AI Toolkit is a collection of 150 done-for-you AI prompts built specifically for UK professional services firms — consultants, lawyers, accountants, financial advisory firms, and management consultants. It covers nine of the most important areas of running a practice, from client communication and business development through to proposals, compliance, strategy, finance, and growth. Every prompt is ready to paste straight into ChatGPT, Claude, Gemini, or any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Communication & Relationships",
+          "description": "15 prompts covering every client touchpoint — welcome letters and onboarding sequences, matter and project updates, complaint responses, relationship reviews, difficult-news letters, fee notes, satisfaction surveys, cross-referrals, retention and re-engagement, thank-you letters, fee increase notices, communication policies, and client offboarding."
+        },
+        {
+          "title": "Marketing, Thought Leadership & BD",
+          "description": "15 prompts covering reputation and pipeline building — thought leadership articles, LinkedIn profiles, BD plans, speaking pitches, sector newsletters, referral partner programmes, case studies, event invitation sequences, practice area web pages, panel and framework pitches, cold outreach, directory and ranking submissions, BD activity trackers, social media strategy, and awards submissions."
+        },
+        {
+          "title": "Proposals, Pricing & Engagement Letters",
+          "description": "20 prompts covering winning and structuring work cleanly — proposals, engagement letters, fixed-fee schedules, value-based pricing rationales, scope-of-work documents, proposal follow-ups, competitive re-pitches, retainer proposals, RFP responses, fee objection scripts, alternative fee arrangements, pro bono policies, fee audits, regulatory engagement letters, multi-disciplinary proposals, due diligence report structures, subscription proposals, risk-based pricing frameworks, advisory proposals, and conflict disclosure letters."
+        },
+        {
+          "title": "Project & Client Matter Management",
+          "description": "20 prompts covering planning, delivering and billing matters — matter and project plans, risk registers, client briefing notes, file review and QA checklists, escalation processes, knowledge management plans, project debriefs, supervision frameworks, time recording policies, data room guides, conflict and AML/KYC procedures, billing and WIP processes, written advice guides, difficult-matter communications, matter closure letters, breach and near-miss reporting, practitioner handovers, team briefings, practice group meeting agendas, and specialist co-advisory protocols."
+        },
+        {
+          "title": "Business Admin, Compliance & Risk",
+          "description": "20 prompts covering keeping the firm compliant and safe — professional indemnity insurance reviews, GDPR and data protection policies, AML policies and risk assessments, business continuity plans, complaints handling, cyber security, conflicts of interest policies, regulatory reporting calendars, financial controls, whistleblowing, health/safety/wellbeing, CPD policies, supplier due diligence, partnership and shareholders' agreement checklists, succession planning, remote working policies, restrictive covenants, fee earner accountability frameworks, pay equity audits, and gifts and entertainment policies."
+        },
+        {
+          "title": "Productivity, Systems & Team",
+          "description": "15 prompts covering the systems and team practices that scale the firm — technology and systems strategies, delegation and supervision frameworks, document and precedent systems, AI tools adoption policies, weekly planning, meeting management, new joiner onboarding, client portal rollouts, CRM and data quality plans, pricing governance, lateral hire integration, internal training programmes, lock-up and cash collection plans, partner performance reviews, and firm culture and values plans."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts covering setting direction and growing with intent — strategic plans, sector specialisation, M&A strategy, pricing and profitability improvement, geographic expansion, service line development, talent retention, partnership admission and equity, client diversification, thought leadership positioning, fee income budgets, risk management strategy, ESG and sustainability, client advisory boards, lateral hire recruitment, founding partner succession, practice area profit improvement, boutique growth strategy, market entry for new firms, and client experience improvement."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts covering running the numbers — financial management dashboards, profitability analysis by client and matter, rate-setting and annual rate reviews, WIP and billing discipline plans, cash flow forecasts, utilisation and productivity analysis, partner remuneration frameworks, bad debt and write-off policies, overhead and cost management, tax planning calendars, bank and lender relationship plans, financial scenario planning, capital investment business cases, firm valuation frameworks, and fee recovery and debt collection escalation."
+        },
+        {
+          "title": "Scaling, Partnerships & Expansion",
+          "description": "10 prompts covering diversifying revenue and growing beyond the core practice — subscription or SaaS advisory products, non-executive director and advisory board strategies, white label and IP licensing, strategic alliances and joint ventures, training and education revenue streams, new geographic market entry, media and publishing revenue, private equity investment preparation, international association networks, and management buyout (MBO) planning."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised across 9 sections",
+        "Every prompt includes a Pro Tip with practical, real-world insight to get better results",
+        "Designed to save professional services firms 10+ hours per week",
+        "Written in plain English with UK terminology throughout",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Solicitors and law firms handling client matters, compliance, and BD",
+        "Accountants and accountancy practices managing clients, billing, and regulation",
+        "Financial advisory firms and IFAs running a regulated practice",
+        "Management consultants delivering projects and growing their pipeline",
+        "Boutique and owner-managed professional services firms looking to scale, price, and run their practice more profitably"
+      ]
+    }
   },
   {
     "slug": "real-estate-lettings-ai-toolkit",
@@ -285,7 +902,9 @@
     "description": "AI prompts for estate agents, lettings agents, and property managers — property descriptions, client communications, viewing follow-ups, marketing, tenancy management, and compliance.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["property"],
+    "industries": [
+      "property"
+    ],
     "format": "pdf",
     "fileName": "real-estate-lettings-ai-toolkit.pdf",
     "image": ""
@@ -296,10 +915,62 @@
     "description": "AI prompts to manage social media for any business — content ideas, captions, hashtag strategies, engagement responses, ad copy, analytics interpretation, and platform-specific content.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["social-media", "all-businesses"],
+    "industries": [
+      "social-media",
+      "all-businesses"
+    ],
     "format": "pdf",
     "fileName": "social-media-management-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/social-media-management-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Social Media Management AI Toolkit is a library of 150 done-for-you AI prompts that help social media managers plan, create, and report on social content in a fraction of the usual time. It covers everything from writing posts, captions, and scripts to strategy, platform-specific content, client and agency operations, growth, and analytics. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Posts, Captions & Scripts",
+          "description": "22 prompts covering direct content deliverables - Instagram captions, LinkedIn thought leadership posts, Facebook posts, TikTok and YouTube scripts, Pinterest pin descriptions, Stories sequences, carousels, Twitter/X threads, bios, hooks, testimonials, case studies, and more across every platform."
+        },
+        {
+          "title": "Content Systems, Series & Campaigns",
+          "description": "18 prompts covering frameworks, libraries, batches, repurposing plans, and content programmes built to scale production - repurposing plans, evergreen content libraries, content series, launch campaigns, weekly batches, template and caption banks, crisis communications, AI image prompts, and challenge launches."
+        },
+        {
+          "title": "Strategy & Planning",
+          "description": "26 prompts covering the strategy and planning behind every account - social media strategies, content calendars, account audits, KPIs, brand voice, and the planning frameworks that sit behind successful social media management."
+        },
+        {
+          "title": "Platform-Specific Content",
+          "description": "21 prompts covering deeper platform-specialised content for Instagram, LinkedIn, TikTok, YouTube, Pinterest, Facebook, and Twitter/X, tailored to each platform's formats and audience behaviour."
+        },
+        {
+          "title": "Client Management & Agency Ops",
+          "description": "23 prompts covering how to run a social media practice - client onboarding, contracts, reporting, agency positioning, business development, and team SOPs."
+        },
+        {
+          "title": "Growth & Audience Building",
+          "description": "23 prompts covering how to grow accounts and audiences with intent - follower growth, lead generation, viral content, influencer marketing, and partnerships."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "17 prompts covering how to measure what matters - analytics reviews, ROI, A/B testing, attribution, audits, conversion funnel analysis, performance prediction, and reporting."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you prompts organised into 7 clearly structured sections",
+        "Every prompt includes an expert Pro Tip with the insight behind why it works",
+        "Each prompt is built around a specialist role and a clear, structured brief so the AI produces usable output first time",
+        "Written in plain English with UK terminology throughout",
+        "Bracketed placeholders make every prompt easy to personalise to your business or client",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "87-page PDF - download once, use forever"
+      ],
+      "whoItsFor": [
+        "Social media managers handling multiple accounts who want to produce more content in less time",
+        "Social media agencies running client work, reporting, and team operations",
+        "In-house marketing teams responsible for an organisation's social presence",
+        "Freelance social media specialists who need professional, repeatable content systems",
+        "Small business owners and creators managing their own social media without a dedicated team"
+      ]
+    }
   },
   {
     "slug": "trades-construction-ai-toolkit",
@@ -307,21 +978,197 @@
     "description": "AI prompts for plumbers, electricians, builders, roofers, and construction businesses — quoting, invoicing, customer communications, marketing, H&S documentation, and project management.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["trades"],
+    "industries": [
+      "trades"
+    ],
     "format": "pdf",
     "fileName": "trades-construction-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/trades-construction-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Trades & Construction AI Toolkit is a collection of 150 done-for-you AI prompts built for UK builders, contractors, tradespeople, and construction businesses. It covers everything from winning customers and quoting work to running sites safely, managing the finances, and growing the firm. Every prompt is ready to paste straight into ChatGPT, Claude, Gemini, or any other AI tool.",
+      "sections": [
+        {
+          "title": "Customer Communication & Service",
+          "description": "15 prompts covering every customer touchpoint handled warmly and professionally — new enquiry responses, job confirmations, delay and variation updates, complaint handling, review requests, payment reminders, warranties, price-increase notices, and decline messages."
+        },
+        {
+          "title": "Marketing & Lead Generation",
+          "description": "15 prompts for winning local work — Google Business Profile and directory listings, Checkatrade/Rated People profiles, leaflet and door-drop campaigns, website homepage and 'why choose us' copy, social media content plans, before-and-after posts, case studies, referral requests, email newsletters, van signage, and seasonal promotions."
+        },
+        {
+          "title": "Quotes, Tenders & Sales",
+          "description": "20 prompts to win and structure work cleanly — written quotes, tender covering letters, variation orders, commercial and insurance quotes, PQQ responses, materials and labour breakdowns, schedules of works, maintenance and framework proposals, deposit requests, letters of intent, snagging responses, subcontract quotes, and domestic contract summaries."
+        },
+        {
+          "title": "Project Management & Site Operations",
+          "description": "20 prompts for running projects and sites to programme — project programmes, daily site diaries, subcontractor inductions, procurement schedules, progress reports, handover checklists, waste management plans, plant inspection logs, extension-of-time requests, method statements, risk registers, neighbour notifications, building control descriptions, budget trackers, meeting minutes, practical completion notices, and construction phase plans."
+        },
+        {
+          "title": "Health, Safety & Compliance",
+          "description": "20 prompts to stay safe and compliant on site — H&S policies, risk assessments, COSHH assessments, toolbox talks, accident and near-miss reports, safe systems of work, PPE policies, environmental and asbestos briefs, fire risk assessments, young-worker inductions, welfare checklists, manual handling guides, CDM 2015 duties, electrical and lone-working policies, scaffold inspections, RIDDOR narratives, infectious disease procedures, and mental health policies."
+        },
+        {
+          "title": "Business Admin & Finance",
+          "description": "15 prompts to run the back office — subcontractor agreements, late payment demand letters, payment applications, annual business plans, tax and CIS guides, insurance reviews, financial KPI dashboards, employment contracts, vehicle and driver policies, supplier terms, business continuity plans, apprenticeship reviews, GDPR policies, and exit/succession plans."
+        },
+        {
+          "title": "Business Strategy & Positioning",
+          "description": "20 prompts to position the business and grow with intent — niche positioning statements, growth and diversification plans, moving from domestic to commercial work, first-hire planning, recurring revenue models, competitive analysis, winning developer work, 3-year strategic plans, brand and reputation strategy, framework applications, post-difficult-year reviews, client-dependency reduction, technology adoption, accreditation plans, sustainability strategy, M&A briefs, workforce development, valuation prep, and geographic expansion."
+        },
+        {
+          "title": "Financial Management & Pricing",
+          "description": "15 prompts to run the numbers — pricing strategy reviews, job costing templates, cash flow forecasts, day-rate vs fixed-price guides, margin improvement plans, VAT scheme comparisons, retention release requests, overhead budgets, debt recovery letters, pricing by customer type, financial resilience plans, equipment investment appraisals, limited company vs sole trader comparisons, payment schedules, and annual financial reviews."
+        },
+        {
+          "title": "Subcontractors, Suppliers & Expansion",
+          "description": "10 prompts to grow capacity and capability — subcontractor onboarding packs, supplier evaluation policies, subcontract tender enquiries, joint venture proposals, franchise/licence models, supply chain development plans, materials buying strategies, design-and-build expansion, architect partnership proposals, and apprentice recruitment plans."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts across 9 focused sections",
+        "Every prompt includes a practical Pro Tip and example use cases or placeholders",
+        "Written in plain English with UK terminology and regulatory references (CDM, COSHH, CIS, RIDDOR, Building Regs)",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Designed to save 10+ hours per week on admin, quoting, marketing, and compliance",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Builders and general contractors running residential or commercial projects",
+        "Sole trader tradespeople (electricians, plumbers, roofers, plasterers) handling their own admin",
+        "Small construction firms managing sites, subcontractors, and health & safety compliance",
+        "Trades businesses wanting to win more local work through better marketing and quoting",
+        "Growing contractors looking to scale capacity, recurring revenue, and accreditations"
+      ]
+    }
   },
   {
-    "slug": "wedding-events-planning-ai-toolkit",
-    "name": "The Complete Wedding & Events Planning AI Toolkit",
+    "slug": "wedding-planning-ai-toolkit",
+    "name": "The Complete Wedding Planning AI Toolkit",
     "description": "AI prompts for wedding planners and event coordinators — client communications, vendor management, timelines, social media content, proposals, and day-of coordination.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["wedding-planners"],
+    "industries": [
+      "wedding-planners"
+    ],
     "format": "pdf",
-    "fileName": "wedding-events-planning-ai-toolkit.pdf",
-    "image": ""
+    "fileName": "wedding-planning-ai-toolkit.pdf",
+    "image": "/images/products/wedding-planning-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Wedding Planning AI Toolkit is a collection of 150 done-for-you AI prompts built specifically for UK mid-market wedding planning businesses. It covers the full client journey and back-office operation — from first enquiry and supplier briefs through design, finance, marketing, operations, business strategy, and couple-facing resources. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Communication & Enquiries",
+          "description": "21 prompts covering enquiry responses, discovery call scripts, proposals and quotes, booking and welcome letters, kickoff agendas, milestone updates, difficult conversations (budget vs vision, family politics, scope creep), supplier recommendations, day-of and wedding-party briefings, postponements, complaint resolution, post-wedding thank-yous, proposal follow-ups, and inclusive and anniversary communications."
+        },
+        {
+          "title": "Venue & Supplier Management",
+          "description": "23 prompts covering venue sourcing, site-visit checklists and comparison reports, plus detailed supplier briefs for photographers, florists, videographers, cake, catering, bar service, music, officiants, hair and makeup, stationery, transport, marquees, lighting, and hire — alongside contract review, day-of briefing packs, supplier feedback, accommodation, and venue-coordinator agreements."
+        },
+        {
+          "title": "Wedding Design & Styling",
+          "description": "25 prompts covering design briefs across classic, modern, rustic, destination, garden, themed, city, seasonal, micro, and multi-day weddings, plus concept and styling briefs, ceremony and tablescape design, dining experience, guest journey, inclusive and sustainable design, moodboards, photo moments, cultural ceremonies, favours, and welcome bags."
+        },
+        {
+          "title": "Budgeting & Financial Management",
+          "description": "14 prompts covering planner-business finance only — pricing strategy and package structure, fee positioning, annual revenue and pipeline forecasting, deposit and payment terms, cash flow, contracts, force majeure, supplier payments, insurance, and year-end."
+        },
+        {
+          "title": "Marketing & Business Building",
+          "description": "23 prompts covering marketing, content, and visibility strategy for a mid-market wedding planning business — Instagram, Pinterest, wedding fairs, press, referrals, awards, and conversion."
+        },
+        {
+          "title": "Operations & Admin",
+          "description": "22 prompts covering day-of execution, operations infrastructure, and compliance — from the master run-of-show and morning prep through ceremony, dining, evening reception, and post-wedding wrap-up."
+        },
+        {
+          "title": "Business Strategy & Growth",
+          "description": "10 prompts covering long-game decisions for a wedding planning business — growth, recession-proofing, hiring, vertical specialisation, exit planning, and adjacent-segment expansion."
+        },
+        {
+          "title": "Couples' Resources & Templates",
+          "description": "12 prompts covering content the planner produces for couples to use and share — guest information, RSVP guidance, budget frameworks, cost-saving, honeymoon and insurance guides, vendor cash flow, attire timelines, children at weddings, vows, dietary management, and more."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you AI prompts organised across 8 sections",
+        "Every prompt includes a practical Pro Tip drawn from real wedding-industry experience",
+        "Written in plain English with UK terminology and UK English throughout",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Covers the full business from client enquiry through to post-wedding wrap-up",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Mid-market wedding planners running their own business",
+        "Solo and small-team wedding planning professionals who want to save time on client comms and admin",
+        "Wedding planners who manage venues, suppliers, and full-day coordination",
+        "Wedding stylists and designers handling concept, styling, and supplier briefs",
+        "Planners expanding into anniversaries, vow renewals, and adjacent celebration events"
+      ]
+    }
+  },
+  {
+    "slug": "events-planning-ai-toolkit",
+    "name": "The Complete Events Planning AI Toolkit",
+    "description": "AI prompts built for event planners and event management professionals — covering client briefs, supplier communications, timelines, marketing, and day-of coordination.",
+    "pricePence": 2700,
+    "productType": "prompt-library",
+    "industries": [
+      "all-businesses"
+    ],
+    "format": "pdf",
+    "fileName": "events-planning-ai-toolkit.pdf",
+    "image": "/images/products/events-planning-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete Events Planning AI Toolkit is a collection of 150 done-for-you AI prompts built for UK event professionals planning corporate, charity, and private events. It covers everything from client enquiries and supplier briefs to event design, budgets, operations, marketing, and business strategy. Every prompt is written to paste straight into ChatGPT, Claude, Gemini, or any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Communication & Enquiries",
+          "description": "18 prompts covering enquiry responses, discovery call scripts, proposals and quotes, booking confirmations, planning milestone communications, supplier recommendations, difficult budget conversations, post-event thank-yous and review requests, complaint resolution, contract covering letters, event-day timelines, postponements, corporate briefs, NDAs, client onboarding guides, and corporate, charity, and inclusive enquiry frameworks."
+        },
+        {
+          "title": "Venue & Supplier Management",
+          "description": "23 prompts covering venue sourcing and comparison briefs, supplier briefs for florists, caterers, music and entertainment, AV and live-streaming, staging and structural builds, conference tech and registration, signage and branding, furniture and hire, photography and videography, hair and makeup, transport, and stationery, plus contract review checklists, payment trackers, walk-through reports, day-of briefing packs, and post-event supplier and venue feedback."
+        },
+        {
+          "title": "Event Design & Styling",
+          "description": "28 prompts covering table plans and seating, lighting design, marquee and outdoor specs, themed concepts, written mood boards, sustainable and zero-waste design, children's and family provision, corporate theming, floral installations, accessibility, photo and Instagram moments, bar and drinks, conference layouts, garden parties, and run-of-show design briefs for corporate events, charity galas, milestone birthdays, awards ceremonies, anniversaries, christenings, retreats, product launches, retirements, memorials, immersive dinners, and hybrid events."
+        },
+        {
+          "title": "Budgeting & Financial Management",
+          "description": "19 prompts covering budget frameworks, supplier payment policy, ticketing, sponsorship, pricing, cancellation terms, and financial risk for events of every shape and scale."
+        },
+        {
+          "title": "Marketing & Business Building",
+          "description": "21 prompts covering marketing, content, sponsorship, positioning, and lead generation for an event planning business that competes on outcome."
+        },
+        {
+          "title": "Operations & Admin",
+          "description": "26 prompts covering day-of running, contingency planning, GDPR, safeguarding, hybrid production, and post-event reporting — the operational backbone of every event."
+        },
+        {
+          "title": "Business Strategy & Growth",
+          "description": "15 prompts covering long-game decisions for an event planning business — recession-proofing, hiring, vertical specialisation, IP, and adjacent-segment growth."
+        }
+      ],
+      "whatsInside": [
+        "150 ready-to-use AI prompts organised into 7 clear sections",
+        "Every prompt includes a Pro Tip with practical, real-world advice from experienced event planners",
+        "Covers the full event lifecycle: client comms, venues and suppliers, design, budgets, marketing, operations, and strategy",
+        "Written in plain English with UK terminology throughout",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Independent event planners and event management businesses",
+        "Corporate event managers running conferences, awards, and brand activations",
+        "Charity gala and fundraising event organisers",
+        "Private and milestone event specialists handling birthdays, anniversaries, and celebrations",
+        "Solo and small event businesses wanting to save time and work more professionally with AI"
+      ]
+    }
   },
   {
     "slug": "website-generator-ai-toolkit",
@@ -329,10 +1176,73 @@
     "description": "AI prompts to create every piece of website copy you need — homepage, about page, service pages, FAQs, testimonials, CTAs, meta descriptions, and blog posts. Works for any business.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses"],
+    "industries": [
+      "all-businesses"
+    ],
     "format": "pdf",
     "fileName": "website-generator-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/website-generator-ai-toolkit.jpg",
+    "overview": {
+      "intro": "The Complete AI Website Copy Generator Kit is a library of 150 done-for-you AI prompts covering every page of your website, from the homepage and service pages to SEO, blogs, e-commerce, landing pages and professional copywriting frameworks. Written for UK small business owners, sole traders and marketers who want high-converting website copy without hiring an agency or learning copywriting from scratch. Every prompt works with ChatGPT, Claude, Gemini and any other AI tool.",
+      "sections": [
+        {
+          "title": "Homepage Copy",
+          "description": "15 prompts covering hero headlines and subheadlines, above-the-fold value propositions, services overview sections, social proof and trust, 'How It Works' sections, primary CTAs, About teasers, featured case studies, FAQ snippets, industry-specific rewrites, SEO titles and meta descriptions, positioning statements, 'Why Choose Us' comparisons, homepage video scripts and full copy audits."
+        },
+        {
+          "title": "Services & Product Pages",
+          "description": "15 prompts covering service page headlines and intros, features and benefits sections, process/'What to Expect' sections, pricing copy, service FAQs, service comparison pages, retainer and subscription pages, digital product and course sales pages, meta tags and schema, testimonial integration, internal linking, locality pages, objection handlers and new service launch pages."
+        },
+        {
+          "title": "About & Team Pages",
+          "description": "15 prompts covering founder stories, mission and values sections, team bios, 'Why We Are Different' sections, social impact and community copy, timelines and milestones, accreditations and awards, client guarantees, press mentions, remote/UK-wide service statements, sustainability statements, Contact page intros, partnerships pages, diversity and inclusion statements and full About page rewrites."
+        },
+        {
+          "title": "SEO Copy & Keywords",
+          "description": "15 prompts covering keyword research briefs, SEO-optimised service pages, blog post outlines, local SEO landing pages, FAQ schema content, title tag and meta description batches, internal linking strategy, content gap analysis, SEO product descriptions, LocalBusiness schema, pillar page strategy, competitor SEO analysis, voice search optimisation, image alt text and full SEO content audits."
+        },
+        {
+          "title": "CTAs & Conversion Copy",
+          "description": "15 prompts covering primary CTA button copy, pop-up and exit-intent copy, lead magnet and free trial sign-up pages, urgency and scarcity copy, social proof CTA integration, risk reversal and guarantees, multi-step forms, sticky header banners, thank you pages and upsells, pricing page CTAs, chatbot opening messages, scroll-triggered banners, A/B test variants and form micro-copy."
+        },
+        {
+          "title": "Blog & Content Writing",
+          "description": "15 prompts covering authority posts, list posts, thought leadership articles, case study posts, how-to tutorials, news and industry commentary, comparison posts, expert roundups, beginner's guides, statistics and research summaries, interview-format posts, seasonal posts, myth-busting posts, blog distribution copy and AI-assisted post refinement."
+        },
+        {
+          "title": "E-commerce Copy",
+          "description": "15 prompts covering complete product page copy sets, category page intros, bundle and cross-sell copy, checkout reassurance, delivery and returns pages, sale and discount copy, gift guides, subscription and repeat order copy, review request copy, out-of-stock and pre-order copy, size and fit guides, loyalty programme copy, homepage personalisation, store policies pages and wholesale/trade copy."
+        },
+        {
+          "title": "Landing Pages & Ads",
+          "description": "15 prompts covering PPC/Google Ads landing pages, Facebook and Instagram ad pages, webinar and event registration pages, competitor comparison pages, free download pages, retargeting pages, LinkedIn Ads pages, Responsive Search Ad copy, email campaign landing pages, coming soon pages, partner/affiliate pages, high-ticket service pages, A/B test plans and email-capture squeeze pages."
+        },
+        {
+          "title": "Bonus: Technical & Specialist Copy",
+          "description": "15 prompts covering plain English privacy summaries, cookie consent banners, 404 error pages, accessibility statements, site search messaging, App Store descriptions, Google Business Profile and LinkedIn Company Page copy, chatbot scripts and decision trees, newsletter sign-up micro-copy, breadcrumb and navigation copy, Article and HowTo schema, full-site copy audits, maintenance notifications and complete website copy packages."
+        },
+        {
+          "title": "Copywriting Frameworks & AI Tools",
+          "description": "15 prompts covering the AIDA, PAS, StoryBrand, Before-After-Bridge and 4 Ps frameworks, conversational copy rewriting, long-form vs short-form comparison, the inverted pyramid, emotional vs rational split tests, power words, voice and tone guides, copy testing frameworks, full-website AI prompt chains, neuromarketing principles and reusable copy brief templates."
+        }
+      ],
+      "whatsInside": [
+        "150 ready-to-use AI prompts organised across 10 clearly structured sections",
+        "Every prompt includes a real-world Example Use Case and a Pro Tip to get better results",
+        "Built-in SEO guidance throughout, plus copy for homepages, services, blogs, e-commerce, landing pages and ads",
+        "Written in plain English with UK terminology and spelling",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Small business owners and sole traders who need to write or refresh their own website copy",
+        "Freelancers and consultants who want a high-converting site without hiring a copywriter",
+        "E-commerce and online store owners optimising product, category and checkout pages",
+        "Marketers, web designers and agencies producing client website copy faster",
+        "Coaches, course creators and service providers building landing pages, lead magnets and sales pages"
+      ]
+    }
   },
   {
     "slug": "customer-service-response-ai-toolkit",
@@ -340,11 +1250,74 @@
     "description": "150 AI prompts across 10 sections covering complaints, enquiries, returns, reviews, retention, trade customers, e-commerce support, proactive service, and handling difficult situations.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses"],
+    "industries": [
+      "all-businesses"
+    ],
     "format": "pdf",
     "fileName": "customer-service-response-ai-toolkit.pdf",
-    "image": "",
-    "featured": true
+    "image": "/images/products/customer-service-response-ai-toolkit.jpg",
+    "featured": true,
+    "overview": {
+      "intro": "The Complete Customer Services Response AI Toolkit is a done-for-you library of 150 AI prompts that helps UK small businesses handle every customer interaction with confidence and care. It covers everything from complaints and refunds to reviews, retention, trade accounts, e-commerce support and the toughest difficult-customer situations. Every prompt is ready to paste into ChatGPT, Claude, Gemini or any other AI tool.",
+      "sections": [
+        {
+          "title": "Complaints & Issue Resolution",
+          "description": "15 prompts covering first responses, full apologies, complaints where fault is disputed or declined on policy grounds, escalation to management, aggressive or abusive complaints, social media complaints, proactive issue notifications, repeat and third-party complaints, legal threat responses, goodwill gestures and a customer-facing complaints process explainer."
+        },
+        {
+          "title": "Enquiries & General Support",
+          "description": "15 prompts covering general enquiries, product and service information, pricing and availability enquiries, pre-purchase questions, out-of-hours auto-responses, warranty enquiries, technical support first responses, chasing missing information, referral responses, signposting when you can't help, high-volume batch templates, accessibility requests, unsubscribe responses and post-purchase support introductions."
+        },
+        {
+          "title": "Returns, Refunds & Cancellations",
+          "description": "15 prompts covering return approvals and declines, refund and exchange confirmations, service and event cancellations, faulty or damaged products, delayed refunds, partial refunds, subscription pause options, chargeback and payment disputes, no-show policies, warranty claim rejections, Consumer Rights Act responses and gift returns."
+        },
+        {
+          "title": "Reviews & Reputation Management",
+          "description": "15 prompts covering review requests (post-purchase and after service recovery), responses to 5-star, negative, factually incorrect and fake reviews, profile response strategy, requesting updated reviews, feedback collection, video testimonial and case study requests, social proof campaigns, milestone celebrations, competitor review analysis and NPS follow-ups."
+        },
+        {
+          "title": "Customer Retention & Loyalty",
+          "description": "15 prompts covering onboarding sequences, win-back and re-engagement emails, milestone recognition, loyalty programmes, renewal reminders, VIP appreciation, satisfaction check-ins, referral requests, cross-sells, annual reviews, end-of-year thank-yous, experience surveys, pricing change communications and community invitations."
+        },
+        {
+          "title": "Trade Business Customer Service",
+          "description": "15 prompts covering trade quote follow-ups, fleet and bulk orders, installation booking and handover, trade delivery delays, account setup, price list and specification updates, credit applications, repeat order lead times, site visit bookings, account review meetings, trade complaints, year-end statements and trade product launches."
+        },
+        {
+          "title": "Digital & E-commerce Support",
+          "description": "15 prompts covering order confirmations, despatch and tracking, delivery problems, failed payments, account access and password resets, subscription billing queries, e-commerce review requests, digital download problems, subscription cancellations, chatbot-to-human escalation, API and integration support, outage communications, GDPR data requests, multi-channel consistency and seasonal high-volume template packs."
+        },
+        {
+          "title": "Proactive & Preventive Customer Service",
+          "description": "15 prompts covering service reminders, pre-appointment prep guides, usage tips and product education, account health checks, regulatory and compliance updates, weather and external disruption alerts, product recalls and safety alerts, new team member introductions, service improvement announcements, expiring card alerts, end-of-trial transitions, birthday emails, contact detail update requests, service pause notices and post-purchase care guides."
+        },
+        {
+          "title": "Bonus: AI Customer Service Productivity",
+          "description": "15 prompts covering response time optimisation, tone adjustment, sentiment analysis, FAQ and template library building, customer journey mapping, SLA and feedback theme audits, escalation decision frameworks, metrics dashboards, out-of-hours cover protocols, training scenario generators, policy simplification, complaint root cause analysis and customer service handbook sections."
+        },
+        {
+          "title": "Difficult Customers & Special Situations",
+          "description": "15 prompts covering chronic complainers, bereavement and personal tragedy, financial hardship, media and journalist enquiries, online trolling and harassment, language barriers, vulnerable customer recognition, false accusations, competitor win-back scripts, unrealistic expectations, simultaneous multiple complaints, data breach notifications, ending business relationships, staff protection from abusive customers and a complete difficult-scenario playbook."
+        }
+      ],
+      "whatsInside": [
+        "150 done-for-you customer service prompts across 10 sections",
+        "Every prompt includes a practical Pro Tip with real-world guidance on getting the best result",
+        "Built around UK customer service essentials including Consumer Rights Act 2015, GDPR and ICO data breach obligations",
+        "Written in plain English with UK terminology and spelling throughout",
+        "Bracketed placeholders make every prompt easy to personalise to your business",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "Print-ready PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Small business owners and sole traders who handle their own customer service",
+        "E-commerce and online retailers managing orders, returns and digital support",
+        "Trade and commercial businesses dealing with accounts, quotes and B2B customers",
+        "Service providers and subscription businesses focused on retention and loyalty",
+        "Anyone who wants to respond to complaints, reviews and difficult situations calmly and professionally using AI"
+      ]
+    }
   },
   {
     "slug": "business-audit-ai-toolkit",
@@ -352,7 +1325,9 @@
     "description": "A guided AI-powered self-assessment that helps you identify where your business could save the most time. Covers operations, marketing, customer service, finance, and administration.",
     "pricePence": 2700,
     "productType": "prompt-library",
-    "industries": ["all-businesses"],
+    "industries": [
+      "all-businesses"
+    ],
     "format": "pdf",
     "fileName": "business-audit-ai-toolkit.pdf",
     "image": ""

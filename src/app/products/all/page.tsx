@@ -5,7 +5,7 @@ export const metadata = {
   title: "All Products — SoloDeck",
 };
 
-const HERO_SLUG = "ultimate-small-business-ai-toolkit";
+const HERO_SLUG = "complete-small-business-ai-toolkit";
 
 export default function AllProductsPage() {
   const sorted = [...products].sort((a, b) => {

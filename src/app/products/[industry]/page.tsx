@@ -36,7 +36,7 @@ export default async function IndustryPage({ params }: Props) {
 
   // Sort: for "all-businesses", hero first then rest
   // For specific industries, industry-specific first, then all-businesses (hero first among those)
-  const HERO_SLUG = "ultimate-small-business-ai-toolkit";
+  const HERO_SLUG = "complete-small-business-ai-toolkit";
 
   const sortedIndustryProducts = [...products].sort((a, b) => {
     if (a.slug === HERO_SLUG) return -1;
