@@ -1115,6 +1115,7 @@
     "pricePence": 2700,
     "productType": "prompt-library",
     "industries": [
+      "wedding-planners",
       "all-businesses"
     ],
     "format": "pdf",
