@@ -95,14 +95,14 @@ export default async function ProductPage({ params }: Props) {
                   </span>
                 )}
               </div>
-              <h1 className="text-4xl font-bold text-white sm:text-5xl">
+              <h1 className="text-3xl font-bold text-white sm:text-4xl">
                 {product.name}
               </h1>
-              <p className="mt-4 text-lg text-slate-300 leading-relaxed">
+              <p className="mt-4 text-base text-slate-300 leading-relaxed">
                 {product.description}
               </p>
               {overview?.intro && (
-                <p className="mt-3 text-lg text-slate-300 leading-relaxed">
+                <p className="mt-3 text-base text-slate-300 leading-relaxed">
                   {overview.intro}
                 </p>
               )}
