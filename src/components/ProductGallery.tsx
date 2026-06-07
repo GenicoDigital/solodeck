@@ -22,7 +22,7 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
   return (
     <div>
       {/* Main image */}
-      <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-lg shadow-2xl">
+      <div className="relative aspect-[1000/1414] w-full overflow-hidden rounded-lg bg-white shadow-2xl">
         <Image
           src={active.src}
           alt={active.alt}
