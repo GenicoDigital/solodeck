@@ -33,7 +33,7 @@ export default function ProductCard({ item, type }: ProductCardProps) {
     <div className="group flex flex-col rounded-lg border border-border bg-card-bg p-4 transition-shadow hover:shadow-md">
       <Link href={href}>
         {hasImage ? (
-          <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md bg-gray-100">
+          <div className="relative mb-3 aspect-[1/1] w-full overflow-hidden rounded-md border-2 border-[#1a2332] bg-gray-100">
             <Image
               src={item.image}
               alt={item.name}
@@ -43,7 +43,7 @@ export default function ProductCard({ item, type }: ProductCardProps) {
             />
           </div>
         ) : (
-          <div className="mb-3 aspect-[1/1] w-full rounded-md bg-gray-100" />
+          <div className="mb-3 aspect-[1/1] w-full rounded-md border-2 border-[#1a2332] bg-gray-100" />
         )}
         {type === "bundle" && (
           <span className="mb-1 inline-block text-xs font-medium uppercase tracking-wide text-accent">
