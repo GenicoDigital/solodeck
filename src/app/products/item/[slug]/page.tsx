@@ -183,18 +183,17 @@ export default async function ProductPage({ params }: Props) {
                   className="flex flex-col rounded-lg border border-border bg-card-bg p-4"
                 >
                   {img ? (
-                    <div className="relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-100">
+                    <div className="relative mb-3 aspect-[3/4] w-full overflow-hidden rounded-md bg-gray-100">
                       <Image
                         src={p.image}
                         alt={p.name}
                         fill
                         className="object-cover"
-                        style={{ objectPosition: "center 25px" }}
                         sizes="(max-width: 640px) 100vw, 33vw"
                       />
                     </div>
                   ) : (
-                    <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+                    <div className="mb-3 aspect-[3/4] w-full rounded-md bg-gray-100" />
                   )}
                   <p className="mt-auto pt-3 text-right text-base font-semibold text-charcoal">
                     {formatPrice(p.pricePence)}

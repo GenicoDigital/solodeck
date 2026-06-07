@@ -33,26 +33,23 @@ export default function ProductCard({ item, type }: ProductCardProps) {
     <div className="group flex flex-col rounded-lg border border-border bg-card-bg p-4 transition-shadow hover:shadow-md">
       <Link href={href}>
         {hasImage ? (
-          <div className="relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-100">
+          <div className="relative mb-3 aspect-[3/4] w-full overflow-hidden rounded-md bg-gray-100">
             <Image
               src={item.image}
               alt={item.name}
               fill
-              className="object-cover" style={{ objectPosition: "center 25px" }}
+              className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         ) : (
-          <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+          <div className="mb-3 aspect-[3/4] w-full rounded-md bg-gray-100" />
         )}
         {type === "bundle" && (
           <span className="mb-1 inline-block text-xs font-medium uppercase tracking-wide text-accent">
             Bundle
           </span>
         )}
-        <p className="text-sm text-muted line-clamp-2">
-          {item.description}
-        </p>
       </Link>
       <p className="mt-auto pt-3 text-right text-base font-semibold text-foreground">
         {formatPrice(item.pricePence)}
