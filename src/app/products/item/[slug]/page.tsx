@@ -61,7 +61,7 @@ export default async function ProductPage({ params }: Props) {
     ...others.filter(hasImg),
     ...sameIndustry.filter((p) => !hasImg(p)),
     ...others.filter((p) => !hasImg(p)),
-  ].slice(0, 3);
+  ].slice(0, 4);
 
   return (
     <>
@@ -190,7 +190,7 @@ export default async function ProductPage({ params }: Props) {
                 <h2 className="mb-6 text-2xl font-semibold text-white">
                   You Might Also Like
                 </h2>
-                <div className="grid gap-6 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
                   {related.map((p) => {
                     const img = Boolean(p.image && p.image.length > 0);
                     return (
