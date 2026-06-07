@@ -688,60 +688,60 @@
     "fileName": "hr-people-management-ai-toolkit.pdf",
     "image": "/images/products/hr-people-management-ai-toolkit-v3.jpg",
     "overview": {
-      "intro": "The Complete HR & People Management AI Toolkit is a collection of 150 done-for-you AI prompts covering every aspect of HR and people management — from writing job advertisements and conducting structured interviews to managing performance, handling redundancy, building a people strategy, and measuring the ROI of HR investment. Designed for UK small businesses, it lets you simply replace the bracketed placeholders with your own details and paste the prompt into your AI tool of choice. It works with ChatGPT, Claude, Gemini, and any other AI assistant.",
+      "intro": "The Complete HR & People Management AI Toolkit is a collection of 150 done-for-you AI prompts built for UK HR teams, people managers, and small business owners. It covers the full employee lifecycle and back office — recruitment, employee relations, onboarding and development, performance, compliance, people strategy, growth, finance, and ready-to-use HR tools. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
       "sections": [
         {
           "title": "Recruitment & Hiring",
-          "description": "15 prompts covering job advertisements, candidate shortlisting and rejection, structured interview question sets, job offer letters, recruitment agency briefs, internal postings and promotions, reference requests, probationary reviews, graduate and apprentice campaigns, skills-based assessments, social media recruitment posts, counter-offers, diversity and inclusion hiring statements, onboarding welcome packs, and talent pipeline communications."
+          "description": "15 prompts covering job adverts, candidate shortlisting and rejections, structured interview question sets, offer letters, recruitment agency briefs, internal postings and promotions, reference requests, probationary reviews, graduate and apprentice campaigns, skills-based assessments, social recruitment posts, counter-offers, diversity and inclusion hiring statements, onboarding welcome packs, and talent-pipeline communications."
         },
         {
           "title": "Employee Relations & Communications",
-          "description": "15 prompts covering company-wide announcements, manager briefings for difficult conversations, employee surveys, redundancy consultation, flexible working responses, return to work interviews, performance improvement plans, grievance and disciplinary letters, absence management, recognition and reward, pay reviews, TUPE transfers, wellbeing and mental health, and leaver communications with exit interviews."
+          "description": "15 prompts covering company-wide announcements, manager briefings for difficult conversations, employee surveys, redundancy consultation, flexible-working responses, return-to-work interviews, performance improvement plans, grievance and disciplinary letters, absence management, recognition and reward, pay reviews, TUPE transfers, wellbeing and mental health, and leaver and exit-interview templates."
         },
         {
           "title": "Onboarding & Development",
-          "description": "20 prompts covering 90-day onboarding plans, induction checklists, buddy and mentor programmes, training needs analysis, line manager guides, skills matrices, L&D policies, succession planning, lunch and learn sessions, leadership development, 360-degree feedback, coaching frameworks, new manager communications, cross-training, career development conversations, secondments, qualification sponsorship, review preparation, and apprenticeship programmes."
+          "description": "20 prompts covering 90-day onboarding plans, induction checklists, buddy and mentor programmes, training needs analysis, line-manager guides, skills matrices, L&D policies, succession planning, lunch-and-learns, leadership development, 360-degree feedback, coaching frameworks, new-manager comms, cross-training, career-development conversations, secondments, qualification sponsorship, review prep, and apprenticeship programmes."
         },
         {
           "title": "Performance Management",
-          "description": "20 prompts covering annual review templates, SMART objectives, mid-year check-ins, performance feedback emails, high performer retention, performance management process guides, underperformance support plans, team reviews, bonus and incentive schemes, calibration, 1-2-1 templates, remote worker performance, end-of-year summaries, dismissal letters, objective-setting cascades, performance data analysis, away day agendas, values assessments, high-potential identification, and appeal processes."
+          "description": "20 prompts covering annual review templates, SMART objectives, mid-year check-ins, feedback emails, high-performer retention, performance-management process guides, underperformance support plans, team reviews, bonus and incentive schemes, calibration, 1-2-1 templates, remote and hybrid performance, end-of-year summaries, dismissal letters, objective-setting cascades, performance data analysis, away-day agendas, values assessments, high-potential identification, and appeals."
         },
         {
           "title": "Policy, Compliance & Legal",
-          "description": "20 prompts covering essential HR policy suites, GDPR and data protection, social media and acceptable use, whistleblowing, health and safety, hybrid and remote working, equal pay, maternity/paternity/shared parental leave, redundancy policy, anti-bribery, drug and alcohol, menopause at work, right to work checks, modern slavery, settlement agreements, carer's leave, neonatal care leave, reasonable adjustments, and night worker and working time compliance."
+          "description": "20 prompts covering essential HR policy suites, GDPR and data protection, social media and acceptable use, whistleblowing, health and safety, hybrid and remote working, equal pay, family leave, redundancy, anti-bribery, drug and alcohol, menopause at work, right-to-work checks, modern slavery, settlement agreements, carer's and neonatal care leave, reasonable adjustments, and working-time compliance."
         },
         {
           "title": "Strategy & Business Admin",
-          "description": "20 prompts covering people strategy, employer brand and EVP, organisational design and restructure, culture change, HR metrics and people analytics, TUPE and acquisition integration, HRIS business cases, seasonal workforce planning, employee share schemes, diversity and inclusion strategy, staff handbooks, zero hours contracts, HR budgets, multi-generational workforces, HR annual reports, HR function maturity assessments, recruitment cost analysis, remote onboarding, and supporting team members through personal difficulty."
+          "description": "20 prompts covering people strategy, employer brand and EVP, organisational design and restructure, culture change, HR metrics and people analytics, TUPE and acquisition integration, HRIS business cases, seasonal workforce planning, share schemes, diversity and inclusion strategy, staff handbooks, zero-hours contracts, HR budgets, multi-generational workforce comms, HR annual reports, function maturity assessments, recruitment cost analysis, remote onboarding, and supporting staff through personal difficulty."
         },
         {
           "title": "Business Strategy & Growth",
-          "description": "20 prompts covering the people section of a business plan, change management communication plans, manager effectiveness surveys, hybrid team ways of working agreements, new hire business cases, outsourcing vs in-house HR, strategy launch communications, key person risk plans, stakeholder communications, merger and acquisition people integration, job evaluation and pay banding, financial wellbeing programmes, international hiring and global mobility, job sharing proposals, long service awards, and team re-energising communications."
+          "description": "20 prompts covering the people section of a business plan, change-management plans, manager-effectiveness surveys, hybrid ways-of-working agreements, new-hire business cases, outsourcing vs in-house HR, strategy-launch comms, key-person risk, stakeholder comms, M&A people integration, job evaluation and pay banding, financial wellbeing, international hiring and global mobility, job sharing, long-service awards, and team re-energising comms."
         },
         {
           "title": "Financial Management & Profitability",
-          "description": "10 prompts covering HR cost analysis for the board, payroll budgets and forecasts, redundancy cost calculations, agency vs direct hire comparisons, benefits benchmarking, training ROI cases, pension scheme communications, salary benchmarking and pay review processes, financial cases for wellbeing investment, and restructure financial models with payback analysis."
+          "description": "10 prompts covering HR cost analysis for the board, payroll budgets and forecasts, redundancy cost models, agency vs direct-hire comparisons, benefits benchmarking, training ROI cases, pension communications, salary benchmarking and pay reviews, the financial case for wellbeing investment, and restructure financial models with payback analysis."
         },
         {
-          "title": "HR Tools & Templates",
-          "description": "10 prompts covering essential HR document sets for new businesses, disciplinary investigation report templates, TUPE consultation letters and employee liability information, job description templates, employment contract checklists, HR audit checklists for SMEs, guides to managing volunteers, employment status determination, managing sickness absence fairly, and conducting a lawful redundancy process."
+          "title": "HR Tools, Templates & Guides",
+          "description": "10 prompts covering complete HR document template sets for new businesses, disciplinary investigation report templates, TUPE consultation letters, job description templates, employment contract checklists, SME HR audit checklists, and guides to managing volunteers, employment status, sickness absence, and lawful redundancy."
         }
       ],
       "whatsInside": [
-        "150 done-for-you AI prompts across 9 sections covering recruitment, employee relations, onboarding, performance, compliance, strategy, growth, finance, and HR tools",
-        "Every prompt includes a pro tip, and key prompts include real-world example use cases",
-        "Built around current UK employment law, referencing GDPR, the Equality Act 2010, TUPE, the Working Time Regulations 1998, and recent legislation like the Carer's Leave Act 2023 and Neonatal Care (Leave and Pay) Act 2023",
+        "150 done-for-you AI prompts across 9 sections",
+        "Every prompt includes a Pro Tip with practical, real-world HR advice",
+        "Built around current UK employment law — GDPR, the Equality Act 2010, TUPE, the Working Time Regulations, and recent legislation like the Carer's Leave and Neonatal Care Acts",
         "Written in plain English with UK terminology and legal references",
         "Bracketed placeholders make every prompt easy to personalise",
         "Works with ChatGPT, Claude, Gemini, and any other AI tool",
         "Print-ready PDF — download once, use forever"
       ],
       "whoItsFor": [
-        "Solo HR managers running the people function single-handedly in a small or growing business",
+        "Solo HR managers running the people function single-handedly",
         "Line managers who handle people issues alongside their day job",
         "Small business owners and SME founders building and managing their team",
         "Office managers and operations leads responsible for HR admin and compliance",
-        "Anyone responsible for recruitment, performance, policies, or staff communications in a UK small business"
+        "Anyone responsible for recruitment, performance, policies, or staff communications in a UK business"
       ]
     }
   },
