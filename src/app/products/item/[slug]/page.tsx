@@ -196,7 +196,7 @@ export default async function ProductPage({ params }: Props) {
                   ) : (
                     <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
                   )}
-                  <p className="mt-auto pt-3 text-right text-lg font-semibold text-charcoal">
+                  <p className="mt-auto pt-3 text-right text-base font-semibold text-charcoal">
                     {formatPrice(p.pricePence)}
                   </p>
                   <Link href={`/products/item/${p.slug}`} className="mt-2">

@@ -54,7 +54,7 @@ export default function ProductCard({ item, type }: ProductCardProps) {
           {item.description}
         </p>
       </Link>
-      <p className="mt-auto pt-3 text-right text-lg font-semibold text-foreground">
+      <p className="mt-auto pt-3 text-right text-base font-semibold text-foreground">
         {formatPrice(item.pricePence)}
       </p>
       <button
