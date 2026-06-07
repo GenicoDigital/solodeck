@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products, formatPrice } from "@/lib/products";
-import { PRODUCT_TYPE_LABELS, INDUSTRY_LABELS } from "@/lib/types";
+import { PRODUCT_TYPE_LABELS } from "@/lib/types";
 import AddToCartButton from "@/components/AddToCartButton";
 
 interface Props {
@@ -12,6 +13,14 @@ export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
 
+/** Truncate to roughly the first `maxWords` words for the "What's Covered" cards. */
+function truncateWords(text: string, maxWords = 15): { text: string; truncated: boolean } {
+  const words = text.trim().split(/\s+/);
+  if (words.length <= maxWords) return { text, truncated: false };
+  const clipped = words.slice(0, maxWords).join(" ").replace(/[,.;:]+$/, "");
+  return { text: clipped, truncated: true };
+}
+
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
@@ -20,6 +29,22 @@ export default async function ProductPage({ params }: Props) {
 
   const hasImage = product.image && product.image.length > 0;
   const overview = product.overview;
+
+  // Related products: same-industry first, preferring finalised (has-image) products,
+  // then other finalised products, falling back to coming-soon stubs only if needed.
+  const hasImg = (p: typeof products[number]) => Boolean(p.image && p.image.length > 0);
+  const sameIndustry = products.filter(
+    (p) => p.slug !== product.slug && p.industries.some((i) => product.industries.includes(i))
+  );
+  const others = products.filter(
+    (p) => p.slug !== product.slug && !sameIndustry.includes(p)
+  );
+  const related = [
+    ...sameIndustry.filter(hasImg),
+    ...others.filter(hasImg),
+    ...sameIndustry.filter((p) => !hasImg(p)),
+    ...others.filter((p) => !hasImg(p)),
+  ].slice(0, 3);
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
@@ -40,7 +65,7 @@ export default async function ProductPage({ params }: Props) {
           <div className="aspect-[4/3] w-full rounded-lg bg-border" />
         )}
 
-        <div>
+        <div className="flex flex-col">
           <div className="mb-2 flex flex-wrap gap-2">
             <span className="text-xs font-medium uppercase tracking-wide text-accent">
               {PRODUCT_TYPE_LABELS[product.productType]}
@@ -54,27 +79,22 @@ export default async function ProductPage({ params }: Props) {
           <h1 className="text-3xl font-bold text-charcoal">
             {product.name}
           </h1>
-          <p className="mt-4 text-muted leading-relaxed">
+          <p className="mt-4 text-sm text-muted leading-relaxed">
             {product.description}
           </p>
+          {overview?.intro && (
+            <p className="mt-3 text-sm text-muted leading-relaxed">
+              {overview.intro}
+            </p>
+          )}
 
-          {/* Industries */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            {product.industries.map((industry) => (
-              <span
-                key={industry}
-                className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent"
-              >
-                {INDUSTRY_LABELS[industry]}
-              </span>
-            ))}
-          </div>
-
-          <p className="mt-6 text-3xl font-semibold text-charcoal">
-            {formatPrice(product.pricePence)}
-          </p>
-          <div className="mt-6">
-            <AddToCartButton slug={product.slug} type="product" />
+          <div className="mt-auto">
+            <p className="mt-6 text-3xl font-semibold text-charcoal">
+              {formatPrice(product.pricePence)}
+            </p>
+            <div className="mt-6">
+              <AddToCartButton slug={product.slug} type="product" />
+            </div>
           </div>
         </div>
       </div>
@@ -82,16 +102,6 @@ export default async function ProductPage({ params }: Props) {
       {/* Overview section */}
       {overview && (
         <div className="mt-16 space-y-12">
-          {/* Introduction */}
-          <div>
-            <h2 className="mb-4 text-2xl font-semibold text-charcoal">
-              About This Toolkit
-            </h2>
-            <p className="text-muted leading-relaxed">
-              {overview.intro}
-            </p>
-          </div>
-
           {/* What's Inside */}
           {overview.whatsInside.length > 0 && (
             <div>
@@ -116,19 +126,25 @@ export default async function ProductPage({ params }: Props) {
                 What&#39;s Covered
               </h2>
               <div className="grid gap-4 sm:grid-cols-2">
-                {overview.sections.map((section, i) => (
-                  <div
-                    key={i}
-                    className="rounded-lg border border-border bg-card-bg p-5"
-                  >
-                    <h3 className="mb-2 text-base font-semibold text-charcoal">
-                      {section.title}
-                    </h3>
-                    <p className="text-sm text-muted leading-relaxed">
-                      {section.description}
-                    </p>
-                  </div>
-                ))}
+                {overview.sections.map((section, i) => {
+                  const { text, truncated } = truncateWords(section.description, 15);
+                  return (
+                    <div
+                      key={i}
+                      className="rounded-lg border border-border bg-card-bg p-5"
+                    >
+                      <h3 className="mb-2 text-base font-semibold text-charcoal">
+                        {section.title}
+                      </h3>
+                      <p className="text-sm text-muted leading-relaxed">
+                        {text}
+                        {truncated && (
+                          <span className="text-gray-400"> and more...</span>
+                        )}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -149,6 +165,52 @@ export default async function ProductPage({ params }: Props) {
               </ul>
             </div>
           )}
+        </div>
+      )}
+
+      {/* You Might Also Like */}
+      {related.length > 0 && (
+        <div className="mt-20 border-t border-border pt-12">
+          <h2 className="mb-6 text-2xl font-semibold text-charcoal">
+            You Might Also Like
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-3">
+            {related.map((p) => {
+              const img = Boolean(p.image && p.image.length > 0);
+              return (
+                <div
+                  key={p.slug}
+                  className="flex flex-col rounded-lg border border-border bg-card-bg p-4"
+                >
+                  {img ? (
+                    <div className="relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-md bg-gray-100">
+                      <Image
+                        src={p.image}
+                        alt={p.name}
+                        fill
+                        className="object-cover"
+                        style={{ objectPosition: "center 25px" }}
+                        sizes="(max-width: 640px) 100vw, 33vw"
+                      />
+                    </div>
+                  ) : (
+                    <div className="mb-3 aspect-[4/3] w-full rounded-md bg-gray-100" />
+                  )}
+                  <h3 className="text-base font-semibold text-charcoal">
+                    {p.name}
+                  </h3>
+                  <p className="mt-1 text-lg font-semibold text-charcoal">
+                    {formatPrice(p.pricePence)}
+                  </p>
+                  <Link href={`/products/item/${p.slug}`} className="mt-auto pt-3">
+                    <span className="block rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-accent-hover">
+                      View Toolkit
+                    </span>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
