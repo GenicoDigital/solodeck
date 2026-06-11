@@ -19,9 +19,8 @@ export default function Home() {
                 AI Prompt Toolkits for Small Business
               </p>
               <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                Get More Done with AI.
-                <br />
-                Without the Learning Curve
+                <span className="block">Get More Done with AI.</span>
+                <span className="mt-4 block">Without the Learning Curve</span>
               </h1>
               <p className="mt-6 max-w-xl text-lg text-slate-300">
                 Ready-to-use prompt kits built for small businesses and sole
