@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import HeroPromptCards from "@/components/HeroPromptCards";
 import { getFeaturedProducts, bundles } from "@/lib/products";
 
 export default function Home() {
@@ -8,22 +9,37 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl">
-          Your AI-Powered Toolkit for Getting More Done
-        </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
-          Ready-to-use prompt kits, templates, and guides built for small
-          businesses and sole traders. No tech skills required — just
-          download and start saving time.
-        </p>
-        <Link
-          href="/products"
-          className="mt-8 inline-block rounded-md bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
-        >
-          Browse all products
-        </Link>
+      {/* Hero — split dark navy band */}
+      <section className="bg-[#1a2332]">
+        <div className="mx-auto flex min-h-[600px] max-w-6xl items-center px-6 py-20">
+          <div className="grid w-full items-center gap-12 md:grid-cols-2">
+            {/* Left: copy */}
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-accent">
+                AI Prompt Toolkits for Small Business
+              </p>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                Get More Done With AI — Without the Learning Curve
+              </h1>
+              <p className="mt-6 max-w-xl text-lg text-slate-300">
+                Ready-to-use prompt kits built for small businesses and sole
+                traders. Pick your toolkit, copy the prompts, and start saving
+                time today.
+              </p>
+              <Link
+                href="/products"
+                className="mt-8 inline-block rounded-md bg-accent px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-accent-hover"
+              >
+                Browse all products
+              </Link>
+            </div>
+
+            {/* Right: animated prompt cards (hidden on mobile) */}
+            <div className="hidden md:block">
+              <HeroPromptCards />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* How It Works */}
