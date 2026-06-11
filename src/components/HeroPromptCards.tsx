@@ -50,21 +50,17 @@ const PROMPTS: Prompt[] = [
 
 function Card({ p }: { p: Prompt }) {
   return (
-    <div className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-xl shadow-black/20">
-      <span className="text-xs font-semibold uppercase tracking-wide text-accent">
+    <div className="rounded-xl border-l-4 border-[#0d9488] bg-white p-6 shadow-2xl">
+      <span className="text-xs font-semibold uppercase tracking-widest text-accent">
         {p.section}
       </span>
-      <h3 className="mt-2 text-lg font-semibold leading-snug text-[#1a2332]">
-        {p.title}
-      </h3>
-      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-slate-600">
-        {p.body}
-      </p>
-      <div className="mt-auto flex items-start gap-2 pt-5">
+      <h3 className="mt-2 text-xl font-bold text-[#1a2332]">{p.title}</h3>
+      <p className="mt-3 text-sm leading-relaxed text-slate-600">{p.body}</p>
+      <div className="mt-4 flex items-start gap-2 border-t border-slate-100 pt-4">
         <span className="mt-0.5 shrink-0 rounded bg-accent/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">
           Pro Tip
         </span>
-        <span className="text-xs leading-relaxed text-accent">{p.proTip}</span>
+        <span className="text-sm leading-relaxed text-slate-600">{p.proTip}</span>
       </div>
     </div>
   );
@@ -81,25 +77,20 @@ export default function HeroPromptCards() {
   }, []);
 
   return (
-    <div className="relative ml-auto w-full max-w-md">
-      {/* Ghost cards behind for depth */}
-      <div className="absolute inset-0 translate-x-8 -translate-y-6 rotate-3 rounded-xl border border-slate-200 bg-white/60" />
-      <div className="absolute inset-0 translate-x-4 -translate-y-3 rotate-2 rounded-xl border border-slate-200 bg-white/80" />
-
-      {/* Front card — cross-fades through all prompts */}
-      <div className="relative h-[330px]">
-        {PROMPTS.map((p, i) => (
-          <div
-            key={i}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-              i === index ? "opacity-100" : "pointer-events-none opacity-0"
-            }`}
-            aria-hidden={i !== index}
-          >
-            <Card p={p} />
-          </div>
-        ))}
-      </div>
+    // All cards share one grid cell so the container sizes to the tallest card
+    // (no fixed height) while the cross-fade stays smooth with no layout jump.
+    <div className="grid w-full">
+      {PROMPTS.map((p, i) => (
+        <div
+          key={i}
+          className={`col-start-1 row-start-1 transition-opacity duration-700 ease-in-out ${
+            i === index ? "opacity-100" : "pointer-events-none opacity-0"
+          }`}
+          aria-hidden={i !== index}
+        >
+          <Card p={p} />
+        </div>
+      ))}
     </div>
   );
 }
