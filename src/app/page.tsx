@@ -12,9 +12,9 @@ export default function Home() {
       {/* Hero — split dark navy band */}
       <section className="bg-[#1a2332]">
         <div className="mx-auto flex min-h-[600px] max-w-6xl items-center px-6 py-20">
-          <div className="grid w-full items-center gap-12 md:grid-cols-2">
+          <div className="grid w-full items-stretch gap-12 md:grid-cols-2">
             {/* Left: copy */}
-            <div>
+            <div className="flex flex-col justify-center">
               <p className="text-sm font-semibold uppercase tracking-wide text-accent">
                 AI Prompt Toolkits for Small Business
               </p>

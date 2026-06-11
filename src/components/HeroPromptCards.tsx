@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Prompt {
   section: string;
@@ -48,47 +48,114 @@ const PROMPTS: Prompt[] = [
   },
 ];
 
-function Card({ p }: { p: Prompt }) {
+const DURATION = 9000; // ms per card, matches the scroll animation length
+
+function Entry({ p }: { p: Prompt }) {
   return (
-    <div className="rounded-xl border-l-4 border-[#0d9488] bg-white p-6 shadow-2xl">
-      <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-        {p.section}
-      </span>
-      <h3 className="mt-2 text-xl font-bold text-[#1a2332]">{p.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-slate-600">{p.body}</p>
-      <div className="mt-4 flex items-start gap-2 border-t border-slate-100 pt-4">
-        <span className="mt-0.5 shrink-0 rounded bg-accent/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">
-          Pro Tip
+    <div className="mb-6">
+      <p className="text-sm leading-relaxed text-slate-600">{p.body}</p>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">
+        <span className="font-semibold text-accent">Pro Tip </span>
+        {p.proTip}
+      </p>
+    </div>
+  );
+}
+
+function Card({ i, reduce }: { i: number; reduce: boolean }) {
+  const p = PROMPTS[i];
+  // Stack a few prompts so the content overflows the tall window and the
+  // teleprompter has something to scroll through.
+  const scrollPrompts = [0, 1, 2].map((n) => PROMPTS[(i + n) % PROMPTS.length]);
+  const winRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  // Measure the overflow and run a linear translateY scroll over the card's
+  // lifetime. Web Animations API avoids the CSS-var-in-keyframe timing issue.
+  useEffect(() => {
+    if (reduce) return;
+    const w = winRef.current;
+    const t = trackRef.current;
+    if (!w || !t) return;
+    const dist = Math.max(0, t.scrollHeight - w.clientHeight);
+    if (dist === 0) return;
+    const anim = t.animate(
+      [{ transform: "translateY(0)" }, { transform: `translateY(-${dist}px)` }],
+      { duration: DURATION, easing: "linear", fill: "forwards" }
+    );
+    return () => anim.cancel();
+  }, [reduce]);
+
+  return (
+    <div className="flex h-full flex-col rounded-xl border-l-4 border-[#0d9488] bg-white p-6 shadow-2xl">
+      {/* Fixed header */}
+      <div className="shrink-0">
+        <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+          {p.section}
         </span>
-        <span className="text-sm leading-relaxed text-slate-600">{p.proTip}</span>
+        <h3 className="mt-2 text-xl font-bold leading-snug text-[#1a2332]">
+          {p.title}
+        </h3>
+      </div>
+      <div className="mt-4 shrink-0 border-t border-slate-100" />
+
+      {/* Scrolling window */}
+      <div ref={winRef} className="relative mt-4 min-h-0 flex-1 overflow-hidden">
+        <div ref={trackRef}>
+          {scrollPrompts.map((sp, n) => (
+            <Entry key={n} p={sp} />
+          ))}
+        </div>
+        {/* Soft fade where new text emerges */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white to-transparent" />
       </div>
     </div>
   );
 }
 
 export default function HeroPromptCards() {
-  const [index, setIndex] = useState(0);
+  const [reduce, setReduce] = useState(false);
+  // Two persistent layers that cross-fade. The fading-out layer keeps its
+  // content (and scroll position); the fading-in layer remounts fresh.
+  const [layers, setLayers] = useState<[number, number]>([0, 0]);
+  const [keys, setKeys] = useState<[number, number]>([0, 0]);
+  const [front, setFront] = useState(0);
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (reduce.matches) return;
-    const id = setInterval(() => setIndex((i) => (i + 1) % PROMPTS.length), 3000);
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduce(mq.matches);
+    if (mq.matches) return;
+
+    let curFront = 0;
+    const id = setInterval(() => {
+      const back = curFront === 0 ? 1 : 0;
+      setLayers((prev) => {
+        const nextIdx = (prev[curFront] + 1) % PROMPTS.length;
+        const n: [number, number] = [...prev] as [number, number];
+        n[back] = nextIdx;
+        return n;
+      });
+      setKeys((prev) => {
+        const n: [number, number] = [...prev] as [number, number];
+        n[back] = n[back] + 1; // remount the incoming layer so its scroll restarts
+        return n;
+      });
+      setFront(back);
+      curFront = back;
+    }, DURATION);
     return () => clearInterval(id);
   }, []);
 
   return (
-    // All cards share one grid cell so the container sizes to the tallest card
-    // (no fixed height) while the cross-fade stays smooth with no layout jump.
-    <div className="grid w-full">
-      {PROMPTS.map((p, i) => (
+    <div className="relative h-full w-full">
+      {[0, 1].map((layer) => (
         <div
-          key={i}
-          className={`col-start-1 row-start-1 transition-opacity duration-700 ease-in-out ${
-            i === index ? "opacity-100" : "pointer-events-none opacity-0"
-          }`}
-          aria-hidden={i !== index}
+          key={layer}
+          className="absolute inset-0 transition-opacity duration-700 ease-out"
+          style={{ opacity: front === layer ? 1 : 0 }}
+          aria-hidden={front !== layer}
         >
-          <Card p={p} />
+          <Card key={keys[layer]} i={layers[layer]} reduce={reduce} />
         </div>
       ))}
     </div>
