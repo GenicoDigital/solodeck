@@ -48,7 +48,7 @@ const PROMPTS: Prompt[] = [
   },
 ];
 
-const DURATION = 9000; // ms per card, matches the scroll animation length
+const DURATION = 5000; // ms per card, matches the scroll animation length
 
 function Entry({ p }: { p: Prompt }) {
   return (
