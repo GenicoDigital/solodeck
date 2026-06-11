@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import PromptShowcase from "@/components/PromptShowcase";
 import { getFeaturedProducts, bundles } from "@/lib/products";
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
           Browse all products
         </Link>
       </section>
+
+      {/* See What's Inside — animated prompt showcase */}
+      <PromptShowcase />
 
       {/* How It Works */}
       <section className="border-y border-border bg-card-bg">
