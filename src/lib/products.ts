@@ -5,6 +5,18 @@ import bundlesData from "@/data/products/bundles.json";
 export const products: Product[] = productsData as Product[];
 export const bundles: Bundle[] = bundlesData as Bundle[];
 
+/**
+ * A product is "published" once it has a cover image. Unpublished stubs
+ * (no image, no overview) are hidden from listing/discovery surfaces but
+ * remain resolvable by slug so bundles and related-product links keep working.
+ */
+export function isPublished(p: Product): boolean {
+  return Boolean(p.image && p.image.length > 0);
+}
+
+/** Products shown in grids and the industry picker (excludes coming-soon stubs). */
+export const visibleProducts: Product[] = products.filter(isPublished);
+
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
 }
@@ -22,11 +34,11 @@ export function getItemBySlug(slug: string): (Product | Bundle) & { type: "produ
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter((p) => p.featured);
+  return visibleProducts.filter((p) => p.featured);
 }
 
 export function getProductsByIndustry(industry: Industry): Product[] {
-  return products.filter((p) => p.industries.includes(industry));
+  return visibleProducts.filter((p) => p.industries.includes(industry));
 }
 
 export function getBundlesByIndustry(industry: Industry): Bundle[] {
@@ -34,13 +46,13 @@ export function getBundlesByIndustry(industry: Industry): Bundle[] {
 }
 
 export function getProductsByType(type: ProductType): Product[] {
-  return products.filter((p) => p.productType === type);
+  return visibleProducts.filter((p) => p.productType === type);
 }
 
-/** Get all industries that have at least one product or bundle */
+/** Get all industries that have at least one published product or bundle */
 export function getActiveIndustries(): Industry[] {
   const industries = new Set<Industry>();
-  for (const p of products) {
+  for (const p of visibleProducts) {
     for (const i of p.industries) industries.add(i);
   }
   for (const b of bundles) {
@@ -58,7 +70,7 @@ export function getActiveIndustries(): Industry[] {
 /** Get all product types that have at least one product */
 export function getActiveProductTypes(): ProductType[] {
   const types = new Set<ProductType>();
-  for (const p of products) types.add(p.productType);
+  for (const p of visibleProducts) types.add(p.productType);
   return Array.from(types);
 }
 

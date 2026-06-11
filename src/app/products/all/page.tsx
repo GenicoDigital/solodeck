@@ -1,5 +1,5 @@
 import ProductFilters from "@/components/ProductFilters";
-import { products, bundles } from "@/lib/products";
+import { visibleProducts, bundles } from "@/lib/products";
 
 export const metadata = {
   title: "All Products — SoloDeck",
@@ -8,7 +8,7 @@ export const metadata = {
 const HERO_SLUG = "complete-small-business-ai-toolkit";
 
 export default function AllProductsPage() {
-  const sorted = [...products].sort((a, b) => {
+  const sorted = [...visibleProducts].sort((a, b) => {
     if (a.slug === HERO_SLUG) return -1;
     if (b.slug === HERO_SLUG) return 1;
     return 0;
