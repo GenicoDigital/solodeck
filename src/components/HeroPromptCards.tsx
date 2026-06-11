@@ -50,21 +50,21 @@ const PROMPTS: Prompt[] = [
 
 function Card({ p }: { p: Prompt }) {
   return (
-    <div className="flex h-full flex-col rounded-xl border border-white/10 bg-[#0f1923] p-6 shadow-xl shadow-black/30">
+    <div className="flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-xl shadow-black/20">
       <span className="text-xs font-semibold uppercase tracking-wide text-accent">
         {p.section}
       </span>
-      <h3 className="mt-2 text-lg font-semibold leading-snug text-white">
+      <h3 className="mt-2 text-lg font-semibold leading-snug text-[#1a2332]">
         {p.title}
       </h3>
-      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-slate-300">
+      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-slate-600">
         {p.body}
       </p>
       <div className="mt-auto flex items-start gap-2 pt-5">
-        <span className="mt-0.5 shrink-0 rounded bg-accent/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">
+        <span className="mt-0.5 shrink-0 rounded bg-accent/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">
           Pro Tip
         </span>
-        <span className="text-xs leading-relaxed text-slate-300">{p.proTip}</span>
+        <span className="text-xs leading-relaxed text-accent">{p.proTip}</span>
       </div>
     </div>
   );
@@ -83,8 +83,8 @@ export default function HeroPromptCards() {
   return (
     <div className="relative ml-auto w-full max-w-md">
       {/* Ghost cards behind for depth */}
-      <div className="absolute inset-0 translate-x-8 -translate-y-6 rotate-3 rounded-xl border border-white/10 bg-[#0f1923]/40" />
-      <div className="absolute inset-0 translate-x-4 -translate-y-3 rotate-2 rounded-xl border border-white/10 bg-[#0f1923]/70" />
+      <div className="absolute inset-0 translate-x-8 -translate-y-6 rotate-3 rounded-xl border border-slate-200 bg-white/60" />
+      <div className="absolute inset-0 translate-x-4 -translate-y-3 rotate-2 rounded-xl border border-slate-200 bg-white/80" />
 
       {/* Front card — cross-fades through all prompts */}
       <div className="relative h-[330px]">
