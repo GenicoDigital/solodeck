@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface Prompt {
   section: string;
@@ -9,51 +9,70 @@ interface Prompt {
   proTip: string;
 }
 
+// A cross-section of the Small Business AI Toolkit — one prompt per business area.
 const PROMPTS: Prompt[] = [
   {
-    section: "CLIENT COMMUNICATION",
-    title: "Write a welcome letter to a new client",
-    body: "Act as an experienced business owner. Write a warm, professional welcome letter to a new client for [your business name].",
-    proTip: "Clients who feel welcomed from day one are far less likely to cancel.",
+    section: "Customer Service",
+    title: "Reply to a customer complaint",
+    body: "Act as a calm, experienced customer service manager. Write a professional, empathetic reply to this complaint for [business name]: [paste complaint]. Acknowledge the issue and offer a clear next step.",
+    proTip: "Reply within the hour where you can — fast responses defuse most complaints before they escalate.",
   },
   {
-    section: "SOCIAL MEDIA",
-    title: "Write 5 Instagram captions for a product launch",
-    body: "Act as a social media copywriter. Write 5 Instagram captions for the launch of [product name] by [business name]. Mix tones: hype, storytelling, question-led.",
-    proTip: "Variety in caption style lets you test what resonates without repeating yourself.",
+    section: "Marketing & Content",
+    title: "Plan a month of social media posts",
+    body: "Act as a social media manager. Create a 30-day content calendar for [business name], a [industry] business — mixing promotions, tips, behind-the-scenes, and customer stories, with a caption for each.",
+    proTip: "Batch a month of posts in one sitting so you're never scrambling for something to publish.",
   },
   {
-    section: "CUSTOMER SERVICE",
-    title: "Respond to a negative review professionally",
-    body: "Act as a customer service manager. Write a professional, empathetic response to this negative review: [paste review].",
-    proTip: "Responding publicly to negative reviews often builds more trust than a perfect score.",
+    section: "Sales & Operations",
+    title: "Write a sales proposal that wins the deal",
+    body: "Act as a sales consultant. Write a persuasive proposal for [client name] covering their problem, your solution for [product/service], pricing options, and a clear call to action.",
+    proTip: "Lead with the client's problem, not your features — buyers respond to being understood.",
   },
   {
-    section: "HR & PEOPLE",
-    title: "Write a job description for a new hire",
-    body: "Act as an HR professional. Write a clear, engaging job description for a [job title] role at [company name]. Include responsibilities and requirements.",
-    proTip: "Job descriptions that lead with what the candidate gets attract better applicants.",
+    section: "Operations & Admin",
+    title: "Create a standard operating procedure",
+    body: "Act as an operations expert. Write a clear, step-by-step SOP for [task] at [business name] so anyone on the team can follow it and get a consistent result every time.",
+    proTip: "Documenting one task a week quietly turns a chaotic business into one that runs without you.",
   },
   {
-    section: "MARKETING",
-    title: "Write a promotional email for a seasonal sale",
-    body: "Act as an email marketing specialist. Write a promotional email for [business name] announcing [sale/offer] with a compelling subject line and strong CTA.",
-    proTip: "Write 5 subject line options and pick the best — it determines whether the email gets opened.",
+    section: "Website & SEO",
+    title: "Write homepage copy that converts",
+    body: "Act as a conversion copywriter. Write homepage copy for [business name] that leads with the customer's main problem, presents your offer, lists the key benefits, and ends with a strong call to action.",
+    proTip: "Your headline has about three seconds to earn a stay — make it about them, not you.",
   },
   {
-    section: "OPERATIONS",
-    title: "Create a 30-day onboarding checklist",
-    body: "Act as an operations manager. Create a structured 30-day onboarding checklist for a new [job title] covering week 1 essentials, training, and first project goals.",
-    proTip: "A structured onboarding plan significantly reduces early staff turnover.",
+    section: "Business Strategy",
+    title: "Run a competitor analysis",
+    body: "Act as a business strategist. Compare [competitor] with [business name] across pricing, positioning, and customer experience, then suggest three concrete ways we can stand out.",
+    proTip: "Look for what competitors ignore — the gaps are usually where your edge is.",
+  },
+  {
+    section: "Financial Management",
+    title: "Build a 12-month cash flow forecast",
+    body: "Act as a finance advisor. Build a simple 12-month cash flow forecast for [business name] from [monthly revenue] and [monthly costs], and flag the tightest months to plan for.",
+    proTip: "Forecasting cash monthly is the single habit that prevents most small-business crises.",
+  },
+  {
+    section: "HR & Team",
+    title: "Write a job description for your first hire",
+    body: "Act as an HR specialist. Write a clear, appealing job description for a [role] at [business name] — covering responsibilities, must-have skills, and why it's a great place to work.",
+    proTip: "Lead with what the hire will gain — the best candidates are choosing you too.",
   },
 ];
 
-const DURATION = 3000; // ms per card, matches the scroll animation length
+const SPEED = 50; // px per second for the single continuous scroll
 
 function Entry({ p }: { p: Prompt }) {
   return (
-    <div className="mb-6">
-      <p className="text-sm leading-relaxed text-slate-600">{p.body}</p>
+    <div className="mb-7">
+      <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+        {p.section}
+      </span>
+      <h4 className="mt-1 text-base font-bold leading-snug text-[#1a2332]">
+        {p.title}
+      </h4>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.body}</p>
       <p className="mt-2 text-sm leading-relaxed text-slate-600">
         <span className="font-semibold text-accent">Pro Tip </span>
         {p.proTip}
@@ -62,102 +81,51 @@ function Entry({ p }: { p: Prompt }) {
   );
 }
 
-function Card({ i, reduce }: { i: number; reduce: boolean }) {
-  const p = PROMPTS[i];
-  // Stack a few prompts so the content overflows the tall window and the
-  // teleprompter has something to scroll through.
-  const scrollPrompts = [0, 1, 2].map((n) => PROMPTS[(i + n) % PROMPTS.length]);
-  const winRef = useRef<HTMLDivElement>(null);
+export default function HeroPromptCards() {
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // Measure the overflow and run a linear translateY scroll over the card's
-  // lifetime. Web Animations API avoids the CSS-var-in-keyframe timing issue.
+  // One continuous, seamless loop: the selection is rendered twice and we scroll
+  // up by exactly one set, so the wrap back to the start is invisible — no card
+  // switching, no visible reset.
   useEffect(() => {
-    if (reduce) return;
-    const w = winRef.current;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const t = trackRef.current;
-    if (!w || !t) return;
-    const dist = Math.max(0, t.scrollHeight - w.clientHeight);
-    if (dist === 0) return;
+    if (!t) return;
+    const setH = t.scrollHeight / 2; // one of the two identical sets
+    if (setH <= 0) return;
     const anim = t.animate(
-      [{ transform: "translateY(0)" }, { transform: `translateY(-${dist}px)` }],
-      { duration: DURATION, easing: "linear", fill: "forwards" }
+      [{ transform: "translateY(0)" }, { transform: `translateY(-${setH}px)` }],
+      { duration: (setH / SPEED) * 1000, easing: "linear", iterations: Infinity }
     );
     return () => anim.cancel();
-  }, [reduce]);
+  }, []);
 
   return (
-    <div className="flex h-full flex-col rounded-xl border-l-4 border-[#0d9488] bg-white p-6 shadow-2xl">
+    // The card is absolutely positioned so its tall scroll content doesn't
+    // inflate the column height — it fills the height set by the left column.
+    <div className="relative h-full w-full">
+      <div className="absolute inset-0 flex flex-col rounded-xl border-l-4 border-[#0d9488] bg-white p-6 shadow-2xl">
       {/* Fixed header */}
       <div className="shrink-0">
         <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-          {p.section}
+          Small Business AI Toolkit
         </span>
         <h3 className="mt-2 text-xl font-bold leading-snug text-[#1a2332]">
-          {p.title}
+          150 prompts, ready to use
         </h3>
       </div>
       <div className="mt-4 shrink-0 border-t border-slate-100" />
 
-      {/* Scrolling window */}
-      <div ref={winRef} className="relative mt-4 min-h-0 flex-1 overflow-hidden">
+      {/* Single continuous scroll */}
+      <div className="relative mt-4 min-h-0 flex-1 overflow-hidden">
         <div ref={trackRef}>
-          {scrollPrompts.map((sp, n) => (
-            <Entry key={n} p={sp} />
+          {[...PROMPTS, ...PROMPTS].map((p, n) => (
+            <Entry key={n} p={p} />
           ))}
         </div>
-        {/* Soft fade where new text emerges */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent" />
       </div>
-    </div>
-  );
-}
-
-export default function HeroPromptCards() {
-  const [reduce, setReduce] = useState(false);
-  // Two persistent layers that cross-fade. The fading-out layer keeps its
-  // content (and scroll position); the fading-in layer remounts fresh.
-  const [layers, setLayers] = useState<[number, number]>([0, 0]);
-  const [keys, setKeys] = useState<[number, number]>([0, 0]);
-  const [front, setFront] = useState(0);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReduce(mq.matches);
-    if (mq.matches) return;
-
-    let curFront = 0;
-    const id = setInterval(() => {
-      const back = curFront === 0 ? 1 : 0;
-      setLayers((prev) => {
-        const nextIdx = (prev[curFront] + 1) % PROMPTS.length;
-        const n: [number, number] = [...prev] as [number, number];
-        n[back] = nextIdx;
-        return n;
-      });
-      setKeys((prev) => {
-        const n: [number, number] = [...prev] as [number, number];
-        n[back] = n[back] + 1; // remount the incoming layer so its scroll restarts
-        return n;
-      });
-      setFront(back);
-      curFront = back;
-    }, DURATION);
-    return () => clearInterval(id);
-  }, []);
-
-  return (
-    <div className="relative h-full w-full">
-      {[0, 1].map((layer) => (
-        <div
-          key={layer}
-          className="absolute inset-0 transition-opacity duration-700 ease-out"
-          style={{ opacity: front === layer ? 1 : 0 }}
-          aria-hidden={front !== layer}
-        >
-          <Card key={keys[layer]} i={layers[layer]} reduce={reduce} />
-        </div>
-      ))}
+      </div>
     </div>
   );
 }
