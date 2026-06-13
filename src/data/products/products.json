@@ -69,7 +69,7 @@
   {
     "slug": "accountants-bookkeepers-ai-toolkit",
     "name": "The Complete Accountants & Bookkeepers AI Toolkit",
-    "description": "AI prompts built for accountants, bookkeepers, and finance professionals — coming soon.",
+    "description": "AI prompts for accountants, bookkeepers, and finance professionals — client communication, bookkeeping, tax and compliance, practice management, and business advisory. Works with ChatGPT, Claude & Gemini.",
     "pricePence": 2700,
     "productType": "prompt-library",
     "industries": [
@@ -77,7 +77,48 @@
     ],
     "format": "pdf",
     "fileName": "accountants-bookkeepers-ai-toolkit.pdf",
-    "image": ""
+    "image": "/images/products/accountants-bookkeepers-ai-toolkit-v1.jpg",
+    "overview": {
+      "intro": "The Complete Accountants & Bookkeepers AI Toolkit is a collection of 121 done-for-you AI prompts built for UK accountants, bookkeepers, and finance professionals. It covers client communication, bookkeeping and accounts, tax and compliance, practice management, and business advisory and growth. Every prompt is written in plain English and works with ChatGPT, Claude, Gemini, and any other AI tool.",
+      "sections": [
+        {
+          "title": "Client Communication",
+          "description": "23 prompts covering new-client welcome and engagement letters, fee-increase and year-end accounts reminders, late-document chasers, VAT registration and Making Tax Digital updates, tax-return and tax-saving summaries, capital gains and succession-planning letters, HMRC enquiry support, quarterly review agendas, disengagement letters, and adviser referrals."
+        },
+        {
+          "title": "Bookkeeping & Accounts",
+          "description": "21 prompts covering month-end and year-end checklists, bank reconciliation, accounts receivable/payable and credit control, chart-of-accounts setup, payroll processing, fixed-asset and petty-cash policies, cash flow forecasts, management accounts packs, dividends and directors' loan accounts, software setup, error logs, and prepayments and accruals."
+        },
+        {
+          "title": "Tax & Compliance",
+          "description": "31 prompts covering corporation tax and self-assessment, VAT, personal and inheritance tax planning, R&D tax credits, IR35 and off-payroll working, P11D and benefits in kind, Making Tax Digital for Income Tax, CIS, capital allowances, property and landlord tax, PAYE compliance, business asset disposal relief, crypto-asset tax, HMRC time-to-pay, and investigation defence."
+        },
+        {
+          "title": "Practice Management",
+          "description": "21 prompts covering client segmentation and profitability, pricing and packaging, onboarding, marketing and LinkedIn plans, referral programmes, staff performance reviews, tenders and proposals, AML policies, complaint handling, quality control, CPD plans, technology stack, succession planning, and AI adoption."
+        },
+        {
+          "title": "Business Advisory & Growth",
+          "description": "25 prompts covering business health checks, financial ratio analysis, profit improvement, budgets and forecasts, KPI dashboards and board packs, valuation and exit planning, funding options, working capital, scenario planning, due diligence, outsourced-FD proposals, cloud-accounting migration, growth strategy, and going-concern assessments."
+        }
+      ],
+      "whatsInside": [
+        "121 done-for-you AI prompts across 5 sections",
+        "Every prompt includes a Pro Tip with practical, real-world advice for UK practice",
+        "Built around UK tax and compliance — HMRC, VAT, Making Tax Digital, IR35, CIS, corporation tax, and self-assessment",
+        "Written in plain English with UK terminology",
+        "Bracketed placeholders make every prompt easy to personalise",
+        "Works with ChatGPT, Claude, Gemini, and any other AI tool",
+        "53-page PDF — download once, use forever"
+      ],
+      "whoItsFor": [
+        "Accountants in practice serving small-business and personal-tax clients",
+        "Bookkeepers managing day-to-day records, VAT, and payroll for clients",
+        "Sole practitioners and small firms wanting to scale without adding headcount",
+        "Practice owners handling pricing, onboarding, compliance, and growth",
+        "Finance professionals who want to use AI to save time without being technical"
+      ]
+    }
   },
   {
     "slug": "coaching-consultancy-ai-toolkit",
