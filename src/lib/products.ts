@@ -14,8 +14,10 @@ export function isPublished(p: Product): boolean {
   return Boolean(p.image && p.image.length > 0);
 }
 
-/** Products shown in grids and the industry picker (excludes coming-soon stubs). */
-export const visibleProducts: Product[] = products.filter(isPublished);
+/** Products shown in grids and the industry picker (excludes coming-soon stubs), sorted A–Z by name. */
+export const visibleProducts: Product[] = products
+  .filter(isPublished)
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);

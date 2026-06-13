@@ -34,23 +34,9 @@ export default async function IndustryPage({ params }: Props) {
       )
     : [];
 
-  // Sort: for "all-businesses", hero first then rest
-  // For specific industries, industry-specific first, then all-businesses (hero first among those)
-  const HERO_SLUG = "complete-small-business-ai-toolkit";
-
-  const sortedIndustryProducts = [...products].sort((a, b) => {
-    if (a.slug === HERO_SLUG) return -1;
-    if (b.slug === HERO_SLUG) return 1;
-    return 0;
-  });
-
-  const sortedAllBusinessProducts = [...allBusinessProducts].sort((a, b) => {
-    if (a.slug === HERO_SLUG) return -1;
-    if (b.slug === HERO_SLUG) return 1;
-    return 0;
-  });
-
-  const combinedProducts = [...sortedIndustryProducts, ...sortedAllBusinessProducts];
+  // Industry-specific products first, then "all-businesses" products.
+  // Each group is already A–Z (inherited from the alphabetically-sorted visibleProducts).
+  const combinedProducts = [...products, ...allBusinessProducts];
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">

@@ -7,7 +7,9 @@ export const metadata = {
 };
 
 export default function ProductsPage() {
-  const industries = getActiveIndustries();
+  // "All Businesses" is intentionally excluded — the "browse all products"
+  // link below covers it.
+  const industries = getActiveIndustries().filter((i) => i !== "all-businesses");
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">
