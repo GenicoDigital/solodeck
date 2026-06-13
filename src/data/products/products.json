@@ -871,9 +871,7 @@
     "pricePence": 2700,
     "productType": "prompt-library",
     "industries": [
-      "all-businesses",
-      "accountants-bookkeepers",
-      "coaches-consultants"
+      "all-businesses"
     ],
     "format": "pdf",
     "fileName": "professional-services-ai-toolkit.pdf",
