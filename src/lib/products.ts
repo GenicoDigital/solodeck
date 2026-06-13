@@ -14,10 +14,22 @@ export function isPublished(p: Product): boolean {
   return Boolean(p.image && p.image.length > 0);
 }
 
-/** Products shown in grids and the industry picker (excludes coming-soon stubs), sorted A–Z by name. */
+/**
+ * Sort key that ignores the shared "The Complete" prefix and a leading "AI"
+ * qualifier, so toolkits order by their actual subject — e.g. "The Complete AI
+ * Email Assistant Toolkit" sorts under E (Email), not A (AI).
+ */
+function sortName(name: string): string {
+  return name
+    .replace(/^The Complete\s+/i, "")
+    .replace(/^AI\s+/i, "")
+    .toLowerCase();
+}
+
+/** Products shown in grids and the industry picker (excludes coming-soon stubs), sorted A–Z by subject. */
 export const visibleProducts: Product[] = products
   .filter(isPublished)
-  .sort((a, b) => a.name.localeCompare(b.name));
+  .sort((a, b) => sortName(a.name).localeCompare(sortName(b.name)));
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
