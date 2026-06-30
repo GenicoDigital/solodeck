@@ -1,4 +1,4 @@
-import { Product, Bundle, Industry, ProductType } from "./types";
+import { Product, Bundle, Industry, ProductType, INDUSTRY_LABELS } from "./types";
 import productsData from "@/data/products/products.json";
 import bundlesData from "@/data/products/bundles.json";
 
@@ -72,11 +72,13 @@ export function getActiveIndustries(): Industry[] {
   for (const b of bundles) {
     for (const i of b.industries) industries.add(i);
   }
-  // Put "all-businesses" first, then sort the rest alphabetically
+  // Put "all-businesses" first, then sort the rest alphabetically by display
+  // label (not slug — slugs like "retail" / "salons-beauty" don't match their
+  // labels "Ecommerce & Retail" / "Beauty & Aesthetics").
   const sorted = Array.from(industries).sort((a, b) => {
     if (a === "all-businesses") return -1;
     if (b === "all-businesses") return 1;
-    return a.localeCompare(b);
+    return INDUSTRY_LABELS[a].localeCompare(INDUSTRY_LABELS[b]);
   });
   return sorted;
 }
