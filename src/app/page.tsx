@@ -1,11 +1,10 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import HeroPromptCards from "@/components/HeroPromptCards";
-import { getFeaturedProducts, bundles } from "@/lib/products";
+import { getFeaturedProducts } from "@/lib/products";
 
 export default function Home() {
   const featured = getFeaturedProducts();
-  const featuredBundles = bundles.filter((b) => b.featured);
 
   return (
     <div>
@@ -104,19 +103,28 @@ export default function Home() {
         </section>
       )}
 
-      {/* Bundles */}
-      {featuredBundles.length > 0 && (
-        <section className="mx-auto max-w-6xl px-6 pb-16">
-          <h2 className="mb-6 text-2xl font-semibold text-charcoal">
-            Bundles — Save More
+      {/* Multi-buy offer — any 3 toolkits for £60 */}
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="overflow-hidden rounded-2xl bg-[#1a2332] px-8 py-12 text-center sm:px-12">
+          <span className="text-sm font-semibold uppercase tracking-wide text-accent">
+            Best Value
+          </span>
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+            Buy Any 3 Toolkits for £60
           </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredBundles.map((bundle) => (
-              <ProductCard key={bundle.slug} item={bundle} type="bundle" />
-            ))}
-          </div>
-        </section>
-      )}
+          <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
+            Mix and match any three toolkits and pay a flat £60 — that&apos;s £21
+            off the regular price. The discount is applied automatically in your
+            cart.
+          </p>
+          <Link
+            href="/products/all"
+            className="mt-8 inline-block rounded-md bg-accent px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-accent-hover"
+          >
+            Browse all toolkits
+          </Link>
+        </div>
+      </section>
 
       {/* Who It's For */}
       <section className="border-y border-border bg-card-bg">

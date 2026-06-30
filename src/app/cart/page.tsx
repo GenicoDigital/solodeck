@@ -83,12 +83,12 @@ export default function CartPage() {
         ))}
       </div>
 
-      {/* Discount notice */}
-      {!summary.discountApplied && summary.standaloneCount > 0 && (
+      {/* Offer notice — prompt toward the next "3 for £60" group */}
+      {summary.itemsToNextDeal > 0 && (
         <p className="mt-4 text-sm text-accent">
-          {summary.standaloneCount < 3
-            ? `Add ${3 - summary.standaloneCount} more standalone product${3 - summary.standaloneCount === 1 ? "" : "s"} to get 10% off!`
-            : null}
+          {summary.discountApplied
+            ? `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to unlock another 3 for £60!`
+            : `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to get any 3 for £60!`}
         </p>
       )}
 
@@ -101,7 +101,10 @@ export default function CartPage() {
               <span>{formatPrice(summary.standaloneSubtotal)}</span>
             </div>
             <div className="flex justify-between text-accent font-medium">
-              <span>10% discount (3+ items)</span>
+              <span>
+                3 for £60 offer
+                {summary.dealGroups > 1 ? ` (×${summary.dealGroups})` : ""}
+              </span>
               <span>-{formatPrice(summary.discountAmount)}</span>
             </div>
           </>

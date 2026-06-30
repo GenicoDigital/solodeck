@@ -94,7 +94,7 @@ Products are defined in `src/data/products/products.json` and bundles in `src/da
 ### Discount Logic
 
 - Bundles have a set discounted price (not calculated from individual items)
-- Buying 3+ standalone products (total quantity, not unique items) triggers 10% off those standalone items
+- Multi-buy offer: any 3 standalone toolkits cost a flat £60, applied once per complete group of 3 (by total quantity, not unique items). The priciest items are grouped first, and a group is never charged more than its natural total (no upcharge on sub-£60 trios). Leftover items below a full group of 3 are at full price.
 - Bundles are excluded from both the count and the discount
 - No coupon/promo code system initially
 
