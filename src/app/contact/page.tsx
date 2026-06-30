@@ -23,6 +23,9 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         {/* Form card */}
         <div className="mx-auto max-w-lg rounded-xl bg-white p-8 shadow-md sm:p-10">
+          <h2 className="mb-6 text-xl font-semibold text-[#1a2332]">
+            Send us a message
+          </h2>
           <form className="space-y-5">
             <div>
               <label htmlFor="name" className="mb-1 block text-sm font-medium text-charcoal">
