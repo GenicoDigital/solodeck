@@ -43,16 +43,16 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="border-y border-border bg-card-bg">
+      <section className="border-y border-border bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="mb-10 text-center text-2xl font-semibold text-[#1a2332]">
             How It Works
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {/* Step 1 — Pick your toolkit */}
-            <div className="rounded-xl border-t-4 border-accent bg-white p-8 shadow-md">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-8 text-center shadow-md">
               <svg
-                className="h-10 w-10 text-accent"
+                className="mx-auto h-10 w-10 text-accent"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
@@ -65,7 +65,7 @@ export default function Home() {
                   d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
                 />
               </svg>
-              <p className="mt-4 text-5xl font-bold text-accent opacity-20">1</p>
+              <p className="mt-4 text-5xl font-bold text-accent opacity-40">1</p>
               <h3 className="mt-2 text-lg font-bold text-[#1a2332]">
                 Pick your toolkit
               </h3>
@@ -76,9 +76,9 @@ export default function Home() {
             </div>
 
             {/* Step 2 — Pay and download */}
-            <div className="rounded-xl border-t-4 border-accent bg-white p-8 shadow-md">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-8 text-center shadow-md">
               <svg
-                className="h-10 w-10 text-accent"
+                className="mx-auto h-10 w-10 text-accent"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
@@ -91,7 +91,7 @@ export default function Home() {
                   d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
                 />
               </svg>
-              <p className="mt-4 text-5xl font-bold text-accent opacity-20">2</p>
+              <p className="mt-4 text-5xl font-bold text-accent opacity-40">2</p>
               <h3 className="mt-2 text-lg font-bold text-[#1a2332]">
                 Pay and download
               </h3>
@@ -102,9 +102,9 @@ export default function Home() {
             </div>
 
             {/* Step 3 — Start saving time */}
-            <div className="rounded-xl border-t-4 border-accent bg-white p-8 shadow-md">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-8 text-center shadow-md">
               <svg
-                className="h-10 w-10 text-accent"
+                className="mx-auto h-10 w-10 text-accent"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
@@ -117,7 +117,7 @@ export default function Home() {
                   d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
                 />
               </svg>
-              <p className="mt-4 text-5xl font-bold text-accent opacity-20">3</p>
+              <p className="mt-4 text-5xl font-bold text-accent opacity-40">3</p>
               <h3 className="mt-2 text-lg font-bold text-[#1a2332]">
                 Start saving time
               </h3>
