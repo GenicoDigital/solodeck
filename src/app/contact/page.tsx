@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 export const metadata = {
   title: "Contact — SoloDeck",
 };
@@ -26,56 +28,7 @@ export default function ContactPage() {
           <h2 className="mb-6 text-xl font-semibold text-[#1a2332]">
             Send us a message
           </h2>
-          <form className="space-y-5">
-            <div>
-              <label htmlFor="name" className="mb-1 block text-sm font-medium text-charcoal">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full rounded-md border border-border bg-card-bg px-4 py-2.5 text-sm text-foreground placeholder:text-muted/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="mb-1 block text-sm font-medium text-charcoal">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full rounded-md border border-border bg-card-bg px-4 py-2.5 text-sm text-foreground placeholder:text-muted/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="mb-1 block text-sm font-medium text-charcoal">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                className="w-full rounded-md border border-border bg-card-bg px-4 py-2.5 text-sm text-foreground placeholder:text-muted/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
-                placeholder="Tell us how we can help..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-md bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
-            >
-              Send message
-            </button>
-          </form>
-          <p className="mt-4 text-center text-sm text-slate-500">
-            We aim to respond within one working day.
-          </p>
+          <ContactForm />
         </div>
 
         {/* Contact options row */}
