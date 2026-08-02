@@ -95,7 +95,7 @@ export default function CartPage() {
       {/* Bundle deal banner */}
       {summary.discountApplied && (
         <div className="mt-4 rounded-md bg-accent/10 px-4 py-3 text-sm font-semibold text-accent">
-          Bundle deal applied — saving {formatPrice(summary.discountAmount)}!
+          Bundle deal applied — saving £{Math.round(summary.discountAmount / 100)}!
         </div>
       )}
 
