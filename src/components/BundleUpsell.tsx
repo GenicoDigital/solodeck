@@ -29,7 +29,7 @@ export default function BundleUpsell({ cartSlugs }: BundleUpsellProps) {
         Add 1 more toolkit to get any 3 for £60 — saving £21!
       </p>
 
-      <p className="mt-4 text-sm text-slate-500">
+      <p className="mt-4 text-sm font-bold text-slate-500">
         Suggested toolkits to complete your bundle:
       </p>
 
