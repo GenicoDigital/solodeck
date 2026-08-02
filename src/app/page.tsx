@@ -145,25 +145,60 @@ export default function Home() {
       )}
 
       {/* Multi-buy offer — any 3 toolkits for £60 */}
-      <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="overflow-hidden rounded-2xl bg-[#1a2332] px-8 py-12 text-center sm:px-12">
+      <section className="bg-[#1a2332]">
+        <div className="mx-auto max-w-6xl px-6 py-16 text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent">
             Best Value
           </span>
           <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-            Buy Any 3 Toolkits for £60
+            Stock Up and Save
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">
-            Mix and match any three toolkits and pay a flat £60 — that&apos;s £21
-            off the regular price. The discount is applied automatically in your
-            cart.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
+            Buy any 3 toolkits for just £60 — that&apos;s a saving of £21. Mix and
+            match across any industry.
           </p>
+
+          {/* Benefit points */}
+          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
+            {[
+              "Any 3 toolkits from our full range",
+              "Saving of £21 vs buying individually",
+              "Instant download — no account needed",
+            ].map((benefit) => (
+              <div
+                key={benefit}
+                className="flex items-start justify-center gap-2 text-left"
+              >
+                <svg
+                  className="mt-0.5 h-5 w-5 shrink-0 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+                <span className="text-sm text-white">{benefit}</span>
+              </div>
+            ))}
+          </div>
+
           <Link
             href="/products/all"
-            className="mt-8 inline-block rounded-md bg-accent px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-accent-hover"
+            className="mt-10 inline-block rounded-md bg-accent px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-accent-hover"
           >
             Browse all toolkits
           </Link>
+          <p className="mt-4 text-sm text-slate-400">
+            <Link href="/products/all" className="hover:text-slate-200">
+              Prefer a curated bundle? View our ready-made bundles →
+            </Link>
+          </p>
         </div>
       </section>
 

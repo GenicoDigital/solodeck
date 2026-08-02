@@ -92,6 +92,13 @@ export default function CartPage() {
         </p>
       )}
 
+      {/* Bundle deal banner */}
+      {summary.discountApplied && (
+        <div className="mt-4 rounded-md bg-accent/10 px-4 py-3 text-sm font-semibold text-accent">
+          Bundle deal applied — saving {formatPrice(summary.discountAmount)}!
+        </div>
+      )}
+
       {/* Summary */}
       <div className="mt-6 space-y-2 text-sm">
         {summary.discountApplied && (
