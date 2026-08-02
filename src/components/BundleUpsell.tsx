@@ -29,7 +29,11 @@ export default function BundleUpsell({ cartSlugs }: BundleUpsellProps) {
         Add 1 more toolkit to get any 3 for £60 — saving £21!
       </p>
 
-      <div className="mt-4 flex gap-3 overflow-x-auto pb-1">
+      <p className="mt-4 text-sm text-slate-500">
+        Suggested toolkits to complete your bundle:
+      </p>
+
+      <div className="mt-2 flex gap-3 overflow-x-auto pb-1">
         {suggestions.map((product) => (
           <div
             key={product.slug}

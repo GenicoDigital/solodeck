@@ -37,8 +37,11 @@ const POPULAR_SLUGS = [
   "customer-service-response-ai-toolkit",
 ];
 
+/** Number of toolkits suggested in the cart bundle-completion upsell. */
+const SUGGESTION_COUNT = 4;
+
 /**
- * Suggest exactly 3 published toolkits to complete a "3 for £60" group, given
+ * Suggest exactly 4 published toolkits to complete a "3 for £60" group, given
  * the standalone product slugs already in the cart. Toolkits sharing an
  * industry with the cart come first (industry-specific matches naturally rank
  * above broad "all-businesses" overlaps because they share more), then the
@@ -69,7 +72,7 @@ export function getBundleSuggestions(cartSlugs: string[]): Product[] {
       return 0; // visibleProducts is already sorted A–Z by subject
     });
 
-  const result: Product[] = [...related.slice(0, 3)];
+  const result: Product[] = [...related.slice(0, SUGGESTION_COUNT)];
 
   const pushIfNew = (p: Product | undefined) => {
     if (p && !inCart.has(p.slug) && !result.some((r) => r.slug === p.slug)) {
@@ -79,15 +82,15 @@ export function getBundleSuggestions(cartSlugs: string[]): Product[] {
 
   // Fill remaining slots with the popular featured toolkits, then any others.
   for (const slug of POPULAR_SLUGS) {
-    if (result.length >= 3) break;
+    if (result.length >= SUGGESTION_COUNT) break;
     pushIfNew(getProductBySlug(slug));
   }
   for (const p of candidates) {
-    if (result.length >= 3) break;
+    if (result.length >= SUGGESTION_COUNT) break;
     pushIfNew(p);
   }
 
-  return result.slice(0, 3);
+  return result.slice(0, SUGGESTION_COUNT);
 }
 
 export interface CartLine {
