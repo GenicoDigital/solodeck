@@ -1,5 +1,9 @@
-import { CartItem } from "./types";
-import { getProductBySlug, getBundleBySlug } from "./products";
+import { CartItem, Product } from "./types";
+import {
+  getProductBySlug,
+  getBundleBySlug,
+  visibleProducts,
+} from "./products";
 
 /**
  * Multi-buy offer: any 3 standalone toolkits for a flat £60, applied once per
@@ -20,6 +24,70 @@ export interface CartSummary {
   itemsToNextDeal: number;
   discountAmount: number;
   total: number;
+}
+
+/**
+ * Popular fallback suggestions, in priority order. These are the featured
+ * all-round toolkits used to fill any suggestion slots not taken by
+ * industry-related products.
+ */
+const POPULAR_SLUGS = [
+  "complete-small-business-ai-toolkit",
+  "social-media-management-ai-toolkit",
+  "customer-service-response-ai-toolkit",
+];
+
+/**
+ * Suggest exactly 3 published toolkits to complete a "3 for £60" group, given
+ * the standalone product slugs already in the cart. Toolkits sharing an
+ * industry with the cart come first (industry-specific matches naturally rank
+ * above broad "all-businesses" overlaps because they share more), then the
+ * popular featured toolkits, then any remaining published toolkits A–Z.
+ */
+export function getBundleSuggestions(cartSlugs: string[]): Product[] {
+  const inCart = new Set(cartSlugs);
+
+  const cartIndustries = new Set<string>();
+  for (const slug of cartSlugs) {
+    const product = getProductBySlug(slug);
+    if (product) {
+      for (const industry of product.industries) cartIndustries.add(industry);
+    }
+  }
+
+  const candidates = visibleProducts.filter((p) => !inCart.has(p.slug));
+
+  const sharedCount = (p: Product) =>
+    p.industries.filter((i) => cartIndustries.has(i)).length;
+
+  const related = candidates
+    .filter((p) => sharedCount(p) > 0)
+    .sort((a, b) => {
+      const diff = sharedCount(b) - sharedCount(a);
+      if (diff !== 0) return diff;
+      if (a.featured !== b.featured) return a.featured ? -1 : 1;
+      return 0; // visibleProducts is already sorted A–Z by subject
+    });
+
+  const result: Product[] = [...related.slice(0, 3)];
+
+  const pushIfNew = (p: Product | undefined) => {
+    if (p && !inCart.has(p.slug) && !result.some((r) => r.slug === p.slug)) {
+      result.push(p);
+    }
+  };
+
+  // Fill remaining slots with the popular featured toolkits, then any others.
+  for (const slug of POPULAR_SLUGS) {
+    if (result.length >= 3) break;
+    pushIfNew(getProductBySlug(slug));
+  }
+  for (const p of candidates) {
+    if (result.length >= 3) break;
+    pushIfNew(p);
+  }
+
+  return result.slice(0, 3);
 }
 
 export interface CartLine {

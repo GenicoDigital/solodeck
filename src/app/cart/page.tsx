@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useCart } from "@/lib/cart-context";
 import { calculateCart } from "@/lib/cart-utils";
 import { formatPrice } from "@/lib/products";
+import BundleUpsell from "@/components/BundleUpsell";
 
 export default function CartPage() {
   const { items, updateQuantity, removeItem, clearCart } = useCart();
@@ -83,13 +84,22 @@ export default function CartPage() {
         ))}
       </div>
 
-      {/* Offer notice — prompt toward the next "3 for £60" group */}
-      {summary.itemsToNextDeal > 0 && (
-        <p className="mt-4 text-sm text-accent">
-          {summary.discountApplied
-            ? `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to unlock another 3 for £60!`
-            : `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to get any 3 for £60!`}
-        </p>
+      {/* Offer notice — prompt toward the next "3 for £60" group. With exactly
+          two standalone products, show the richer bundle-completion upsell. */}
+      {summary.standaloneCount === 2 ? (
+        <BundleUpsell
+          cartSlugs={summary.lines
+            .filter((line) => line.type === "product")
+            .map((line) => line.slug)}
+        />
+      ) : (
+        summary.itemsToNextDeal > 0 && (
+          <p className="mt-4 text-sm text-accent">
+            {summary.discountApplied
+              ? `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to unlock another 3 for £60!`
+              : `Add ${summary.itemsToNextDeal} more toolkit${summary.itemsToNextDeal === 1 ? "" : "s"} to get any 3 for £60!`}
+          </p>
+        )
       )}
 
       {/* Bundle deal banner */}
