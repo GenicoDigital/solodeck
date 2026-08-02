@@ -10,7 +10,32 @@ import BundleUpsell from "@/components/BundleUpsell";
 export default function CartPage() {
   const { items, updateQuantity, removeItem, clearCart } = useCart();
   const [consentGiven, setConsentGiven] = useState(false);
+  const [checkingOut, setCheckingOut] = useState(false);
+  const [checkoutError, setCheckoutError] = useState<string | null>(null);
   const summary = calculateCart(items);
+
+  async function handleCheckout() {
+    setCheckingOut(true);
+    setCheckoutError(null);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items }),
+      });
+      const data = await res.json().catch(() => null);
+      if (!res.ok || !data?.url) {
+        throw new Error(data?.error || "Checkout failed");
+      }
+      // Redirect to Stripe Checkout (page navigates away).
+      window.location.href = data.url;
+    } catch {
+      setCheckoutError(
+        "Something went wrong starting checkout. Please try again."
+      );
+      setCheckingOut(false);
+    }
+  }
 
   if (summary.lines.length === 0) {
     return (
@@ -163,16 +188,20 @@ export default function CartPage() {
           Clear cart
         </button>
         <button
-          disabled={!consentGiven}
+          onClick={handleCheckout}
+          disabled={!consentGiven || checkingOut}
           className={`rounded-md px-8 py-3 text-sm font-medium text-white transition-colors ${
-            consentGiven
+            consentGiven && !checkingOut
               ? "bg-accent hover:bg-accent-hover"
               : "bg-muted/40 cursor-not-allowed"
           }`}
         >
-          Proceed to checkout
+          {checkingOut ? "Redirecting…" : "Proceed to checkout"}
         </button>
       </div>
+      {checkoutError && (
+        <p className="mt-3 text-right text-sm text-red-600">{checkoutError}</p>
+      )}
     </div>
   );
 }
