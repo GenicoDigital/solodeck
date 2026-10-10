@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://solodeck.co";
+export const SITE_URL = "https://www.solodeck.co";
 export const SITE_NAME = "SoloDeck";
 const DEFAULT_IMAGE = "/images/products/complete-small-business-ai-toolkit-v5.jpg";
 

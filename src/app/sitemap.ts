@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { bundles, getActiveIndustries, visibleProducts } from "@/lib/products";
-
-const SITE_URL = "https://solodeck.co";
+import { SITE_URL } from "@/lib/seo";
 
 /** Served at /sitemap.xml. Built from the product data, so new toolkits are added automatically. */
 export default function sitemap(): MetadataRoute.Sitemap {
