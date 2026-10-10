@@ -15,6 +15,68 @@ export const metadata = {
   title: { absolute: "SoloDeck — AI Prompt Toolkits for Small Businesses" },
 };
 
+/** Homepage FAQs. Answers may contain [link text](/path) links. */
+const HOME_FAQS = [
+  {
+    question: "What format are the downloads?",
+    answer:
+      "All products are delivered as PDF files. You can open them on any device — phone, tablet, or computer — and copy the prompts directly into ChatGPT or any other AI tool.",
+  },
+  {
+    question: "Do I need any special software?",
+    answer:
+      "No. You just need a PDF reader (which most devices have built in) and access to an AI tool like ChatGPT, which has a free plan. No coding or technical skills needed.",
+  },
+  {
+    question: "Can I get a refund?",
+    answer:
+      "Because digital downloads are delivered instantly, we're unable to offer refunds for change of mind once you've accessed your files. At checkout, you'll be asked to confirm you're happy for delivery to begin straight away. If your download is faulty or not as described, you're fully covered — just [get in touch](/contact) and we'll sort it out.",
+  },
+  {
+    question: "How do I receive my download?",
+    answer:
+      "After payment, you'll receive an email with a secure download link. Just click the link to save your files. No account needed.",
+  },
+  {
+    question: "What if I'm not sure which product is right for me?",
+    answer:
+      "No problem — drop us a message on the [contact page](/contact) and we'll point you in the right direction based on your business and what you're trying to achieve.",
+  },
+  {
+    question: "Do the prompts work with any AI tool?",
+    answer:
+      "Yes. The prompts are written in plain English and work with ChatGPT, Claude, Gemini, Copilot, and any other text-based AI tool. We include tips on how to get the best results.",
+  },
+];
+
+const LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+/** Turn [text](/path) markers into links. */
+function withLinks(text: string) {
+  // split() with two capture groups yields [text, linkText, href, text, ...]
+  const parts = text.split(LINK);
+  return parts.map((part, i) => {
+    if (i % 3 === 1) {
+      return (
+        <a key={i} href={parts[i + 1]} className="text-accent hover:text-accent-hover underline">
+          {part}
+        </a>
+      );
+    }
+    return i % 3 === 2 ? null : part;
+  });
+}
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: HOME_FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer.replace(LINK, "$1") },
+  })),
+};
+
 const siteJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -35,6 +97,7 @@ export default function Home() {
   return (
     <div>
       <JsonLd data={siteJsonLd} />
+      <JsonLd data={faqJsonLd} />
       {/* Hero — split dark navy band */}
       <section className="bg-[#1a2332]">
         <div className="mx-auto flex min-h-[600px] max-w-6xl items-center px-6 py-20">
@@ -279,80 +342,15 @@ export default function Home() {
           Frequently Asked Questions
         </h2>
         <div className="divide-y divide-border">
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              What format are the downloads?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              All products are delivered as PDF files. You can open them on
-              any device — phone, tablet, or computer — and copy the prompts
-              directly into ChatGPT or any other AI tool.
-            </p>
-          </details>
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              Do I need any special software?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              No. You just need a PDF reader (which most devices have built in)
-              and access to an AI tool like ChatGPT, which has a free plan.
-              No coding or technical skills needed.
-            </p>
-          </details>
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              Can I get a refund?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              Because digital downloads are delivered instantly, we&apos;re unable
-              to offer refunds for change of mind once you&apos;ve accessed your
-              files. At checkout, you&apos;ll be asked to confirm you&apos;re happy for
-              delivery to begin straight away. If your download is faulty or
-              not as described, you&apos;re fully covered — just{" "}
-              <a href="/contact" className="text-accent hover:text-accent-hover underline">
-                get in touch
-              </a>{" "}
-              and we&apos;ll sort it out.
-            </p>
-          </details>
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              How do I receive my download?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              After payment, you&apos;ll receive an email with a secure download
-              link. Just click the link to save your files. No account needed.
-            </p>
-          </details>
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              What if I&apos;m not sure which product is right for me?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              No problem — drop us a message on the{" "}
-              <a href="/contact" className="text-accent hover:text-accent-hover underline">
-                contact page
-              </a>{" "}
-              and we&apos;ll point you in the right direction based on your
-              business and what you&apos;re trying to achieve.
-            </p>
-          </details>
-          <details className="group py-4">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
-              Do the prompts work with any AI tool?
-              <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-muted leading-relaxed">
-              Yes. The prompts are written in plain English and work with
-              ChatGPT, Claude, Gemini, Copilot, and any other text-based AI
-              tool. We include tips on how to get the best results.
-            </p>
-          </details>
+          {HOME_FAQS.map((faq) => (
+            <details key={faq.question} className="group py-4">
+              <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-charcoal">
+                {faq.question}
+                <span className="ml-2 text-muted transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-3 text-sm text-muted leading-relaxed">{withLinks(faq.answer)}</p>
+            </details>
+          ))}
         </div>
       </section>
     </div>
