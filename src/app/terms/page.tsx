@@ -1,6 +1,10 @@
-export const metadata = {
-  title: "Terms & Conditions — SoloDeck",
-};
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata({
+  title: "Terms & Conditions",
+  description:
+    "The terms that apply when you buy and download SoloDeck AI toolkits, including delivery, licensing and refunds.",
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

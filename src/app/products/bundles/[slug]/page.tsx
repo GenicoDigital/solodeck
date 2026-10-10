@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { bundles, getProductBySlug, formatPrice } from "@/lib/products";
 import { INDUSTRY_LABELS } from "@/lib/types";
 import AddToCartButton from "@/components/AddToCartButton";
+import JsonLd from "@/components/JsonLd";
+import { clip, pageMetadata, productJsonLd } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -9,6 +11,25 @@ interface Props {
 
 export function generateStaticParams() {
   return bundles.map((b) => ({ slug: b.slug }));
+}
+
+/** Bundles have no artwork of their own, so borrow the first included toolkit's cover. */
+function bundleImage(productSlugs: string[]): string | undefined {
+  return productSlugs.map(getProductBySlug).find((p) => p?.image)?.image;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const bundle = bundles.find((b) => b.slug === slug);
+  if (!bundle) return {};
+
+  const price = formatPrice(bundle.pricePence).replace(/.00$/, "");
+  return pageMetadata({
+    title: bundle.name,
+    description: `${clip(bundle.description, 125)} Instant PDF download, ${price}.`,
+    path: `/products/bundles/${bundle.slug}`,
+    image: bundleImage(bundle.productSlugs),
+  });
 }
 
 export default async function BundlePage({ params }: Props) {
@@ -27,8 +48,15 @@ export default async function BundlePage({ params }: Props) {
   );
   const savings = individualTotal - bundle.pricePence;
 
+  const image = bundleImage(bundle.productSlugs);
+
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
+      {image && (
+        <JsonLd
+          data={productJsonLd({ ...bundle, image, path: `/products/bundles/${bundle.slug}` })}
+        />
+      )}
       <div className="grid gap-10 md:grid-cols-2">
         {/* Image placeholder */}
         <div className="aspect-[4/3] w-full rounded-lg bg-border" />

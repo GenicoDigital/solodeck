@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { getActiveIndustries } from "@/lib/products";
 import { INDUSTRY_LABELS, Industry } from "@/lib/types";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Products — SoloDeck",
-};
+export const metadata = pageMetadata({
+  title: "AI Toolkits by Industry",
+  description:
+    "Find the AI prompt toolkit built for your industry — from accountants and trades to salons, retail and hospitality. Instant PDF downloads.",
+  path: "/products",
+});
 
 /** Icon (Heroicons outline path) and short descriptor for each industry card. */
 const INDUSTRY_META: Partial<

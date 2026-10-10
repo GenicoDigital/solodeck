@@ -1,6 +1,10 @@
-export const metadata = {
-  title: "Privacy Policy — SoloDeck",
-};
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata({
+  title: "Privacy Policy",
+  description:
+    "How SoloDeck collects, uses and protects your personal data when you browse the site or buy a toolkit.",
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

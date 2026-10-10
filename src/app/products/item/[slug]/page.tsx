@@ -7,6 +7,8 @@ import { products, formatPrice } from "@/lib/products";
 import { PRODUCT_TYPE_LABELS } from "@/lib/types";
 import AddToCartButton from "@/components/AddToCartButton";
 import ProductGallery from "@/components/ProductGallery";
+import JsonLd from "@/components/JsonLd";
+import { clip, pageMetadata, productJsonLd } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -14,6 +16,22 @@ interface Props {
 
 export function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const product = products.find((p) => p.slug === slug);
+  if (!product) return {};
+
+  const price = formatPrice(product.pricePence).replace(/.00$/, "");
+  return pageMetadata({
+    title: product.name,
+    description: `${clip(product.description, 125)} Instant PDF download, ${price}.`,
+    path: `/products/item/${product.slug}`,
+    image: product.image || undefined,
+    // Coming-soon stubs stay reachable for bundle links but shouldn't appear in search.
+    noIndex: !product.image,
+  });
 }
 
 /** Truncate to roughly the first `maxWords` words for the "What's Covered" cards. */
@@ -73,6 +91,11 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <>
+      {hasImage && (
+        <JsonLd
+          data={productJsonLd({ ...product, path: `/products/item/${product.slug}` })}
+        />
+      )}
       {/* Dark hero band — full viewport width */}
       <section className="bg-[#1a2332]">
         <div className="mx-auto max-w-4xl px-6 py-16">

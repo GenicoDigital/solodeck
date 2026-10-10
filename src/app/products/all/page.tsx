@@ -1,9 +1,13 @@
 import ProductFilters from "@/components/ProductFilters";
 import { visibleProducts, bundles } from "@/lib/products";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "All Products — SoloDeck",
-};
+export const metadata = pageMetadata({
+  title: "All AI Prompt Toolkits",
+  description:
+    "Browse every SoloDeck AI prompt toolkit and bundle. Done-for-you prompts for marketing, emails, customer service and admin. Instant PDF download.",
+  path: "/products/all",
+});
 
 export default function AllProductsPage() {
   return (

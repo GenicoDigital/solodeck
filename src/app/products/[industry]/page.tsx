@@ -6,6 +6,7 @@ import {
 } from "@/lib/products";
 import { Industry, INDUSTRY_LABELS, Product } from "@/lib/types";
 import IndustryToolkits from "@/components/IndustryToolkits";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ industry: string }>;
@@ -24,6 +25,21 @@ const UNIVERSAL_SLUGS = [
 
 export function generateStaticParams() {
   return getActiveIndustries().map((i) => ({ industry: i }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { industry } = await params;
+  const label = INDUSTRY_LABELS[industry as Industry];
+  if (!label) return {};
+
+  const audience = industry === "all-businesses" ? "Small Businesses" : label;
+  const cover = getProductsByIndustry(industry as Industry).find((p) => p.image)?.image;
+  return pageMetadata({
+    title: `AI Toolkits for ${audience}`,
+    description: `Ready-to-use AI prompt toolkits for ${audience}. Save hours on emails, marketing and admin with ChatGPT or any AI tool. Instant PDF download.`,
+    path: `/products/${industry}`,
+    image: cover,
+  });
 }
 
 export default async function IndustryPage({ params }: Props) {

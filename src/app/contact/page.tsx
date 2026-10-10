@@ -1,8 +1,12 @@
 import ContactForm from "@/components/ContactForm";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Contact — SoloDeck",
-};
+export const metadata = pageMetadata({
+  title: "Contact Us",
+  description:
+    "Questions about a toolkit, your order or a download? Get in touch with the SoloDeck team — we reply to every message.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

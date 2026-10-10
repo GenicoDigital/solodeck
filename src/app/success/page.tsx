@@ -10,7 +10,8 @@ import {
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Order Confirmed — SoloDeck",
+  title: "Order Confirmed",
+  robots: { index: false, follow: false },
 };
 
 function Fallback({ message }: { message: string }) {

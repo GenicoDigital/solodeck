@@ -1,13 +1,40 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import HeroPromptCards from "@/components/HeroPromptCards";
+import JsonLd from "@/components/JsonLd";
 import { getFeaturedProducts } from "@/lib/products";
+import { pageMetadata, SITE_NAME, SITE_URL } from "@/lib/seo";
+
+export const metadata = {
+  ...pageMetadata({
+    title: "AI Prompt Toolkits for Small Businesses",
+    description:
+      "Ready-to-use prompt toolkits, templates, and guides that help small businesses and sole traders work smarter with AI. No technical skills needed.",
+    path: "/",
+  }),
+  title: { absolute: "SoloDeck — AI Prompt Toolkits for Small Businesses" },
+};
+
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      email: "hello@solodeck.co",
+      areaServed: "GB",
+    },
+    { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+  ],
+};
 
 export default function Home() {
   const featured = getFeaturedProducts();
 
   return (
     <div>
+      <JsonLd data={siteJsonLd} />
       {/* Hero — split dark navy band */}
       <section className="bg-[#1a2332]">
         <div className="mx-auto flex min-h-[600px] max-w-6xl items-center px-6 py-20">
