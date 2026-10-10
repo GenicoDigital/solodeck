@@ -1,0 +1,54 @@
+{
+  "all-businesses": {
+    "title": "AI for Small Businesses: UK AI Prompt Packs",
+    "description": "Ready-to-use AI prompt packs for UK small businesses and sole traders — emails, marketing, customer service and admin. Works with ChatGPT or any AI tool."
+  },
+  "accountants-bookkeepers": {
+    "title": "AI for Accountants & Bookkeepers (UK)",
+    "description": "Ready-to-use AI prompt packs for UK accountants and bookkeepers — client emails, tax and compliance, practice admin. Works with ChatGPT or any AI tool."
+  },
+  "salons-beauty": {
+    "title": "AI Prompts for Salons & Beauty Businesses (UK)",
+    "description": "Ready-to-use AI prompt packs for UK salons, hairdressers and aesthetics clinics — bookings, client messages and social posts. Works with any AI tool."
+  },
+  "coaches-consultants": {
+    "title": "AI for Coaches & Consultants (UK)",
+    "description": "Ready-to-use AI prompt packs for coaches and consultants — client onboarding, proposals, content and admin. Works with ChatGPT or any AI tool. Instant PDF."
+  },
+  "early-years-education": {
+    "title": "AI for Nurseries & Childminders: AI Prompts (UK)",
+    "description": "Ready-to-use AI prompts for UK nurseries, childminders and early years settings — parent updates, planning, policies and marketing. Instant PDF download."
+  },
+  "retail": {
+    "title": "AI for Ecommerce & Retail Businesses (UK)",
+    "description": "Ready-to-use AI prompt packs for UK online shops and retailers — product listings, customer emails, ads and promotions. Works with ChatGPT or any AI tool."
+  },
+  "hospitality": {
+    "title": "AI for Restaurants, Cafés & Hospitality (UK)",
+    "description": "Ready-to-use AI prompt packs for UK restaurants, cafés, pubs and caterers — menus, guest replies, bookings and marketing. Works with ChatGPT or any AI tool."
+  },
+  "hr": {
+    "title": "AI for HR & People Management (UK)",
+    "description": "Ready-to-use AI prompt packs for HR and line managers in UK small businesses — hiring, onboarding, reviews and policies. Works with ChatGPT or any AI tool."
+  },
+  "manufacturing": {
+    "title": "AI for Manufacturing Businesses (UK)",
+    "description": "Ready-to-use AI prompt packs for UK manufacturers — quotes, tenders, production, quality and supplier emails. Works with ChatGPT or any AI tool. Instant PDF."
+  },
+  "pet-business-veterinary": {
+    "title": "AI for Vets & Pet Businesses (UK)",
+    "description": "Ready-to-use AI prompt packs for UK vets, groomers, dog trainers and pet businesses — client messages and marketing. Works with ChatGPT or any AI tool."
+  },
+  "social-media": {
+    "title": "AI for Social Media: AI Prompt Packs (UK)",
+    "description": "Ready-to-use AI prompt packs for social media managers and small businesses — captions, content calendars and campaigns. Works with ChatGPT or any AI tool."
+  },
+  "trades": {
+    "title": "AI Prompts for Builders, Plumbers & Electricians",
+    "description": "Ready-to-use AI prompt packs for UK tradespeople and construction firms — quotes, invoices, customer replies and H&S. Works with ChatGPT or any AI tool."
+  },
+  "wedding-planners": {
+    "title": "AI for Wedding & Event Planners (UK)",
+    "description": "Ready-to-use AI prompt packs for UK wedding and event planners — enquiries, supplier emails, budgets and marketing. Works with ChatGPT or any AI tool."
+  }
+}

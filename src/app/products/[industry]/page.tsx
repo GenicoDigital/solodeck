@@ -7,6 +7,7 @@ import {
 import { Industry, INDUSTRY_LABELS, Product } from "@/lib/types";
 import IndustryToolkits from "@/components/IndustryToolkits";
 import { pageMetadata } from "@/lib/seo";
+import industrySeo from "@/data/products/industry-seo.json";
 
 interface Props {
   params: Promise<{ industry: string }>;
@@ -34,9 +35,12 @@ export async function generateMetadata({ params }: Props) {
 
   const audience = industry === "all-businesses" ? "Small Businesses" : label;
   const cover = getProductsByIndustry(industry as Industry).find((p) => p.image)?.image;
+  const seo = (industrySeo as Record<string, { title: string; description: string }>)[industry];
   return pageMetadata({
-    title: `AI Toolkits for ${audience}`,
-    description: `Ready-to-use AI prompt toolkits for ${audience}. Save hours on emails, marketing and admin with ChatGPT or any AI tool. Instant PDF download.`,
+    title: seo?.title ?? `AI Prompts for ${audience}`,
+    description:
+      seo?.description ??
+      `Ready-to-use AI prompt packs for ${audience}. Save hours on emails, marketing and admin with ChatGPT or any AI tool. Instant PDF download.`,
     path: `/products/${industry}`,
     image: cover,
   });

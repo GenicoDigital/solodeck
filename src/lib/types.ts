@@ -2,6 +2,10 @@ export interface Product {
   slug: string;
   name: string;
   description: string;
+  /** Search-result title (without the " | SoloDeck" suffix); falls back to `name` */
+  seoTitle?: string;
+  /** Search-result snippet, ideally ≤155 characters; falls back to a clipped `description` */
+  seoDescription?: string;
   /** Price in pence (e.g. 1500 = £15.00) */
   pricePence: number;
   /** What the product is */
@@ -28,6 +32,8 @@ export interface Bundle {
   slug: string;
   name: string;
   description: string;
+  seoTitle?: string;
+  seoDescription?: string;
   /** Discounted bundle price in pence */
   pricePence: number;
   /** Slugs of the products included in this bundle */

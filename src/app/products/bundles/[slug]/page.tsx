@@ -25,8 +25,10 @@ export async function generateMetadata({ params }: Props) {
 
   const price = formatPrice(bundle.pricePence).replace(/.00$/, "");
   return pageMetadata({
-    title: bundle.name,
-    description: `${clip(bundle.description, 125)} Instant PDF download, ${price}.`,
+    title: bundle.seoTitle ?? bundle.name,
+    description:
+      bundle.seoDescription ??
+      `${clip(bundle.description, 125)} Instant PDF download, ${price}.`,
     path: `/products/bundles/${bundle.slug}`,
     image: bundleImage(bundle.productSlugs),
   });

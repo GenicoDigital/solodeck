@@ -3,6 +3,8 @@
     "slug": "ai-essentials-bundle",
     "name": "AI Essentials Bundle",
     "description": "The perfect starting point — includes The Complete Small Business AI Toolkit, The Complete AI Email Assistant Toolkit, and The Complete Business Audit AI Toolkit at a discounted price.",
+    "seoTitle": "AI Prompts Bundle for Small Businesses",
+    "seoDescription": "Three AI prompt packs in one — small business, email and business audit toolkits at a bundle price. Works with ChatGPT or any AI tool. £59.",
     "pricePence": 5900,
     "productSlugs": [
       "complete-small-business-ai-toolkit",
@@ -17,6 +19,8 @@
     "slug": "trades-complete-bundle",
     "name": "Trades & Construction Complete Bundle",
     "description": "Everything a trades business needs — The Complete Trades & Construction AI Toolkit, The Complete Customer Service Response AI Toolkit, and The Complete AI Website Generator Toolkit.",
+    "seoTitle": "AI Prompts Bundle for Trades & Construction",
+    "seoDescription": "Three AI prompt packs for tradespeople — trades, customer service and website copy toolkits at a bundle price. Works with ChatGPT or any AI tool. £59.",
     "pricePence": 5900,
     "productSlugs": [
       "trades-construction-ai-toolkit",

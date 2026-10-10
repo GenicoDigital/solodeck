@@ -25,8 +25,10 @@ export async function generateMetadata({ params }: Props) {
 
   const price = formatPrice(product.pricePence).replace(/.00$/, "");
   return pageMetadata({
-    title: product.name,
-    description: `${clip(product.description, 125)} Instant PDF download, ${price}.`,
+    title: product.seoTitle ?? product.name,
+    description:
+      product.seoDescription ??
+      `${clip(product.description, 125)} Instant PDF download, ${price}.`,
     path: `/products/item/${product.slug}`,
     image: product.image || undefined,
     // Coming-soon stubs stay reachable for bundle links but shouldn't appear in search.
