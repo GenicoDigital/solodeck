@@ -59,11 +59,13 @@ function FeaturedToolkit({ product }: { product: Product }) {
 interface Props {
   heading: string;
   label: string;
+  /** Optional industry-specific intro; defaults to a generic one-liner */
+  intro?: string;
   primary: Product[];
   alsoUseful: Product[];
 }
 
-export default function IndustryToolkits({ heading, label, primary, alsoUseful }: Props) {
+export default function IndustryToolkits({ heading, label, intro, primary, alsoUseful }: Props) {
   const [query, setQuery] = useState("");
   const q = query.trim().toLowerCase();
   const matches = (p: Product) =>
@@ -91,8 +93,8 @@ export default function IndustryToolkits({ heading, label, primary, alsoUseful }
       {primaryFiltered.length > 0 && (
         <section>
           <h1 className="mb-2 text-3xl font-bold text-charcoal">{heading}</h1>
-          <p className="mb-8 text-muted">
-            Done-for-you AI prompts, built specifically for {label}.
+          <p className="mb-8 max-w-3xl text-muted">
+            {intro ?? `Done-for-you AI prompts, built specifically for ${label}.`}
           </p>
           <div className="space-y-6">
             {primaryFiltered.map((p) => (

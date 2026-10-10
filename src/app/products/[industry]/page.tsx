@@ -6,6 +6,9 @@ import {
 } from "@/lib/products";
 import { Industry, INDUSTRY_LABELS, Product } from "@/lib/types";
 import IndustryToolkits from "@/components/IndustryToolkits";
+import IndustryGuide from "@/components/IndustryGuide";
+import JsonLd from "@/components/JsonLd";
+import { INDUSTRY_CONTENT } from "@/data/products/industry-content";
 import { pageMetadata } from "@/lib/seo";
 import industrySeo from "@/data/products/industry-seo.json";
 
@@ -67,14 +70,31 @@ export default async function IndustryPage({ params }: Props) {
   const heading =
     primary.length > 1 ? `Your ${label} Toolkits` : `Your ${label} Toolkit`;
 
+  const content = INDUSTRY_CONTENT[industryKey];
+
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">
+      {content && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: content.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+          }}
+        />
+      )}
       <IndustryToolkits
         heading={heading}
         label={label}
+        intro={content?.intro}
         primary={primary}
         alsoUseful={alsoUseful}
       />
+      {content && <IndustryGuide content={content} />}
     </div>
   );
 }
